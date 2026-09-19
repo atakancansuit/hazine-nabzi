@@ -1,0 +1,1175 @@
+source,year,main_item,item,amount_thousand_try
+balance,2015,Harcamalar,Harcamalar,472942746.0
+balance,2015,Harcamalar,1-Faiz Hariç Harcama,418942746.0
+balance,2015,Harcamalar,Personel Giderleri,119170124.0
+balance,2015,Harcamalar,Sosyal Güv.Kur. Devlet Primi,20324876.0
+balance,2015,Harcamalar,Mal ve Hizmet Alımları,41152681.0
+balance,2015,Harcamalar,Cari Transferler,176424780.0
+balance,2015,Harcamalar,Sermaye Giderleri,40955159.0
+balance,2015,Harcamalar,Sermaye Transferleri,6797889.0
+balance,2015,Harcamalar,Borç Verme,10544604.0
+balance,2015,Harcamalar,Yedek Ödenekler,3572633.0
+balance,2015,Harcamalar,2-Faiz Harcamaları,54000000.0
+balance,2015,Gelirler,Gelirler,451979400.0
+balance,2015,Gelirler,1-Genel Bütçe Gelirleri,440997857.0
+balance,2015,Gelirler,Vergi Gelirleri,389501090.0
+balance,2015,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,9478311.0
+balance,2015,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,1932183.0
+balance,2015,Gelirler,"Faizler, Paylar ve Cezalar",28843105.0
+balance,2015,Gelirler,Sermaye Gelirleri,10438998.0
+balance,2015,Gelirler,Alacaklardan Tahsilat,804170.0
+balance,2015,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,7789211.0
+balance,2015,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,3192332.0
+balance,2015,Denge,Bütçe Dengesi,-20963346.0
+balance,2015,Denge,Faiz Dışı Denge,33036654.0
+expense_detail,2015,1. Personel Giderleri,1. Personel Giderleri,119170124.0
+expense_detail,2015,1. Personel Giderleri,Memurlar,105624997.0
+expense_detail,2015,1. Personel Giderleri,İşçiler,6097185.0
+expense_detail,2015,1. Personel Giderleri,Sözleşmeli Personel,2806962.0
+expense_detail,2015,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,20324876.0
+expense_detail,2015,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,41152681.0
+expense_detail,2015,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,12525711.0
+expense_detail,2015,4. Cari Transferler,4. Cari Transferler,176424780.0
+expense_detail,2015,4. Cari Transferler,KİT Görevlendirme Giderleri,2076500.0
+expense_detail,2015,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,1280000.0
+expense_detail,2015,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,34886685.0
+expense_detail,2015,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),3183968.0
+expense_detail,2015,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),6333046.0
+expense_detail,2015,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),18118607.0
+expense_detail,2015,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,10000000.0
+expense_detail,2015,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,2350000.0
+expense_detail,2015,4. Cari Transferler,g) Sosyal Amaçlı Transferler,8994376.0
+expense_detail,2015,4. Cari Transferler,-Büyükşehir Belediyelerine,19337402.0
+expense_detail,2015,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,17527549.0
+expense_detail,2015,4. Cari Transferler,-Diğer Belediyelere,5842516.0
+expense_detail,2015,5. Sermaye Giderleri,5. Sermaye Giderleri,40955159.0
+expense_detail,2015,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,26059374.0
+expense_detail,2015,6. Sermaye Transferleri,6. Sermaye Transferleri,6797889.0
+expense_detail,2015,7. Borç Verme,7. Borç Verme,10544604.0
+expense_detail,2015,7. Borç Verme,Öğrenim ve Harç Kredisi,3405000.0
+expense_detail,2015,8. Yedek Ödenekler,8. Yedek Ödenekler,3572633.0
+expense_detail,2015,8. Yedek Ödenekler,Yedek Ödenek,1547000.0
+expense_detail,2015,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,632782.0
+expense_detail,2015,B. Faiz Giderleri,B. Faiz Giderleri,54000000.0
+expense_detail,2015,B. Faiz Giderleri,-Tahvil Faizi,40245000.0
+expense_detail,2015,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,9920000.0
+expense_detail,2015,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,1060000.0
+ministries,2015,Genel Bütçeli İdareler,Cumhurbaşkanlığı,397000.0
+ministries,2015,Genel Bütçeli İdareler,TBMM,763216.0
+ministries,2015,Genel Bütçeli İdareler,Anayasa Mahkemesi,43502.0
+ministries,2015,Genel Bütçeli İdareler,Yargıtay,162967.0
+ministries,2015,Genel Bütçeli İdareler,Danıştay,103703.0
+ministries,2015,Genel Bütçeli İdareler,Sayıştay,186373.0
+ministries,2015,Genel Bütçeli İdareler,Başbakanlık,929119.0
+ministries,2015,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Müsteşarlığı,1108220.0
+ministries,2015,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,22575.0
+ministries,2015,Genel Bütçeli İdareler,Basın Yayın ve Enformasyon Genel Müdürlüğü,235985.0
+ministries,2015,Genel Bütçeli İdareler,Hazine Müsteşarlığı,68399057.0
+ministries,2015,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,5743383.0
+ministries,2015,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,993414.0
+ministries,2015,Genel Bütçeli İdareler,Adalet Bakanlığı,8628648.0
+ministries,2015,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,22764255.0
+ministries,2015,Genel Bütçeli İdareler,İçişleri Bakanlığı,3898467.0
+ministries,2015,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,6489530.0
+ministries,2015,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,17623719.0
+ministries,2015,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,506226.0
+ministries,2015,Genel Bütçeli İdareler,Kamu Düzeni ve Güvenliği Müsteşarlığı,22183.0
+ministries,2015,Genel Bütçeli İdareler,Göç İdaresi Genel Müdürlüğü,179890.0
+ministries,2015,Genel Bütçeli İdareler,Dışişleri Bakanlığı,2080968.0
+ministries,2015,Genel Bütçeli İdareler,Maliye Bakanlığı,127254013.0
+ministries,2015,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,2444892.0
+ministries,2015,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,62000248.0
+ministries,2015,Genel Bütçeli İdareler,Sağlık Bakanlığı,2762657.0
+ministries,2015,Genel Bütçeli İdareler,Türkiye Kamu Hastaneleri Kurumu,9873269.0
+ministries,2015,Genel Bütçeli İdareler,Türkiye Halk Sağlığı Kurumu,7488572.0
+ministries,2015,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,30678105.0
+ministries,2015,Genel Bütçeli İdareler,Devlet Personel Başkanlığı,26333.0
+ministries,2015,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,1890023.0
+ministries,2015,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,2297536.0
+ministries,2015,Genel Bütçeli İdareler,Hakimler ve Savcılar Yüksek Kurulu,43219.0
+ministries,2015,Genel Bütçeli İdareler,Aile ve Sosyal Politikalar Bakanlığı,18249634.0
+ministries,2015,Genel Bütçeli İdareler,Avrupa Birliği Bakanlığı,291238.0
+ministries,2015,Genel Bütçeli İdareler,"Bilim, Sanayi ve Teknoloji Bakanlığı",3025593.0
+ministries,2015,Genel Bütçeli İdareler,Çevre ve Şehircilik Bakanlığı,1358916.0
+ministries,2015,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,775866.0
+ministries,2015,Genel Bütçeli İdareler,Ekonomi Bakanlığı,1481672.0
+ministries,2015,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,7202780.0
+ministries,2015,Genel Bütçeli İdareler,"Gıda, Tarım ve Hayvancılık Bakanlığı",14698518.0
+ministries,2015,Genel Bütçeli İdareler,Gümrük ve Ticaret Bakanlığı,764447.0
+ministries,2015,Genel Bütçeli İdareler,Kalkınma Bakanlığı,2182320.0
+ministries,2015,Genel Bütçeli İdareler,Türkiye İstatistik Kurumu Başkanlığı,285146.0
+ministries,2015,Genel Bütçeli İdareler,Orman ve Su İşleri Bakanlığı,11712065.0
+ministries,2015,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,238423.0
+ministries,2015,Genel Bütçeli İdareler,"Ulaştırma, Denizcilik ve Haberleşme Bakanlığı",13855514.0
+balance,2016,Harcamalar,Harcamalar,570506708.0
+balance,2016,Harcamalar,1-Faiz Hariç Harcama,514506708.0
+balance,2016,Harcamalar,Personel Giderleri,147825672.6
+balance,2016,Harcamalar,Sosyal Güv.Kur. Devlet Primi,24895327.4
+balance,2016,Harcamalar,Mal ve Hizmet Alımları,46890808.0
+balance,2016,Harcamalar,Cari Transferler,217673990.0
+balance,2016,Harcamalar,Sermaye Giderleri,51788860.0
+balance,2016,Harcamalar,Sermaye Transferleri,7521806.0
+balance,2016,Harcamalar,Borç Verme,12938516.0
+balance,2016,Harcamalar,Yedek Ödenekler,4971728.0
+balance,2016,Harcamalar,2-Faiz Harcamaları,56000000.0
+balance,2016,Gelirler,Gelirler,540818580.0
+balance,2016,Gelirler,1-Genel Bütçe Gelirleri,528317170.0
+balance,2016,Gelirler,Vergi Gelirleri,459150250.0
+balance,2016,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,18911314.0
+balance,2016,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,2456581.0
+balance,2016,Gelirler,"Faizler, Paylar ve Cezalar",33954266.0
+balance,2016,Gelirler,Sermaye Gelirleri,12201576.0
+balance,2016,Gelirler,Alacaklardan Tahsilat,1643183.0
+balance,2016,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,8733356.0
+balance,2016,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,3768054.0
+balance,2016,Denge,Bütçe Dengesi,-29688128.0
+balance,2016,Denge,Faiz Dışı Denge,26311872.0
+expense_detail,2016,1. Personel Giderleri,1. Personel Giderleri,147825672.6
+expense_detail,2016,1. Personel Giderleri,Memurlar,130464654.6
+expense_detail,2016,1. Personel Giderleri,İşçiler,7421968.0
+expense_detail,2016,1. Personel Giderleri,Sözleşmeli Personel,3953884.0
+expense_detail,2016,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,24895327.4
+expense_detail,2016,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,46890808.0
+expense_detail,2016,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,13377459.0
+expense_detail,2016,4. Cari Transferler,4. Cari Transferler,217673990.0
+expense_detail,2016,4. Cari Transferler,KİT Görevlendirme Giderleri,2078386.0
+expense_detail,2016,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,1742000.0
+expense_detail,2016,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,44369787.0
+expense_detail,2016,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),5179837.0
+expense_detail,2016,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),7791614.0
+expense_detail,2016,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),11308977.0
+expense_detail,2016,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,11644000.0
+expense_detail,2016,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,3099550.0
+expense_detail,2016,4. Cari Transferler,g) Sosyal Amaçlı Transferler,11666820.0
+expense_detail,2016,4. Cari Transferler,-Büyükşehir Belediyelerine,22859073.0
+expense_detail,2016,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,20661761.0
+expense_detail,2016,4. Cari Transferler,-Diğer Belediyelere,6887254.0
+expense_detail,2016,5. Sermaye Giderleri,5. Sermaye Giderleri,51788859.99999999
+expense_detail,2016,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,34286143.3
+expense_detail,2016,6. Sermaye Transferleri,6. Sermaye Transferleri,7521806.0
+expense_detail,2016,7. Borç Verme,7. Borç Verme,12938516.0
+expense_detail,2016,7. Borç Verme,Öğrenim ve Harç Kredisi,4675000.0
+expense_detail,2016,8. Yedek Ödenekler,8. Yedek Ödenekler,4971728.0
+expense_detail,2016,8. Yedek Ödenekler,Yedek Ödenek,2064576.0
+expense_detail,2016,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,770587.0
+expense_detail,2016,B. Faiz Giderleri,B. Faiz Giderleri,56000000.0
+expense_detail,2016,B. Faiz Giderleri,-Tahvil Faizi,37679678.0
+expense_detail,2016,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,13148053.0
+expense_detail,2016,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,1547269.0
+ministries,2016,Genel Bütçeli İdareler,Cumhurbaşkanlığı,434096.0
+ministries,2016,Genel Bütçeli İdareler,TBMM,840029.0
+ministries,2016,Genel Bütçeli İdareler,Anayasa Mahkemesi,54974.0
+ministries,2016,Genel Bütçeli İdareler,Yargıtay,215152.0
+ministries,2016,Genel Bütçeli İdareler,Danıştay,139793.0
+ministries,2016,Genel Bütçeli İdareler,Sayıştay,225656.5
+ministries,2016,Genel Bütçeli İdareler,Başbakanlık,1295211.0
+ministries,2016,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Müsteşarlığı,1636803.0
+ministries,2016,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,25702.0
+ministries,2016,Genel Bütçeli İdareler,Basın Yayın ve Enformasyon Genel Müdürlüğü,281617.0
+ministries,2016,Genel Bütçeli İdareler,Hazine Müsteşarlığı,73223426.0
+ministries,2016,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,6482979.0
+ministries,2016,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,1052242.0
+ministries,2016,Genel Bütçeli İdareler,Adalet Bakanlığı,10569566.0
+ministries,2016,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,26451504.0
+ministries,2016,Genel Bütçeli İdareler,İçişleri Bakanlığı,4794246.0
+ministries,2016,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,8276881.0
+ministries,2016,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,21140638.0
+ministries,2016,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,576812.0
+ministries,2016,Genel Bütçeli İdareler,Kamu Düzeni ve Güvenliği Müsteşarlığı,19962.0
+ministries,2016,Genel Bütçeli İdareler,Göç İdaresi Genel Müdürlüğü,271020.0
+ministries,2016,Genel Bütçeli İdareler,Dışişleri Bakanlığı,2739482.0
+ministries,2016,Genel Bütçeli İdareler,Maliye Bakanlığı,156106374.0
+ministries,2016,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,2785908.0
+ministries,2016,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,76354306.0
+ministries,2016,Genel Bütçeli İdareler,Sağlık Bakanlığı,4212521.0
+ministries,2016,Genel Bütçeli İdareler,Türkiye Kamu Hastaneleri Kurumu,11950900.0
+ministries,2016,Genel Bütçeli İdareler,Türkiye Halk Sağlığı Kurumu,9111684.0
+ministries,2016,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,38389157.0
+ministries,2016,Genel Bütçeli İdareler,Devlet Personel Başkanlığı,29753.0
+ministries,2016,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,1988830.5
+ministries,2016,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,2777769.0
+ministries,2016,Genel Bütçeli İdareler,Hakimler ve Savcılar Yüksek Kurulu,55378.0
+ministries,2016,Genel Bütçeli İdareler,Aile ve Sosyal Politikalar Bakanlığı,24799651.0
+ministries,2016,Genel Bütçeli İdareler,Avrupa Birliği Bakanlığı,318725.0
+ministries,2016,Genel Bütçeli İdareler,"Bilim, Sanayi ve Teknoloji Bakanlığı",4375275.0
+ministries,2016,Genel Bütçeli İdareler,Çevre ve Şehircilik Bakanlığı,1686435.0
+ministries,2016,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,867372.0
+ministries,2016,Genel Bütçeli İdareler,Ekonomi Bakanlığı,1682707.0
+ministries,2016,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,9676240.0
+ministries,2016,Genel Bütçeli İdareler,"Gıda, Tarım ve Hayvancılık Bakanlığı",17175234.0
+ministries,2016,Genel Bütçeli İdareler,Gümrük ve Ticaret Bakanlığı,1052766.0
+ministries,2016,Genel Bütçeli İdareler,Kalkınma Bakanlığı,2008578.0
+ministries,2016,Genel Bütçeli İdareler,Türkiye İstatistik Kurumu Başkanlığı,385234.0
+ministries,2016,Genel Bütçeli İdareler,Orman ve Su İşleri Bakanlığı,12986236.0
+ministries,2016,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,278897.0
+ministries,2016,Genel Bütçeli İdareler,"Ulaştırma, Denizcilik ve Haberleşme Bakanlığı",18978587.0
+balance,2017,Harcamalar,Harcamalar,645124278.0
+balance,2017,Harcamalar,1-Faiz Hariç Harcama,587624278.0
+balance,2017,Harcamalar,Personel Giderleri,162638925.0
+balance,2017,Harcamalar,Sosyal Güv.Kur. Devlet Primi,27138075.0
+balance,2017,Harcamalar,Mal ve Hizmet Alımları,52119062.0
+balance,2017,Harcamalar,Cari Transferler,249265903.0
+balance,2017,Harcamalar,Sermaye Giderleri,66243000.0
+balance,2017,Harcamalar,Sermaye Transferleri,10881283.0
+balance,2017,Harcamalar,Borç Verme,12917108.0
+balance,2017,Harcamalar,Yedek Ödenekler,6420922.0
+balance,2017,Harcamalar,2-Faiz Harcamaları,57500000.0
+balance,2017,Gelirler,Gelirler,598273690.35
+balance,2017,Gelirler,1-Genel Bütçe Gelirleri,584309762.0
+balance,2017,Gelirler,Vergi Gelirleri,511085194.0
+balance,2017,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,17124643.0
+balance,2017,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,1488699.0
+balance,2017,Gelirler,"Faizler, Paylar ve Cezalar",37545356.0
+balance,2017,Gelirler,Sermaye Gelirleri,15405461.0
+balance,2017,Gelirler,Alacaklardan Tahsilat,1660409.0
+balance,2017,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,9777075.35
+balance,2017,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,4186853.0
+balance,2017,Denge,Bütçe Dengesi,-46850587.649999976
+balance,2017,Denge,Faiz Dışı Denge,10649412.350000024
+expense_detail,2017,1. Personel Giderleri,1. Personel Giderleri,162638925.0
+expense_detail,2017,1. Personel Giderleri,Memurlar,140427713.0
+expense_detail,2017,1. Personel Giderleri,İşçiler,8179870.0
+expense_detail,2017,1. Personel Giderleri,Sözleşmeli Personel,7124757.0
+expense_detail,2017,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,27138075.0
+expense_detail,2017,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,52119062.0
+expense_detail,2017,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,14753929.0
+expense_detail,2017,4. Cari Transferler,4. Cari Transferler,249265903.0
+expense_detail,2017,4. Cari Transferler,KİT Görevlendirme Giderleri,2957780.0
+expense_detail,2017,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,2393554.0
+expense_detail,2017,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,47746362.0
+expense_detail,2017,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),5597977.0
+expense_detail,2017,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),8631166.0
+expense_detail,2017,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),21623021.0
+expense_detail,2017,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,12838329.0
+expense_detail,2017,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,3849000.0
+expense_detail,2017,4. Cari Transferler,g) Sosyal Amaçlı Transferler,12613322.0
+expense_detail,2017,4. Cari Transferler,-Büyükşehir Belediyelerine,25194488.0
+expense_detail,2017,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,22998834.0
+expense_detail,2017,4. Cari Transferler,-Diğer Belediyelere,7666278.0
+expense_detail,2017,5. Sermaye Giderleri,5. Sermaye Giderleri,66243000.0
+expense_detail,2017,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,43843484.0
+expense_detail,2017,6. Sermaye Transferleri,6. Sermaye Transferleri,10881283.0
+expense_detail,2017,7. Borç Verme,7. Borç Verme,12917108.0
+expense_detail,2017,7. Borç Verme,Öğrenim ve Harç Kredisi,5874649.0
+expense_detail,2017,8. Yedek Ödenekler,8. Yedek Ödenekler,6420922.0
+expense_detail,2017,8. Yedek Ödenekler,Yedek Ödenek,3662841.0
+expense_detail,2017,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,451710.0
+expense_detail,2017,B. Faiz Giderleri,B. Faiz Giderleri,57500000.0
+expense_detail,2017,B. Faiz Giderleri,-Tahvil Faizi,40096881.0
+expense_detail,2017,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,13000000.0
+expense_detail,2017,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,1738119.0
+ministries,2017,Genel Bütçeli İdareler,Cumhurbaşkanlığı,648488.0
+ministries,2017,Genel Bütçeli İdareler,TBMM,981589.0
+ministries,2017,Genel Bütçeli İdareler,Anayasa Mahkemesi,58784.0
+ministries,2017,Genel Bütçeli İdareler,Yargıtay,382750.0
+ministries,2017,Genel Bütçeli İdareler,Danıştay,125072.0
+ministries,2017,Genel Bütçeli İdareler,Sayıştay,257486.0
+ministries,2017,Genel Bütçeli İdareler,Başbakanlık,1584358.0
+ministries,2017,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Müsteşarlığı,1995692.0
+ministries,2017,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,28071.0
+ministries,2017,Genel Bütçeli İdareler,Basın Yayın ve Enformasyon Genel Müdürlüğü,297305.0
+ministries,2017,Genel Bütçeli İdareler,Hazine Müsteşarlığı,77406980.0
+ministries,2017,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,6867117.0
+ministries,2017,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,1248152.0
+ministries,2017,Genel Bütçeli İdareler,Adalet Bakanlığı,12304365.0
+ministries,2017,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,28702119.0
+ministries,2017,Genel Bütçeli İdareler,İçişleri Bakanlığı,5834586.0
+ministries,2017,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,9374739.0
+ministries,2017,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,23537811.0
+ministries,2017,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,649761.0
+ministries,2017,Genel Bütçeli İdareler,Kamu Düzeni ve Güvenliği Müsteşarlığı,17857.0
+ministries,2017,Genel Bütçeli İdareler,Göç İdaresi Genel Müdürlüğü,349852.0
+ministries,2017,Genel Bütçeli İdareler,Dışişleri Bakanlığı,2963645.0
+ministries,2017,Genel Bütçeli İdareler,Maliye Bakanlığı,171691737.0
+ministries,2017,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,3044626.0
+ministries,2017,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,85048584.0
+ministries,2017,Genel Bütçeli İdareler,Sağlık Bakanlığı,5831124.0
+ministries,2017,Genel Bütçeli İdareler,Türkiye Kamu Hastaneleri Kurumu,15795066.0
+ministries,2017,Genel Bütçeli İdareler,Türkiye Halk Sağlığı Kurumu,10343267.0
+ministries,2017,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,49855256.0
+ministries,2017,Genel Bütçeli İdareler,Devlet Personel Başkanlığı,29303.0
+ministries,2017,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,2333590.0
+ministries,2017,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,3459754.0
+ministries,2017,Genel Bütçeli İdareler,Hakimler ve Savcılar Yüksek Kurulu,61236.0
+ministries,2017,Genel Bütçeli İdareler,Aile ve Sosyal Politikalar Bakanlığı,24303358.0
+ministries,2017,Genel Bütçeli İdareler,Avrupa Birliği Bakanlığı,313525.0
+ministries,2017,Genel Bütçeli İdareler,"Bilim, Sanayi ve Teknoloji Bakanlığı",5147467.0
+ministries,2017,Genel Bütçeli İdareler,Çevre ve Şehircilik Bakanlığı,1823914.0
+ministries,2017,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,919482.0
+ministries,2017,Genel Bütçeli İdareler,Ekonomi Bakanlığı,3948832.0
+ministries,2017,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,11627263.0
+ministries,2017,Genel Bütçeli İdareler,"Gıda, Tarım ve Hayvancılık Bakanlığı",19537920.0
+ministries,2017,Genel Bütçeli İdareler,Gümrük ve Ticaret Bakanlığı,1131320.0
+ministries,2017,Genel Bütçeli İdareler,Kalkınma Bakanlığı,2819793.0
+ministries,2017,Genel Bütçeli İdareler,Türkiye İstatistik Kurumu Başkanlığı,388106.0
+ministries,2017,Genel Bütçeli İdareler,Orman ve Su İşleri Bakanlığı,14663074.0
+ministries,2017,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,277493.0
+ministries,2017,Genel Bütçeli İdareler,"Ulaştırma, Denizcilik ve Haberleşme Bakanlığı",24164820.0
+balance,2018,Harcamalar,Harcamalar,762753272.0
+balance,2018,Harcamalar,1-Faiz Hariç Harcama,691053272.0
+balance,2018,Harcamalar,Personel Giderleri,183127279.0
+balance,2018,Harcamalar,Sosyal Güv.Kur. Devlet Primi,30792221.0
+balance,2018,Harcamalar,Mal ve Hizmet Alımları,66068658.0
+balance,2018,Harcamalar,Cari Transferler,299398527.0
+balance,2018,Harcamalar,Sermaye Giderleri,68794000.0
+balance,2018,Harcamalar,Sermaye Transferleri,15323723.0
+balance,2018,Harcamalar,Borç Verme,20230859.0
+balance,2018,Harcamalar,Yedek Ödenekler,7318005.0
+balance,2018,Harcamalar,2-Faiz Harcamaları,71700000.0
+balance,2018,Gelirler,Gelirler,696829321.0
+balance,2018,Gelirler,1-Genel Bütçe Gelirleri,681349805.0
+balance,2018,Gelirler,Vergi Gelirleri,599425100.0
+balance,2018,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,20150216.0
+balance,2018,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,2769201.0
+balance,2018,Gelirler,"Faizler, Paylar ve Cezalar",46471460.0
+balance,2018,Gelirler,Sermaye Gelirleri,12082256.0
+balance,2018,Gelirler,Alacaklardan Tahsilat,451572.0
+balance,2018,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,10870759.0
+balance,2018,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,4608757.0
+balance,2018,Denge,Bütçe Dengesi,-65923951.0
+balance,2018,Denge,Faiz Dışı Denge,5776049.0
+expense_detail,2018,1. Personel Giderleri,1. Personel Giderleri,183127279.0
+expense_detail,2018,1. Personel Giderleri,Memurlar,155811137.0
+expense_detail,2018,1. Personel Giderleri,İşçiler,8859719.0
+expense_detail,2018,1. Personel Giderleri,Sözleşmeli Personel,10899529.0
+expense_detail,2018,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,30792221.0
+expense_detail,2018,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,66068658.0
+expense_detail,2018,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,26405223.0
+expense_detail,2018,4. Cari Transferler,4. Cari Transferler,299398527.0
+expense_detail,2018,4. Cari Transferler,KİT Görevlendirme Giderleri,2106487.0
+expense_detail,2018,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,2649419.0
+expense_detail,2018,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,53150166.0
+expense_detail,2018,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),7694777.0
+expense_detail,2018,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),9808921.0
+expense_detail,2018,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),34045400.0
+expense_detail,2018,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,14514042.0
+expense_detail,2018,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,4000000.0
+expense_detail,2018,4. Cari Transferler,g) Sosyal Amaçlı Transferler,14023865.0
+expense_detail,2018,4. Cari Transferler,-Büyükşehir Belediyelerine,29791984.0
+expense_detail,2018,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,26706295.0
+expense_detail,2018,4. Cari Transferler,-Diğer Belediyelere,8891890.0
+expense_detail,2018,5. Sermaye Giderleri,5. Sermaye Giderleri,68794000.0
+expense_detail,2018,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,45507238.0
+expense_detail,2018,6. Sermaye Transferleri,6. Sermaye Transferleri,15323723.0
+expense_detail,2018,7. Borç Verme,7. Borç Verme,20230859.0
+expense_detail,2018,7. Borç Verme,Öğrenim ve Harç Kredisi,7209000.0
+expense_detail,2018,8. Yedek Ödenekler,8. Yedek Ödenekler,7318005.0
+expense_detail,2018,8. Yedek Ödenekler,Yedek Ödenek,2883442.0
+expense_detail,2018,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,1000000.0
+expense_detail,2018,B. Faiz Giderleri,B. Faiz Giderleri,71700000.0
+expense_detail,2018,B. Faiz Giderleri,-Tahvil Faizi,49850000.0
+expense_detail,2018,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,16023000.0
+expense_detail,2018,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,2327000.0
+ministries,2018,Genel Bütçeli İdareler,Cumhurbaşkanlığı,845365.0
+ministries,2018,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,2335535.0
+ministries,2018,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,0.0
+ministries,2018,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,0.0
+ministries,2018,Genel Bütçeli İdareler,İletişim Başkanlığı,0.0
+ministries,2018,Genel Bütçeli İdareler,TBMM,1255124.0
+ministries,2018,Genel Bütçeli İdareler,Anayasa Mahkemesi,68448.0
+ministries,2018,Genel Bütçeli İdareler,Yargıtay,460437.0
+ministries,2018,Genel Bütçeli İdareler,Danıştay,148972.0
+ministries,2018,Genel Bütçeli İdareler,Sayıştay,276701.0
+ministries,2018,Genel Bütçeli İdareler,Başbakanlık,1610543.0
+ministries,2018,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,29158.0
+ministries,2018,Genel Bütçeli İdareler,Basın Yayın ve Enformasyon Genel Müdürlüğü,315069.0
+ministries,2018,Genel Bütçeli İdareler,Hazine Müsteşarlığı,97893775.0
+ministries,2018,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,7774183.0
+ministries,2018,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,2265864.0
+ministries,2018,Genel Bütçeli İdareler,Adalet Bakanlığı,13714405.0
+ministries,2018,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,40402239.0
+ministries,2018,Genel Bütçeli İdareler,İçişleri Bakanlığı,7300918.0
+ministries,2018,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,13311208.0
+ministries,2018,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,27792655.0
+ministries,2018,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,682700.0
+ministries,2018,Genel Bütçeli İdareler,Kamu Düzeni ve Güvenliği Müsteşarlığı,18373.0
+ministries,2018,Genel Bütçeli İdareler,Göç İdaresi Genel Müdürlüğü,430326.0
+ministries,2018,Genel Bütçeli İdareler,Dışişleri Bakanlığı,3310380.0
+ministries,2018,Genel Bütçeli İdareler,Maliye Bakanlığı,203779785.0
+ministries,2018,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,3221518.0
+ministries,2018,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,92528652.0
+ministries,2018,Genel Bütçeli İdareler,Sağlık Bakanlığı,37571386.0
+ministries,2018,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,59738565.0
+ministries,2018,Genel Bütçeli İdareler,Devlet Personel Başkanlığı,31978.0
+ministries,2018,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,2386508.0
+ministries,2018,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,3997003.0
+ministries,2018,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,64966.0
+ministries,2018,Genel Bütçeli İdareler,Aile ve Sosyal Politikalar Bakanlığı,26690506.0
+ministries,2018,Genel Bütçeli İdareler,Avrupa Birliği Bakanlığı,346861.0
+ministries,2018,Genel Bütçeli İdareler,"Bilim, Sanayi ve Teknoloji Bakanlığı",5793391.0
+ministries,2018,Genel Bütçeli İdareler,Çevre ve Şehircilik Bakanlığı,1922753.0
+ministries,2018,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,987240.0
+ministries,2018,Genel Bütçeli İdareler,Ekonomi Bakanlığı,4413914.0
+ministries,2018,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,14111212.0
+ministries,2018,Genel Bütçeli İdareler,"Gıda, Tarım ve Hayvancılık Bakanlığı",21676673.0
+ministries,2018,Genel Bütçeli İdareler,Gümrük ve Ticaret Bakanlığı,1238558.0
+ministries,2018,Genel Bütçeli İdareler,Kalkınma Bakanlığı,1764378.0
+ministries,2018,Genel Bütçeli İdareler,Türkiye İstatistik Kurumu Başkanlığı,392171.0
+ministries,2018,Genel Bütçeli İdareler,Orman ve Su İşleri Bakanlığı,14723756.0
+ministries,2018,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,337477.0
+ministries,2018,Genel Bütçeli İdareler,"Ulaştırma, Denizcilik ve Haberleşme Bakanlığı",31338036.0
+balance,2019,Harcamalar,Harcamalar,960975683.0
+balance,2019,Harcamalar,1-Faiz Hariç Harcama,843658683.0
+balance,2019,Harcamalar,Personel Giderleri,247302546.0
+balance,2019,Harcamalar,Sosyal Güv.Kur. Devlet Primi,43375018.0
+balance,2019,Harcamalar,Mal ve Hizmet Alımları,67550825.0
+balance,2019,Harcamalar,Cari Transferler,391337230.0
+balance,2019,Harcamalar,Sermaye Giderleri,54432026.0
+balance,2019,Harcamalar,Sermaye Transferleri,10045697.0
+balance,2019,Harcamalar,Borç Verme,21749451.0
+balance,2019,Harcamalar,Yedek Ödenekler,7865890.0
+balance,2019,Harcamalar,2-Faiz Harcamaları,117317000.0
+balance,2019,Gelirler,Gelirler,880359379.0
+balance,2019,Gelirler,1-Genel Bütçe Gelirleri,862759188.0
+balance,2019,Gelirler,Vergi Gelirleri,756494735.0
+balance,2019,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,33977562.0
+balance,2019,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,3430610.0
+balance,2019,Gelirler,"Faizler, Paylar ve Cezalar",54584379.0
+balance,2019,Gelirler,Sermaye Gelirleri,13513460.0
+balance,2019,Gelirler,Alacaklardan Tahsilat,758442.0
+balance,2019,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,11179800.0
+balance,2019,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,6420391.0
+balance,2019,Denge,Bütçe Dengesi,-80616304.0
+balance,2019,Denge,Faiz Dışı Denge,36700696.0
+expense_detail,2019,1. Personel Giderleri,1. Personel Giderleri,247302546.0
+expense_detail,2019,1. Personel Giderleri,Memurlar,200087282.0
+expense_detail,2019,1. Personel Giderleri,İşçiler,18535797.0
+expense_detail,2019,1. Personel Giderleri,Sözleşmeli Personel,20467850.0
+expense_detail,2019,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,43375018.0
+expense_detail,2019,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,67550825.0
+expense_detail,2019,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,25271379.0
+expense_detail,2019,4. Cari Transferler,4. Cari Transferler,391337230.0
+expense_detail,2019,4. Cari Transferler,KİT Görevlendirme Giderleri,1749597.0
+expense_detail,2019,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,3393029.0
+expense_detail,2019,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,66191681.0
+expense_detail,2019,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),29680246.0
+expense_detail,2019,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),12602029.0
+expense_detail,2019,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),47697718.0
+expense_detail,2019,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,16072290.0
+expense_detail,2019,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,4100000.0
+expense_detail,2019,4. Cari Transferler,g) Sosyal Amaçlı Transferler,20584837.0
+expense_detail,2019,4. Cari Transferler,-Büyükşehir Belediyelerine,39171706.0
+expense_detail,2019,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,33546904.0
+expense_detail,2019,4. Cari Transferler,-Diğer Belediyelere,11182301.0
+expense_detail,2019,5. Sermaye Giderleri,5. Sermaye Giderleri,54432026.0
+expense_detail,2019,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,39666990.0
+expense_detail,2019,6. Sermaye Transferleri,6. Sermaye Transferleri,10045697.0
+expense_detail,2019,7. Borç Verme,7. Borç Verme,21749451.0
+expense_detail,2019,7. Borç Verme,Öğrenim ve Harç Kredisi,6740000.0
+expense_detail,2019,8. Yedek Ödenekler,8. Yedek Ödenekler,7865890.0
+expense_detail,2019,8. Yedek Ödenekler,Yedek Ödenek,3353443.0
+expense_detail,2019,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,600000.0
+expense_detail,2019,B. Faiz Giderleri,B. Faiz Giderleri,117317000.0
+expense_detail,2019,B. Faiz Giderleri,-Tahvil Faizi,83105290.0
+expense_detail,2019,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,23470000.0
+expense_detail,2019,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,3210860.0
+ministries,2019,Genel Bütçeli İdareler,Cumhurbaşkanlığı,2818899.0
+ministries,2019,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,2157761.0
+ministries,2019,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,32341.0
+ministries,2019,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,10445979.0
+ministries,2019,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,91211.0
+ministries,2019,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,120527.0
+ministries,2019,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,260584.0
+ministries,2019,Genel Bütçeli İdareler,İletişim Başkanlığı,344531.0
+ministries,2019,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,1816197.0
+ministries,2019,Genel Bütçeli İdareler,Anayasa Mahkemesi,69959.0
+ministries,2019,Genel Bütçeli İdareler,Yargıtay,595593.0
+ministries,2019,Genel Bütçeli İdareler,Danıştay,182320.0
+ministries,2019,Genel Bütçeli İdareler,Sayıştay,367378.0
+ministries,2019,Genel Bütçeli İdareler,Adalet Bakanlığı,18035989.0
+ministries,2019,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,46462303.0
+ministries,2019,Genel Bütçeli İdareler,İçişleri Bakanlığı,8572166.0
+ministries,2019,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,19604133.0
+ministries,2019,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,33676247.0
+ministries,2019,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,869313.0
+ministries,2019,Genel Bütçeli İdareler,Göç İdaresi Genel Müdürlüğü,2307541.0
+ministries,2019,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,1406671.0
+ministries,2019,Genel Bütçeli İdareler,Dışişleri Bakanlığı,4635760.0
+ministries,2019,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,560728.0
+ministries,2019,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,419857267.0
+ministries,2019,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,3770394.0
+ministries,2019,Genel Bütçeli İdareler,Türkiye İstatistik Kurumu,408907.0
+ministries,2019,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,113813013.0
+ministries,2019,Genel Bütçeli İdareler,Sağlık Bakanlığı,48437276.0
+ministries,2019,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,2863608.0
+ministries,2019,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,5664701.0
+ministries,2019,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,76849.0
+ministries,2019,Genel Bütçeli İdareler,"Aile, Çalışma ve Sosyal Hizmetler Bakanlığı",103091801.0
+ministries,2019,Genel Bütçeli İdareler,Devlet Personel Başkanlığı,36020.0
+ministries,2019,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,7784793.0
+ministries,2019,Genel Bütçeli İdareler,Çevre ve Şehircilik Bakanlığı,2573286.0
+ministries,2019,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,1113861.0
+ministries,2019,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,16474681.0
+ministries,2019,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,33743778.0
+ministries,2019,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,416750.0
+ministries,2019,Genel Bütçeli İdareler,Ticaret Bakanlığı,5693573.0
+ministries,2019,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,27770926.0
+balance,2020,Harcamalar,Harcamalar,1095461069.0
+balance,2020,Harcamalar,1-Faiz Hariç Harcama,956521069.0
+balance,2020,Harcamalar,Personel Giderleri,282488235.0
+balance,2020,Harcamalar,Sosyal Güv.Kur. Devlet Primi,48119765.0
+balance,2020,Harcamalar,Mal ve Hizmet Alımları,75549737.0
+balance,2020,Harcamalar,Cari Transferler,451121600.0
+balance,2020,Harcamalar,Sermaye Giderleri,56607207.0
+balance,2020,Harcamalar,Sermaye Transferleri,6783820.0
+balance,2020,Harcamalar,Borç Verme,27087162.0
+balance,2020,Harcamalar,Yedek Ödenekler,8763543.0
+balance,2020,Harcamalar,2-Faiz Harcamaları,138940000.0
+balance,2020,Gelirler,Gelirler,956587613.0
+balance,2020,Gelirler,1-Genel Bütçe Gelirleri,936635045.0
+balance,2020,Gelirler,Vergi Gelirleri,784601816.0
+balance,2020,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,64330972.0
+balance,2020,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,11042648.0
+balance,2020,Gelirler,"Faizler, Paylar ve Cezalar",62152069.0
+balance,2020,Gelirler,Sermaye Gelirleri,13593677.0
+balance,2020,Gelirler,Alacaklardan Tahsilat,913863.0
+balance,2020,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,12464193.0
+balance,2020,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,7488375.0
+balance,2020,Denge,Bütçe Dengesi,-138873456.0
+balance,2020,Denge,Faiz Dışı Denge,66544.0
+expense_detail,2020,1. Personel Giderleri,1. Personel Giderleri,282488235.0
+expense_detail,2020,1. Personel Giderleri,Memurlar,225739441.0
+expense_detail,2020,1. Personel Giderleri,İşçiler,19645037.0
+expense_detail,2020,1. Personel Giderleri,Sözleşmeli Personel,27149682.0
+expense_detail,2020,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,48119765.0
+expense_detail,2020,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,75549737.0
+expense_detail,2020,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,26489438.0
+expense_detail,2020,4. Cari Transferler,4. Cari Transferler,451121600.0
+expense_detail,2020,4. Cari Transferler,KİT Görevlendirme Giderleri,1748157.0
+expense_detail,2020,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,4171574.0
+expense_detail,2020,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,77359137.0
+expense_detail,2020,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),34654931.0
+expense_detail,2020,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),14561048.0
+expense_detail,2020,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),50101764.0
+expense_detail,2020,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,21968822.0
+expense_detail,2020,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,5100000.0
+expense_detail,2020,4. Cari Transferler,g) Sosyal Amaçlı Transferler,23324628.0
+expense_detail,2020,4. Cari Transferler,-Büyükşehir Belediyelerine,40384531.0
+expense_detail,2020,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,34838297.0
+expense_detail,2020,4. Cari Transferler,-Diğer Belediyelere,11612766.0
+expense_detail,2020,5. Sermaye Giderleri,5. Sermaye Giderleri,56607207.0
+expense_detail,2020,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,41510873.0
+expense_detail,2020,6. Sermaye Transferleri,6. Sermaye Transferleri,6783820.0
+expense_detail,2020,7. Borç Verme,7. Borç Verme,27087162.0
+expense_detail,2020,7. Borç Verme,Öğrenim ve Harç Kredisi,7345520.0
+expense_detail,2020,8. Yedek Ödenekler,8. Yedek Ödenekler,8763543.0
+expense_detail,2020,8. Yedek Ödenekler,Yedek Ödenek,3749149.0
+expense_detail,2020,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,694278.0
+expense_detail,2020,B. Faiz Giderleri,B. Faiz Giderleri,138940000.0
+expense_detail,2020,B. Faiz Giderleri,-Tahvil Faizi,95617147.0
+expense_detail,2020,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,27501300.0
+expense_detail,2020,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,6865825.0
+ministries,2020,Genel Bütçeli İdareler,Cumhurbaşkanlığı,3152937.0
+ministries,2020,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,2182381.0
+ministries,2020,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,34787.0
+ministries,2020,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,11519609.0
+ministries,2020,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,101632.0
+ministries,2020,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,157398.0
+ministries,2020,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,9073161.0
+ministries,2020,Genel Bütçeli İdareler,İletişim Başkanlığı,368136.0
+ministries,2020,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,1747789.0
+ministries,2020,Genel Bütçeli İdareler,Anayasa Mahkemesi,73607.0
+ministries,2020,Genel Bütçeli İdareler,Yargıtay,505290.0
+ministries,2020,Genel Bütçeli İdareler,Danıştay,210775.0
+ministries,2020,Genel Bütçeli İdareler,Sayıştay,412090.0
+ministries,2020,Genel Bütçeli İdareler,Adalet Bakanlığı,19751360.0
+ministries,2020,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,53859342.0
+ministries,2020,Genel Bütçeli İdareler,İçişleri Bakanlığı,9672218.0
+ministries,2020,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,22968117.0
+ministries,2020,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,38973189.0
+ministries,2020,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,1128824.0
+ministries,2020,Genel Bütçeli İdareler,Göç İdaresi Genel Müdürlüğü,2511171.0
+ministries,2020,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,1637171.0
+ministries,2020,Genel Bütçeli İdareler,Dışişleri Bakanlığı,4631723.0
+ministries,2020,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,656672.0
+ministries,2020,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,468270853.0
+ministries,2020,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,4074536.0
+ministries,2020,Genel Bütçeli İdareler,Türkiye İstatistik Kurumu,427532.0
+ministries,2020,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,125396862.0
+ministries,2020,Genel Bütçeli İdareler,Sağlık Bakanlığı,58875829.0
+ministries,2020,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,3319102.0
+ministries,2020,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,5127247.0
+ministries,2020,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,93163.0
+ministries,2020,Genel Bütçeli İdareler,"Aile, Çalışma ve Sosyal Hizmetler Bakanlığı",125809131.0
+ministries,2020,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,7939333.0
+ministries,2020,Genel Bütçeli İdareler,Çevre ve Şehircilik Bakanlığı,2827733.0
+ministries,2020,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,1185359.0
+ministries,2020,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,17810481.0
+ministries,2020,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,40302916.0
+ministries,2020,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,452401.0
+ministries,2020,Genel Bütçeli İdareler,Ticaret Bakanlığı,5752364.0
+ministries,2020,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,29026976.0
+balance,2021,Harcamalar,Harcamalar,1346138654.0
+balance,2021,Harcamalar,1-Faiz Hariç Harcama,1166596334.0
+balance,2021,Harcamalar,Personel Giderleri,326632540.0
+balance,2021,Harcamalar,Sosyal Güv.Kur. Devlet Primi,54527460.0
+balance,2021,Harcamalar,Mal ve Hizmet Alımları,89066803.0
+balance,2021,Harcamalar,Cari Transferler,536013523.0
+balance,2021,Harcamalar,Sermaye Giderleri,103733665.0
+balance,2021,Harcamalar,Sermaye Transferleri,8781867.0
+balance,2021,Harcamalar,Borç Verme,37983566.0
+balance,2021,Harcamalar,Yedek Ödenekler,9856910.0
+balance,2021,Harcamalar,2-Faiz Harcamaları,179542320.0
+balance,2021,Gelirler,Gelirler,1101146028.0
+balance,2021,Gelirler,1-Genel Bütçe Gelirleri,1076331620.0
+balance,2021,Gelirler,Vergi Gelirleri,922744185.0
+balance,2021,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,57865776.0
+balance,2021,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,13741313.0
+balance,2021,Gelirler,"Faizler, Paylar ve Cezalar",67503896.0
+balance,2021,Gelirler,Sermaye Gelirleri,13070707.0
+balance,2021,Gelirler,Alacaklardan Tahsilat,1405743.0
+balance,2021,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,16546924.0
+balance,2021,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,8267484.0
+balance,2021,Denge,Bütçe Dengesi,-244992626.0
+balance,2021,Denge,Faiz Dışı Denge,-65450306.0
+expense_detail,2021,1. Personel Giderleri,1. Personel Giderleri,326632540.0
+expense_detail,2021,1. Personel Giderleri,Memurlar,254594617.0
+expense_detail,2021,1. Personel Giderleri,İşçiler,24484005.0
+expense_detail,2021,1. Personel Giderleri,Sözleşmeli Personel,36221922.0
+expense_detail,2021,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,54527460.0
+expense_detail,2021,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,89066803.0
+expense_detail,2021,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,29323897.0
+expense_detail,2021,4. Cari Transferler,4. Cari Transferler,536013523.0
+expense_detail,2021,4. Cari Transferler,KİT Görevlendirme Giderleri,2642700.0
+expense_detail,2021,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,5453295.0
+expense_detail,2021,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,87480949.0
+expense_detail,2021,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),38637783.0
+expense_detail,2021,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),16608357.0
+expense_detail,2021,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),69563685.0
+expense_detail,2021,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,22000000.0
+expense_detail,2021,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,5750200.0
+expense_detail,2021,4. Cari Transferler,g) Sosyal Amaçlı Transferler,26598666.0
+expense_detail,2021,4. Cari Transferler,-Büyükşehir Belediyelerine,47628259.0
+expense_detail,2021,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,41069063.0
+expense_detail,2021,4. Cari Transferler,-Diğer Belediyelere,13684438.0
+expense_detail,2021,5. Sermaye Giderleri,5. Sermaye Giderleri,103733665.0
+expense_detail,2021,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,75513677.0
+expense_detail,2021,6. Sermaye Transferleri,6. Sermaye Transferleri,8781867.0
+expense_detail,2021,7. Borç Verme,7. Borç Verme,37983566.0
+expense_detail,2021,7. Borç Verme,Öğrenim ve Harç Kredisi,7967000.0
+expense_detail,2021,8. Yedek Ödenekler,8. Yedek Ödenekler,9856910.0
+expense_detail,2021,8. Yedek Ödenekler,Yedek Ödenek,4122014.0
+expense_detail,2021,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,763326.0
+expense_detail,2021,B. Faiz Giderleri,B. Faiz Giderleri,179542320.0
+expense_detail,2021,B. Faiz Giderleri,-Tahvil Faizi,117570403.0
+expense_detail,2021,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,36828683.0
+expense_detail,2021,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,9659786.0
+ministries,2021,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,1894056.0
+ministries,2021,Genel Bütçeli İdareler,Cumhurbaşkanlığı,4039453.0
+ministries,2021,Genel Bütçeli İdareler,Anayasa Mahkemesi,86522.0
+ministries,2021,Genel Bütçeli İdareler,Yargıtay,1446440.0
+ministries,2021,Genel Bütçeli İdareler,Danıştay,235675.0
+ministries,2021,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,103209.0
+ministries,2021,Genel Bütçeli İdareler,Sayıştay,441550.0
+ministries,2021,Genel Bütçeli İdareler,Adalet Bakanlığı,23973052.0
+ministries,2021,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,61484939.0
+ministries,2021,Genel Bütçeli İdareler,İçişleri Bakanlığı,10665011.0
+ministries,2021,Genel Bütçeli İdareler,Dışişleri Bakanlığı,5786984.0
+ministries,2021,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,570220929.0
+ministries,2021,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,146920234.0
+ministries,2021,Genel Bütçeli İdareler,Sağlık Bakanlığı,77615519.0
+ministries,2021,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,49133659.0
+ministries,2021,Genel Bütçeli İdareler,Aile ve Sosyal Hizmetler Bakanlığı,155011061.0
+ministries,2021,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,3999188.0
+ministries,2021,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,6016496.0
+ministries,2021,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,11918182.0
+ministries,2021,Genel Bütçeli İdareler,"Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",3378164.0
+ministries,2021,Genel Bütçeli İdareler,Ticaret Bakanlığı,6585834.0
+ministries,2021,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,22859079.0
+ministries,2021,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,51518086.0
+ministries,2021,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,38097.0
+ministries,2021,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,2628749.0
+ministries,2021,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,27666860.0
+ministries,2021,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,1470792.0
+ministries,2021,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,44555427.0
+ministries,2021,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,12977926.0
+ministries,2021,Genel Bütçeli İdareler,Türkiye İstatistik Kurumu,500954.0
+ministries,2021,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,2085860.0
+ministries,2021,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,4446012.0
+ministries,2021,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,1290815.0
+ministries,2021,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,541018.0
+ministries,2021,Genel Bütçeli İdareler,Göç İdaresi Başkanlığı,2983522.0
+ministries,2021,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,787432.0
+ministries,2021,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,172663.0
+ministries,2021,Genel Bütçeli İdareler,İletişim Başkanlığı,422754.0
+ministries,2021,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,230408.0
+ministries,2021,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,10121775.0
+ministries,2021,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,0.0
+balance,2022,Harcamalar,Harcamalar,2831472499.0
+balance,2022,Harcamalar,1-Faiz Hariç Harcama,2501672499.0
+balance,2022,Harcamalar,Personel Giderleri,613640701.0
+balance,2022,Harcamalar,Sosyal Güv.Kur. Devlet Primi,97151314.0
+balance,2022,Harcamalar,Mal ve Hizmet Alımları,214813979.0
+balance,2022,Harcamalar,Cari Transferler,1078290824.0
+balance,2022,Harcamalar,Sermaye Giderleri,206348299.0
+balance,2022,Harcamalar,Sermaye Transferleri,23627332.0
+balance,2022,Harcamalar,Borç Verme,201622930.0
+balance,2022,Harcamalar,Yedek Ödenekler,66177120.0
+balance,2022,Harcamalar,2-Faiz Harcamaları,329800000.0
+balance,2022,Gelirler,Gelirler,2553098555.0
+balance,2022,Gelirler,1-Genel Bütçe Gelirleri,2523412609.0
+balance,2022,Gelirler,Vergi Gelirleri,2185950088.0
+balance,2022,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,83747888.0
+balance,2022,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,14220208.0
+balance,2022,Gelirler,"Faizler, Paylar ve Cezalar",223806088.0
+balance,2022,Gelirler,Sermaye Gelirleri,13884939.0
+balance,2022,Gelirler,Alacaklardan Tahsilat,1803398.0
+balance,2022,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,19623651.0
+balance,2022,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,10062295.0
+balance,2022,Denge,Bütçe Dengesi,-278373944.0
+balance,2022,Denge,Faiz Dışı Denge,51426056.0
+expense_detail,2022,1. Personel Giderleri,1. Personel Giderleri,613640701.0
+expense_detail,2022,1. Personel Giderleri,Memurlar,474522176.0
+expense_detail,2022,1. Personel Giderleri,İşçiler,47602121.0
+expense_detail,2022,1. Personel Giderleri,Sözleşmeli Personel,70761187.0
+expense_detail,2022,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,97151314.0
+expense_detail,2022,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,214813979.0
+expense_detail,2022,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,72850031.0
+expense_detail,2022,4. Cari Transferler,4. Cari Transferler,1078290824.0
+expense_detail,2022,4. Cari Transferler,KİT Görevlendirme Giderleri,32530698.0
+expense_detail,2022,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,10785000.0
+expense_detail,2022,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,150596743.0
+expense_detail,2022,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),50831344.0
+expense_detail,2022,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),28993378.0
+expense_detail,2022,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),125273431.0
+expense_detail,2022,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,39220878.0
+expense_detail,2022,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,9700000.0
+expense_detail,2022,4. Cari Transferler,g) Sosyal Amaçlı Transferler,44167711.0
+expense_detail,2022,4. Cari Transferler,-Büyükşehir Belediyelerine,115574109.0
+expense_detail,2022,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,95059172.0
+expense_detail,2022,4. Cari Transferler,-Diğer Belediyelere,31686093.0
+expense_detail,2022,5. Sermaye Giderleri,5. Sermaye Giderleri,206348299.00000003
+expense_detail,2022,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,157899977.67000002
+expense_detail,2022,6. Sermaye Transferleri,6. Sermaye Transferleri,23627332.0
+expense_detail,2022,7. Borç Verme,7. Borç Verme,201622930.0
+expense_detail,2022,7. Borç Verme,Öğrenim ve Harç Kredisi,9348000.0
+expense_detail,2022,8. Yedek Ödenekler,8. Yedek Ödenekler,66177120.0
+expense_detail,2022,8. Yedek Ödenekler,Yedek Ödenek,38633925.0
+expense_detail,2022,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,19158155.0
+expense_detail,2022,B. Faiz Giderleri,B. Faiz Giderleri,329800000.0
+expense_detail,2022,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,81251431.0
+expense_detail,2022,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,16921206.0
+ministries,2022,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,2809957.0
+ministries,2022,Genel Bütçeli İdareler,Cumhurbaşkanlığı,4087977.0
+ministries,2022,Genel Bütçeli İdareler,Anayasa Mahkemesi,151005.0
+ministries,2022,Genel Bütçeli İdareler,Yargıtay,752725.0
+ministries,2022,Genel Bütçeli İdareler,Danıştay,464942.0
+ministries,2022,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,182148.0
+ministries,2022,Genel Bütçeli İdareler,Sayıştay,682707.0
+ministries,2022,Genel Bütçeli İdareler,Adalet Bakanlığı,46495053.0
+ministries,2022,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,130318596.0
+ministries,2022,Genel Bütçeli İdareler,İçişleri Bakanlığı,20594253.0
+ministries,2022,Genel Bütçeli İdareler,Dışişleri Bakanlığı,10494986.0
+ministries,2022,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,1265238115.0
+ministries,2022,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,272435847.0
+ministries,2022,Genel Bütçeli İdareler,Sağlık Bakanlığı,171512208.0
+ministries,2022,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,75621956.0
+ministries,2022,Genel Bütçeli İdareler,Aile ve Sosyal Hizmetler Bakanlığı,97266618.0
+ministries,2022,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,10826695.0
+ministries,2022,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,9841007.0
+ministries,2022,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,18217689.0
+ministries,2022,Genel Bütçeli İdareler,"Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",7034627.0
+ministries,2022,Genel Bütçeli İdareler,Ticaret Bakanlığı,9624870.0
+ministries,2022,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,27937641.0
+ministries,2022,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,83579952.0
+ministries,2022,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,73072.0
+ministries,2022,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,5176092.0
+ministries,2022,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,52396523.0
+ministries,2022,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,3265389.0
+ministries,2022,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,80409872.0
+ministries,2022,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,22926786.0
+ministries,2022,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,12161793.0
+ministries,2022,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,8028759.0
+ministries,2022,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,2290429.0
+ministries,2022,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,970388.0
+ministries,2022,Genel Bütçeli İdareler,Göç İdaresi Başkanlığı,6686866.0
+ministries,2022,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,2313862.0
+ministries,2022,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,230762.0
+ministries,2022,Genel Bütçeli İdareler,İletişim Başkanlığı,816494.0
+ministries,2022,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,354260.0
+ministries,2022,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,66621853.0
+ministries,2022,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,188293407.0
+ministries,2022,Genel Bütçeli İdareler,İklim Değişikliği Başkanlığı,75204.0
+balance,2023,Harcamalar,Harcamalar,5589084532.0
+balance,2023,Harcamalar,1-Faiz Hariç Harcama,4942948532.0
+balance,2023,Harcamalar,Personel Giderleri,952308074.0
+balance,2023,Harcamalar,Sosyal Güv.Kur. Devlet Primi,150392162.0
+balance,2023,Harcamalar,Mal ve Hizmet Alımları,419443203.0
+balance,2023,Harcamalar,Cari Transferler,1940900742.0
+balance,2023,Harcamalar,Sermaye Giderleri,383277852.0
+balance,2023,Harcamalar,Sermaye Transferleri,520999851.0
+balance,2023,Harcamalar,Borç Verme,410410291.0
+balance,2023,Harcamalar,Yedek Ödenekler,165216357.0
+balance,2023,Harcamalar,2-Faiz Harcamaları,646136000.0
+balance,2023,Gelirler,Gelirler,4929663554.0
+balance,2023,Gelirler,1-Genel Bütçe Gelirleri,4873427320.0
+balance,2023,Gelirler,Vergi Gelirleri,4270667774.0
+balance,2023,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,173330188.0
+balance,2023,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,40833163.0
+balance,2023,Gelirler,"Faizler, Paylar ve Cezalar",365091463.0
+balance,2023,Gelirler,Sermaye Gelirleri,18822872.0
+balance,2023,Gelirler,Alacaklardan Tahsilat,4681860.0
+balance,2023,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,37133891.0
+balance,2023,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,19102343.0
+balance,2023,Denge,Bütçe Dengesi,-659420978.0
+balance,2023,Denge,Faiz Dışı Denge,-13284978.0
+expense_detail,2023,1. Personel Giderleri,1. Personel Giderleri,952308074.0
+expense_detail,2023,1. Personel Giderleri,Memurlar,720235642.0
+expense_detail,2023,1. Personel Giderleri,İşçiler,70263694.0
+expense_detail,2023,1. Personel Giderleri,Sözleşmeli Personel,130686349.0
+expense_detail,2023,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,150392162.0
+expense_detail,2023,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,419443202.9999999
+expense_detail,2023,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,145747490.0
+expense_detail,2023,4. Cari Transferler,4. Cari Transferler,1940900742.0
+expense_detail,2023,4. Cari Transferler,KİT Görevlendirme Giderleri,175034476.0
+expense_detail,2023,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,23241345.0
+expense_detail,2023,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,247538522.0
+expense_detail,2023,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),105380460.0
+expense_detail,2023,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),44073153.0
+expense_detail,2023,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),59192143.0
+expense_detail,2023,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,59488500.0
+expense_detail,2023,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,22001500.0
+expense_detail,2023,4. Cari Transferler,g) Sosyal Amaçlı Transferler,82356624.0
+expense_detail,2023,4. Cari Transferler,-Büyükşehir Belediyelerine,220877552.0
+expense_detail,2023,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,183459387.0
+expense_detail,2023,4. Cari Transferler,-Diğer Belediyelere,61152549.0
+expense_detail,2023,5. Sermaye Giderleri,5. Sermaye Giderleri,383277851.995
+expense_detail,2023,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,270224875.605
+expense_detail,2023,6. Sermaye Transferleri,6. Sermaye Transferleri,520999851.0
+expense_detail,2023,7. Borç Verme,7. Borç Verme,410410291.0
+expense_detail,2023,7. Borç Verme,Öğrenim ve Harç Kredisi,25472000.0
+expense_detail,2023,8. Yedek Ödenekler,8. Yedek Ödenekler,165216357.0
+expense_detail,2023,8. Yedek Ödenekler,Yedek Ödenek,81152264.0
+expense_detail,2023,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,67210093.0
+expense_detail,2023,B. Faiz Giderleri,B. Faiz Giderleri,646136000.0
+expense_detail,2023,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,132656837.0
+expense_detail,2023,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,64100073.0
+ministries,2023,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,5560588.0
+ministries,2023,Genel Bütçeli İdareler,Cumhurbaşkanlığı,7277296.0
+ministries,2023,Genel Bütçeli İdareler,Anayasa Mahkemesi,260919.0
+ministries,2023,Genel Bütçeli İdareler,Yargıtay,1276421.0
+ministries,2023,Genel Bütçeli İdareler,Danıştay,805407.0
+ministries,2023,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,312551.0
+ministries,2023,Genel Bütçeli İdareler,Sayıştay,1312458.0
+ministries,2023,Genel Bütçeli İdareler,Adalet Bakanlığı,83236176.0
+ministries,2023,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,213658675.0
+ministries,2023,Genel Bütçeli İdareler,İçişleri Bakanlığı,35987038.0
+ministries,2023,Genel Bütçeli İdareler,Dışişleri Bakanlığı,17315583.0
+ministries,2023,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,2489760590.0
+ministries,2023,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,461649548.0
+ministries,2023,Genel Bütçeli İdareler,Sağlık Bakanlığı,311333678.0
+ministries,2023,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,172082084.0
+ministries,2023,Genel Bütçeli İdareler,Aile ve Sosyal Hizmetler Bakanlığı,196020118.0
+ministries,2023,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,32198264.0
+ministries,2023,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,17635539.0
+ministries,2023,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,37065181.0
+ministries,2023,Genel Bütçeli İdareler,"Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",24836048.0
+ministries,2023,Genel Bütçeli İdareler,Ticaret Bakanlığı,17356310.0
+ministries,2023,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,82379532.0
+ministries,2023,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,141536820.0
+ministries,2023,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,114297.0
+ministries,2023,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,7729120.0
+ministries,2023,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,83487628.0
+ministries,2023,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,5294900.0
+ministries,2023,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,125333343.0
+ministries,2023,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,36186871.0
+ministries,2023,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,490904405.0
+ministries,2023,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,13490334.0
+ministries,2023,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,3068236.0
+ministries,2023,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,1603859.0
+ministries,2023,Genel Bütçeli İdareler,Göç İdaresi Başkanlığı,10438170.0
+ministries,2023,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,3931297.0
+ministries,2023,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,362941.0
+ministries,2023,Genel Bütçeli İdareler,İletişim Başkanlığı,1631576.0
+ministries,2023,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,669800.0
+ministries,2023,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,166130552.0
+ministries,2023,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,196462125.0
+ministries,2023,Genel Bütçeli İdareler,İklim Değişikliği Başkanlığı,154182.0
+balance,2024,Harcamalar,Harcamalar,11089037425.0
+balance,2024,Harcamalar,1-Faiz Hariç Harcama,9835037425.0
+balance,2024,Harcamalar,Personel Giderleri,2553495036.0
+balance,2024,Harcamalar,Sosyal Güv.Kur. Devlet Primi,312450964.0
+balance,2024,Harcamalar,Mal ve Hizmet Alımları,679765730.0
+balance,2024,Harcamalar,Cari Transferler,4266708695.0
+balance,2024,Harcamalar,Sermaye Giderleri,787940000.0
+balance,2024,Harcamalar,Sermaye Transferleri,720837398.0
+balance,2024,Harcamalar,Borç Verme,298507515.0
+balance,2024,Harcamalar,Yedek Ödenekler,215332087.0
+balance,2024,Harcamalar,2-Faiz Harcamaları,1254000000.0
+balance,2024,Gelirler,Gelirler,8437100481.0
+balance,2024,Gelirler,1-Genel Bütçe Gelirleri,8332808408.0
+balance,2024,Gelirler,Vergi Gelirleri,7407706981.0
+balance,2024,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,137577486.0
+balance,2024,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,42804371.0
+balance,2024,Gelirler,"Faizler, Paylar ve Cezalar",702056798.0
+balance,2024,Gelirler,Sermaye Gelirleri,33118003.0
+balance,2024,Gelirler,Alacaklardan Tahsilat,9544769.0
+balance,2024,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,66912570.0
+balance,2024,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,37379503.0
+balance,2024,Denge,Bütçe Dengesi,-2651936944.0
+balance,2024,Denge,Faiz Dışı Denge,-1397936944.0
+expense_detail,2024,1. Personel Giderleri,1. Personel Giderleri,2553495036.0
+expense_detail,2024,1. Personel Giderleri,Memurlar,2097496244.0
+expense_detail,2024,1. Personel Giderleri,İşçiler,198985103.0
+expense_detail,2024,1. Personel Giderleri,Sözleşmeli Personel,182349437.0
+expense_detail,2024,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,312450964.0
+expense_detail,2024,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,679765730.0
+expense_detail,2024,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,241757444.0
+expense_detail,2024,4. Cari Transferler,4. Cari Transferler,4266708695.0
+expense_detail,2024,4. Cari Transferler,KİT Görevlendirme Giderleri,518346066.0
+expense_detail,2024,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,86033061.0
+expense_detail,2024,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,562262850.0
+expense_detail,2024,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),173045680.0
+expense_detail,2024,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),112917451.0
+expense_detail,2024,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),385655371.0
+expense_detail,2024,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,91554000.0
+expense_detail,2024,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,32001500.0
+expense_detail,2024,4. Cari Transferler,g) Sosyal Amaçlı Transferler,140718583.0
+expense_detail,2024,4. Cari Transferler,-Büyükşehir Belediyelerine,379585461.0
+expense_detail,2024,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,320672423.0
+expense_detail,2024,4. Cari Transferler,-Diğer Belediyelere,106889080.0
+expense_detail,2024,5. Sermaye Giderleri,5. Sermaye Giderleri,787940000.0
+expense_detail,2024,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,605380422.466
+expense_detail,2024,6. Sermaye Transferleri,6. Sermaye Transferleri,720837398.0
+expense_detail,2024,7. Borç Verme,7. Borç Verme,298507515.0
+expense_detail,2024,7. Borç Verme,Öğrenim ve Harç Kredisi,22811000.0
+expense_detail,2024,8. Yedek Ödenekler,8. Yedek Ödenekler,215332087.0
+expense_detail,2024,8. Yedek Ödenekler,Yedek Ödenek,96499683.0
+expense_detail,2024,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,84097265.0
+expense_detail,2024,B. Faiz Giderleri,B. Faiz Giderleri,1254000000.0
+expense_detail,2024,B. Faiz Giderleri,-Tahvil Faizi,814329589.0
+expense_detail,2024,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,257456129.0
+expense_detail,2024,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,124403362.0
+ministries,2024,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,9536586.0
+ministries,2024,Genel Bütçeli İdareler,Cumhurbaşkanlığı,12283843.0
+ministries,2024,Genel Bütçeli İdareler,Anayasa Mahkemesi,558799.0
+ministries,2024,Genel Bütçeli İdareler,Yargıtay,2910537.0
+ministries,2024,Genel Bütçeli İdareler,Danıştay,1680171.0
+ministries,2024,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,759957.0
+ministries,2024,Genel Bütçeli İdareler,Sayıştay,2331746.0
+ministries,2024,Genel Bütçeli İdareler,Adalet Bakanlığı,198703054.0
+ministries,2024,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,440496960.0
+ministries,2024,Genel Bütçeli İdareler,İçişleri Bakanlığı,76295436.0
+ministries,2024,Genel Bütçeli İdareler,Dışişleri Bakanlığı,31373647.0
+ministries,2024,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,4564413425.0
+ministries,2024,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,1092129668.0
+ministries,2024,Genel Bütçeli İdareler,Sağlık Bakanlığı,732562378.0
+ministries,2024,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,369082137.0
+ministries,2024,Genel Bütçeli İdareler,Aile ve Sosyal Hizmetler Bakanlığı,334349925.0
+ministries,2024,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,48323176.0
+ministries,2024,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,38964106.0
+ministries,2024,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,78995069.0
+ministries,2024,Genel Bütçeli İdareler,"Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",271741383.0
+ministries,2024,Genel Bütçeli İdareler,Ticaret Bakanlığı,38501707.0
+ministries,2024,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,171030724.0
+ministries,2024,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,283124800.0
+ministries,2024,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,286061.0
+ministries,2024,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,17447418.0
+ministries,2024,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,189693588.0
+ministries,2024,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,11517337.0
+ministries,2024,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,305479702.0
+ministries,2024,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,91824805.0
+ministries,2024,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,671317160.0
+ministries,2024,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,32104510.0
+ministries,2024,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,8160971.0
+ministries,2024,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,3592599.0
+ministries,2024,Genel Bütçeli İdareler,Göç İdaresi Başkanlığı,21631742.0
+ministries,2024,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,4646786.0
+ministries,2024,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,857823.0
+ministries,2024,Genel Bütçeli İdareler,İletişim Başkanlığı,4126595.0
+ministries,2024,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,1900146.0
+ministries,2024,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,217183338.0
+ministries,2024,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,625780424.0
+ministries,2024,Genel Bütçeli İdareler,İklim Değişikliği Başkanlığı,178814.0
+balance,2025,Harcamalar,Harcamalar,14731014332.0
+balance,2025,Harcamalar,1-Faiz Hariç Harcama,12781014332.0
+balance,2025,Harcamalar,Personel Giderleri,3475520917.0
+balance,2025,Harcamalar,Sosyal Güv.Kur. Devlet Primi,434991084.0
+balance,2025,Harcamalar,Mal ve Hizmet Alımları,1023744949.0
+balance,2025,Harcamalar,Cari Transferler,5813438256.0
+balance,2025,Harcamalar,Sermaye Giderleri,1102418447.0
+balance,2025,Harcamalar,Sermaye Transferleri,337955290.0
+balance,2025,Harcamalar,Borç Verme,306084629.0
+balance,2025,Harcamalar,Yedek Ödenekler,286860760.0
+balance,2025,Harcamalar,2-Faiz Harcamaları,1950000000.0
+balance,2025,Gelirler,Gelirler,12800325229.0
+balance,2025,Gelirler,1-Genel Bütçe Gelirleri,12629610448.0
+balance,2025,Gelirler,Vergi Gelirleri,11138752778.0
+balance,2025,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,165061483.0
+balance,2025,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,59997396.0
+balance,2025,Gelirler,"Faizler, Paylar ve Cezalar",1207279953.0
+balance,2025,Gelirler,Sermaye Gelirleri,41292131.0
+balance,2025,Gelirler,Alacaklardan Tahsilat,17226707.0
+balance,2025,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,103904532.0
+balance,2025,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,66810249.0
+balance,2025,Denge,Bütçe Dengesi,-1930689103.0
+balance,2025,Denge,Faiz Dışı Denge,19310897.0
+expense_detail,2025,1. Personel Giderleri,1. Personel Giderleri,3475520917.0
+expense_detail,2025,1. Personel Giderleri,Memurlar,2756819897.0
+expense_detail,2025,1. Personel Giderleri,İşçiler,327350096.0
+expense_detail,2025,1. Personel Giderleri,Sözleşmeli Personel,274405717.0
+expense_detail,2025,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,434991084.0
+expense_detail,2025,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,1023744949.0
+expense_detail,2025,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,385613493.0
+expense_detail,2025,4. Cari Transferler,4. Cari Transferler,5813438256.0
+expense_detail,2025,4. Cari Transferler,KİT Görevlendirme Giderleri,503520300.0
+expense_detail,2025,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,160000000.0
+expense_detail,2025,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,792562199.0
+expense_detail,2025,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),320076089.0
+expense_detail,2025,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),153582031.0
+expense_detail,2025,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),551805182.0
+expense_detail,2025,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,135000000.0
+expense_detail,2025,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,75039835.0
+expense_detail,2025,4. Cari Transferler,g) Sosyal Amaçlı Transferler,185874584.0
+expense_detail,2025,4. Cari Transferler,-Büyükşehir Belediyelerine,582392812.0
+expense_detail,2025,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,486718481.0
+expense_detail,2025,4. Cari Transferler,-Diğer Belediyelere,162236866.0
+expense_detail,2025,5. Sermaye Giderleri,5. Sermaye Giderleri,1102418447.0
+expense_detail,2025,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,812344008.0
+expense_detail,2025,6. Sermaye Transferleri,6. Sermaye Transferleri,337955290.0
+expense_detail,2025,7. Borç Verme,7. Borç Verme,306084629.0
+expense_detail,2025,7. Borç Verme,Öğrenim ve Harç Kredisi,27847000.0
+expense_detail,2025,8. Yedek Ödenekler,8. Yedek Ödenekler,286860760.0
+expense_detail,2025,8. Yedek Ödenekler,Yedek Ödenek,111675992.0
+expense_detail,2025,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,128911365.0
+expense_detail,2025,B. Faiz Giderleri,B. Faiz Giderleri,1950000000.0
+expense_detail,2025,B. Faiz Giderleri,-Tahvil Faizi,1266302135.0
+expense_detail,2025,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,400350357.0
+expense_detail,2025,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,193450164.0
+ministries,2025,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,17817190.0
+ministries,2025,Genel Bütçeli İdareler,Cumhurbaşkanlığı,16928146.0
+ministries,2025,Genel Bütçeli İdareler,Anayasa Mahkemesi,789466.0
+ministries,2025,Genel Bütçeli İdareler,Yargıtay,4010716.0
+ministries,2025,Genel Bütçeli İdareler,Danıştay,2389043.0
+ministries,2025,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,1187203.0
+ministries,2025,Genel Bütçeli İdareler,Sayıştay,3259505.0
+ministries,2025,Genel Bütçeli İdareler,Adalet Bakanlığı,280275802.0
+ministries,2025,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,623899190.0
+ministries,2025,Genel Bütçeli İdareler,İçişleri Bakanlığı,96401694.0
+ministries,2025,Genel Bütçeli İdareler,Dışişleri Bakanlığı,39035706.0
+ministries,2025,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,6598875177.0
+ministries,2025,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,1451715540.0
+ministries,2025,Genel Bütçeli İdareler,Sağlık Bakanlığı,1020317291.0
+ministries,2025,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,479273718.0
+ministries,2025,Genel Bütçeli İdareler,Aile ve Sosyal Hizmetler Bakanlığı,407010627.0
+ministries,2025,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,45332020.0
+ministries,2025,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,53202392.0
+ministries,2025,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,124497913.0
+ministries,2025,Genel Bütçeli İdareler,"Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",219294468.0
+ministries,2025,Genel Bütçeli İdareler,Ticaret Bakanlığı,56233383.0
+ministries,2025,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,231922274.0
+ministries,2025,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,438122123.0
+ministries,2025,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,865536500.0
+ministries,2025,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,380778.0
+ministries,2025,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,28896461.0
+ministries,2025,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,261262624.0
+ministries,2025,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,16766308.0
+ministries,2025,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,416426543.0
+ministries,2025,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,130119153.0
+ministries,2025,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,266923268.0
+ministries,2025,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,47519639.0
+ministries,2025,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,11172157.0
+ministries,2025,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,4873426.0
+ministries,2025,Genel Bütçeli İdareler,Göç İdaresi Başkanlığı,36205532.0
+ministries,2025,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,6797254.0
+ministries,2025,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,1217806.0
+ministries,2025,Genel Bütçeli İdareler,İletişim Başkanlığı,6155014.0
+ministries,2025,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,3113542.0
+ministries,2025,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,290238912.0
+ministries,2025,Genel Bütçeli İdareler,İklim Değişikliği Başkanlığı,405463.0
+balance,2026,Harcamalar,Harcamalar,18978815484.0
+balance,2026,Harcamalar,1-Faiz Hariç Harcama,16237159484.0
+balance,2026,Harcamalar,Personel Giderleri,4907308940.0
+balance,2026,Harcamalar,Sosyal Güv.Kur. Devlet Primi,599691060.0
+balance,2026,Harcamalar,Mal ve Hizmet Alımları,1249567875.0
+balance,2026,Harcamalar,Cari Transferler,6870793847.0
+balance,2026,Harcamalar,Sermaye Giderleri,1312319173.0
+balance,2026,Harcamalar,Sermaye Transferleri,525369037.0
+balance,2026,Harcamalar,Borç Verme,397083301.0
+balance,2026,Harcamalar,Yedek Ödenekler,375026251.0
+balance,2026,Harcamalar,2-Faiz Harcamaları,2741656000.0
+balance,2026,Gelirler,Gelirler,16266122685.0
+balance,2026,Gelirler,1-Genel Bütçe Gelirleri,16036855210.0
+balance,2026,Gelirler,Vergi Gelirleri,13833113452.0
+balance,2026,Gelirler,Teşebbüs ve Mülkiyet Gelirleri,301083115.0
+balance,2026,Gelirler,Alınan Bağış ve Yardımlar ile Özel Gelirler,103150750.0
+balance,2026,Gelirler,"Faizler, Paylar ve Cezalar",1594770457.0
+balance,2026,Gelirler,Sermaye Gelirleri,202827014.0
+balance,2026,Gelirler,Alacaklardan Tahsilat,1910422.0
+balance,2026,Gelirler,2-Özel Bütçeli İdarelerin Öz Gelirleri,145096263.0
+balance,2026,Gelirler,3-Düzen. ve Denet. Kurumların Gelirleri,84171212.0
+balance,2026,Denge,Bütçe Dengesi,-2712692799.0
+balance,2026,Denge,Faiz Dışı Denge,28963201.0
+expense_detail,2026,1. Personel Giderleri,1. Personel Giderleri,4907308940.0
+expense_detail,2026,1. Personel Giderleri,Memurlar,3869707739.0
+expense_detail,2026,1. Personel Giderleri,İşçiler,444073049.0
+expense_detail,2026,1. Personel Giderleri,Sözleşmeli Personel,467127248.0
+expense_detail,2026,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,599691060.0
+expense_detail,2026,3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,1249567875.0
+expense_detail,2026,3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,459056243.0
+expense_detail,2026,4. Cari Transferler,4. Cari Transferler,6870793847.0
+expense_detail,2026,4. Cari Transferler,KİT Görevlendirme Giderleri,392134300.0
+expense_detail,2026,4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,270000000.0
+expense_detail,2026,4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,1162232924.0
+expense_detail,2026,4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),468975907.0
+expense_detail,2026,4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),190848966.0
+expense_detail,2026,4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),43691935.0
+expense_detail,2026,4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,167634665.0
+expense_detail,2026,4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,93032000.0
+expense_detail,2026,4. Cari Transferler,g) Sosyal Amaçlı Transferler,232664410.0
+expense_detail,2026,4. Cari Transferler,-Büyükşehir Belediyelerine,727848679.0
+expense_detail,2026,4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,607784592.0
+expense_detail,2026,4. Cari Transferler,-Diğer Belediyelere,202592826.0
+expense_detail,2026,5. Sermaye Giderleri,5. Sermaye Giderleri,1312319173.0
+expense_detail,2026,5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,972269061.035
+expense_detail,2026,6. Sermaye Transferleri,6. Sermaye Transferleri,525369037.0
+expense_detail,2026,7. Borç Verme,7. Borç Verme,397083301.0
+expense_detail,2026,7. Borç Verme,Öğrenim ve Harç Kredisi,36246000.0
+expense_detail,2026,8. Yedek Ödenekler,8. Yedek Ödenekler,375026251.0
+expense_detail,2026,8. Yedek Ödenekler,Yedek Ödenek,145522405.0
+expense_detail,2026,8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,168881801.0
+expense_detail,2026,B. Faiz Giderleri,B. Faiz Giderleri,2741656000.0
+expense_detail,2026,B. Faiz Giderleri,-Tahvil Faizi,1902722500.0
+expense_detail,2026,B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,303500000.0
+expense_detail,2026,B. Faiz Giderleri,e) Kira Sertifikası Giderleri,267500000.0
+ministries,2026,Genel Bütçeli İdareler,Türkiye Büyük Millet Meclisi,27235264.0
+ministries,2026,Genel Bütçeli İdareler,Cumhurbaşkanlığı,21286534.0
+ministries,2026,Genel Bütçeli İdareler,Anayasa Mahkemesi,996693.0
+ministries,2026,Genel Bütçeli İdareler,Yargıtay,5238733.0
+ministries,2026,Genel Bütçeli İdareler,Danıştay,3136706.0
+ministries,2026,Genel Bütçeli İdareler,Hakimler ve Savcılar Kurulu,1547695.0
+ministries,2026,Genel Bütçeli İdareler,Sayıştay,4729868.0
+ministries,2026,Genel Bütçeli İdareler,Adalet Bakanlığı,389560443.0
+ministries,2026,Genel Bütçeli İdareler,Milli Savunma Bakanlığı,822930177.0
+ministries,2026,Genel Bütçeli İdareler,İçişleri Bakanlığı,119506858.0
+ministries,2026,Genel Bütçeli İdareler,Dışişleri Bakanlığı,46805514.0
+ministries,2026,Genel Bütçeli İdareler,Hazine ve Maliye Bakanlığı,8890323158.0
+ministries,2026,Genel Bütçeli İdareler,Milli Eğitim Bakanlığı,1943965746.0
+ministries,2026,Genel Bütçeli İdareler,Sağlık Bakanlığı,1474947780.0
+ministries,2026,Genel Bütçeli İdareler,Ulaştırma ve Altyapı Bakanlığı,525260273.0
+ministries,2026,Genel Bütçeli İdareler,Aile ve Sosyal Hizmetler Bakanlığı,531905396.0
+ministries,2026,Genel Bütçeli İdareler,Enerji ve Tabii Kaynaklar Bakanlığı,36097800.0
+ministries,2026,Genel Bütçeli İdareler,Kültür ve Turizm Bakanlığı,69999818.0
+ministries,2026,Genel Bütçeli İdareler,Sanayi ve Teknoloji Bakanlığı,176966775.0
+ministries,2026,Genel Bütçeli İdareler,"Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",275011091.0
+ministries,2026,Genel Bütçeli İdareler,Ticaret Bakanlığı,76251159.0
+ministries,2026,Genel Bütçeli İdareler,Gençlik ve Spor Bakanlığı,300302192.0
+ministries,2026,Genel Bütçeli İdareler,Tarım ve Orman Bakanlığı,541840483.0
+ministries,2026,Genel Bütçeli İdareler,Çalışma ve Sosyal Güvenlik Bakanlığı,447903261.0
+ministries,2026,Genel Bütçeli İdareler,Milli Güvenlik Kurulu Genel Sekreterliği,590052.0
+ministries,2026,Genel Bütçeli İdareler,Milli İstihbarat Teşkilatı Başkanlığı,39495902.0
+ministries,2026,Genel Bütçeli İdareler,Jandarma Genel Komutanlığı,375056157.0
+ministries,2026,Genel Bütçeli İdareler,Sahil Güvenlik Komutanlığı,23093023.0
+ministries,2026,Genel Bütçeli İdareler,Emniyet Genel Müdürlüğü,554506812.0
+ministries,2026,Genel Bütçeli İdareler,Diyanet İşleri Başkanlığı,174389341.0
+ministries,2026,Genel Bütçeli İdareler,Afet ve Acil Durum Yönetimi Başkanlığı,373452610.0
+ministries,2026,Genel Bütçeli İdareler,Gelir İdaresi Başkanlığı,70555179.0
+ministries,2026,Genel Bütçeli İdareler,Tapu ve Kadastro Genel Müdürlüğü,15962597.0
+ministries,2026,Genel Bütçeli İdareler,Meteoroloji Genel Müdürlüğü,6086888.0
+ministries,2026,Genel Bütçeli İdareler,Göç İdaresi Başkanlığı,31613903.0
+ministries,2026,Genel Bütçeli İdareler,Avrupa Birliği Başkanlığı,10232906.0
+ministries,2026,Genel Bütçeli İdareler,Devlet Arşivleri Başkanlığı,1532678.0
+ministries,2026,Genel Bütçeli İdareler,İletişim Başkanlığı,7564179.0
+ministries,2026,Genel Bütçeli İdareler,Milli Saraylar İdaresi Başkanlığı,4084667.0
+ministries,2026,Genel Bütçeli İdareler,Strateji ve Bütçe Başkanlığı,378985152.0
+ministries,2026,Genel Bütçeli İdareler,İklim Değişikliği Başkanlığı,563370.0

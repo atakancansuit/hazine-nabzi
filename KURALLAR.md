@@ -39,7 +39,8 @@ Günün işi bittiğinde, commit'ten önce:
 ## 4. Kim ne yazar
 
 - **Claude yazar:** dosya indirme, Excel'in dağınık başlıklarını ayıklama, klasör iskeleti gibi mülakatta anlatılmayacak kısımlar.
-- **Atakan yazar:** temizlik kararları, SQL hesapları, Power Query adımları ve DAX ölçüleri. Mülakatta anlatılacak her şey.
+- **Atakan yazar:** temizlik, hesaplama ve raporlama KARARLARI. Hangi kalem alınır, hangi satır atılır, hangi ölçü hesaplanır.
+- **Kodun kendisini Claude yazar** *(19.09.2026 kararı)*, Atakan yapıştırır. Claude her parçanın ne yaptığını anlatır; amaç kodu ezberlemek değil, mülakatta mantığını anlatabilmek.
 
 ---
 
@@ -59,3 +60,5 @@ Günün işi bittiğinde, commit'ten önce:
 
 - **18.09.2026:** Proje klasörü ve kurallar oluşturuldu. Proje adı: Hazine Nabzı. Veri kaynağına erişim doğrulandı: Muhasebat'ın 2015–2026 bütçe tabloları indirilebiliyor, planlanan ödenek ve aylık gerçekleşme aynı tabloda var.
 - **19.09.2026 (1. gün):** İki dilli README kuruldu, kod dilinin İngilizce olmasına karar verildi. `download.py` ve `xls_reader.py` yazıldı; 2015–2026 için üç tablo (denge, gider detayı, bakanlıklar) toplam 36 dosya iniyor. Formatlar 12 yıl boyunca karşılaştırıldı: denge tablosu tutarlı, gider detayında plan sütunu da var ve ana tabloyla birebir tutuyor. Kapsama bakanlıklar eklendi. Gider detayından 23 kalem seçildi (`items.csv`); 2021 öncesinde ayrı satırı olmayan SSK 5 puan indirimi ve KİT sermaye çıkarıldı.
+- **20.09.2026 (2. gün):** `clean.py` yazıldı: 36 ham dosya iki uzun biçim tabloya dönüşüyor (`data/clean/actuals.csv` 13.728 satır, `plans.csv` 1.174 satır). Sütunlar adıyla bulunuyor, 2021'de değişen kalem adları `items.csv`'deki `old_name` ile eşleşiyor, aynı adın tekrarı `search_under` ile çözülüyor. Üç otomatik kontrol eklendi (satır toplamı, kurum toplamı, iki tablo arası mutabakat); kontroller iki gerçek hata yakaladı: 2015 kurumsal dosyasındaki özet satırları kurum sanılıyordu, 2022'de yedek ödenek satırı tamamen boş olduğu için düşüyordu. Boş hücre kuralı: ay yayımlanmışsa 0, yayımlanmamışsa satır yok. Kod yazımı Claude'a geçti, kararlar Atakan'da (4. kural).
+

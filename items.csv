@@ -1,135 +1,33 @@
-main_item,item,actual_2025_bn_try,planned_2025_bn_try,realization_pct,years_found,selected
-1. Personel Giderleri,1. Personel Giderleri,3634.0,3475.5,105,12,ana kalem
-1. Personel Giderleri,Memurlar,2880.7,2756.8,104,12,evet
-1. Personel Giderleri,İşçiler,370.9,327.4,113,12,evet
-1. Personel Giderleri,Sözleşmeli Personel,281.6,274.4,103,12,evet
-1. Personel Giderleri,Geçici ve Diğer Personel,100.8,116.9,86,12,hayır
-2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,454.5,435.0,104,6,ana kalem
-2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,Memurlar,324.4,310.7,104,12,hayır
-2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,İşçiler,77.3,67.9,114,12,hayır
-2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,Sözleşmeli Personel,29.4,30.1,97,12,hayır
-2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,Geçici ve Diğer Personel,23.5,26.3,89,12,hayır
-3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,1072.9,1023.7,105,12,ana kalem
-3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,355.5,385.6,92,12,evet
-3. Mal ve Hizmet Alım Giderleri,Milli Savunma Bakanlığı,275.5,305.0,90,12,hayır
-3. Mal ve Hizmet Alım Giderleri,Jandarma Genel Komutanlığı,40.0,40.1,100,12,hayır
-3. Mal ve Hizmet Alım Giderleri,Emniyet Genel Müdürlüğü,39.9,40.5,98,12,hayır
-3. Mal ve Hizmet Alım Giderleri,b) Sağlık Giderleri,5.3,4.2,128,12,hayır
-3. Mal ve Hizmet Alım Giderleri,Kamu Personeli Sağlık Giderleri,2.6,2.5,106,12,hayır
-3. Mal ve Hizmet Alım Giderleri,Tedavi ve Sağlık Malzemesi Giderleri,2.7,1.7,158,6,hayır
-3. Mal ve Hizmet Alım Giderleri,c) Borçlanma Genel Giderleri,14.0,30.1,46,12,hayır
-3. Mal ve Hizmet Alım Giderleri,d) Diğer Mal ve Hizmet Alım Giderleri,698.1,603.8,116,12,hayır
-4. Cari Transferler,4. Cari Transferler,5408.6,5813.4,93,12,ana kalem
-4. Cari Transferler,a) Görevlendirme Giderleri,699.2,772.0,91,6,hayır
-4. Cari Transferler,KİT Görevlendirme Giderleri,411.4,503.5,82,6,evet
-4. Cari Transferler,Halk Bankası-Esnaf ve Sanatkârlara Kredi Faiz Desteği,59.6,60.0,99,6,hayır
-4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,182.7,160.0,114,6,evet
-4. Cari Transferler,Aciz Vesikası Giderleri,0.0,0.0,0,3,hayır
-4. Cari Transferler,Diğer Görevlendirme Giderleri,45.5,48.5,94,6,hayır
-4. Cari Transferler,b) Hazine Yardımları,2316.8,2509.2,92,12,hayır
-4. Cari Transferler,Sosyal Güvenlik Kuruluşlarına Hazine Yardımları,83.3,65.3,128,6,hayır
-4. Cari Transferler,-İşsizlik Sigorta Fonu,83.3,65.3,128,12,hayır
-4. Cari Transferler,"Sağlık, Emeklilik ve Sosyal Yardım Giderleri",1931.7,2188.0,88,12,hayır
-4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,888.7,792.6,112,12,evet
-4. Cari Transferler,-Sosyal Güvenliği Omayanların Sağlık Primi,127.2,130.9,97,8,hayır
-4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),372.2,320.1,116,6,evet
-4. Cari Transferler,-SSK 5 Puan İndirimi,295.6,222.8,133,6,hayır
-4. Cari Transferler,-Ek Karşılıklar (Görev Zararı),16.3,16.3,100,6,hayır
-4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),156.7,153.6,102,6,evet
-4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),75.0,551.8,14,6,evet
-4. Cari Transferler,Mahalli İdarelere Hazine Yardımları,8.4,10.4,81,12,hayır
-4. Cari Transferler,-Belediyelere Yardım (Denkleştirme Ödeneği),4.5,4.5,100,12,hayır
-4. Cari Transferler,-İl Özel İdareleri (Köy Hiz. Personeli ve Diğer),3.9,5.9,67,5,hayır
-4. Cari Transferler,Diğer Hazine Yardımları,293.4,245.5,119,12,hayır
-4. Cari Transferler,-DFİF,33.0,33.0,100,6,hayır
-4. Cari Transferler,-Diğer,260.4,212.5,123,12,hayır
-4. Cari Transferler,c) Kar Amacı Gütmeyen Kuruluşlara Yapılan Transferler,51.2,163.8,31,12,hayır
-4. Cari Transferler,Siyasi Partilere Yardım,5.1,5.1,100,12,hayır
-4. Cari Transferler,Diğer,46.1,158.7,29,12,hayır
-4. Cari Transferler,d) Hane Halkına Yapılan Transferler,54.3,58.5,93,12,hayır
-4. Cari Transferler,Burslar ve Harçlıklar,36.2,35.1,103,12,hayır
-4. Cari Transferler,Eğitim Amaçlı Diğer Transferler,12.7,16.5,77,12,hayır
-4. Cari Transferler,Sağlık Amaçlı Transferler,3.0,4.2,72,12,hayır
-4. Cari Transferler,Yiyecek Amaçlı Transferler,0.2,0.3,70,12,hayır
-4. Cari Transferler,Barınma Amaçlı Transferler,2.1,2.2,94,12,hayır
-4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,158.5,135.0,117,12,evet
-4. Cari Transferler,Alan Bazlı Tarımsal Destekleme Hizmetleri,28.0,30.2,93,6,hayır
-4. Cari Transferler,Fark Ödemesi Destekleme Hizmetleri,35.4,42.3,84,12,hayır
-4. Cari Transferler,Hayvancılık Destekleme Hizmetleri,28.4,27.3,104,12,hayır
-4. Cari Transferler,Tarım Sigortası Destekleme Hizmetleri,24.8,19.9,125,12,hayır
-4. Cari Transferler,Telafi Edici Ödemeler Kaps. Tarımsal Destek. Hiz.,2.2,2.1,107,6,hayır
-4. Cari Transferler,Kırsal Kalkınma Amaçlı Tarımsal Destekleme Hizmetleri,10.2,10.2,100,6,hayır
-4. Cari Transferler,Diğer Tarımsal Amaçlı Destekleme Hizmetleri,29.5,3.1,959,6,hayır
-4. Cari Transferler,f) Hane Halkına Yapılan Diğer Transferler,253.1,262.8,96,12,hayır
-4. Cari Transferler,Sanayi ve Teknoloji B. Teşvik Ödemeleri,29.6,31.7,93,6,hayır
-4. Cari Transferler,KOSGEB (Kobi Desteği),0.8,5.0,17,12,hayır
-4. Cari Transferler,Tabii Afetten Zarar Gören Çiftçilere Yardım,0.0,0.1,5,12,hayır
-4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,73.7,75.0,98,12,evet
-4. Cari Transferler,Diğer,149.0,151.0,99,12,hayır
-4. Cari Transferler,g) Sosyal Amaçlı Transferler,175.2,185.9,94,12,evet
-4. Cari Transferler,SHÇEK Yardımları,85.0,88.3,96,12,hayır
-4. Cari Transferler,2022 Kanun Aylık Ödemeleri,80.6,87.6,92,12,hayır
-4. Cari Transferler,Diğer Sosyal Amaçlı Transferler,9.6,9.9,96,12,hayır
-4. Cari Transferler,h) Yurtdışına Yapılan Transferler,41.4,46.4,89,12,hayır
-4. Cari Transferler,Kuzey Kıbrıs Türk Cumhuriyeti,8.2,6.0,136,3,hayır
-4. Cari Transferler,Uluslararası Kuruluşlara Katılım Payı,22.3,26.7,83,12,hayır
-4. Cari Transferler,Diğer,11.0,13.7,81,12,hayır
-4. Cari Transferler,i) Gelirden Ayrılan Paylar,1658.8,1680.0,99,12,hayır
-4. Cari Transferler,Mahalli İdare Payları,1271.7,1285.4,99,12,hayır
-4. Cari Transferler,-İl Özel İdarelerine,53.5,54.1,99,12,hayır
-4. Cari Transferler,-Büyükşehir Belediyelerine,575.7,582.4,99,12,evet
-4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,481.9,486.7,99,12,evet
-4. Cari Transferler,-Diğer Belediyelere,160.6,162.2,99,12,evet
-4. Cari Transferler,Fon Payları,383.0,385.2,99,12,hayır
-4. Cari Transferler,-SSDF,259.3,252.3,103,12,hayır
-4. Cari Transferler,-SYDTF,116.7,133.0,88,12,hayır
-4. Cari Transferler,-Diğerleri,6.9,0.0,,6,hayır
-4. Cari Transferler,Diğer Paylar,4.1,9.3,44,6,hayır
-4. Cari Transferler,-Toplu Konut İdaresine,0.2,0.2,87,6,hayır
-4. Cari Transferler,-Diğer,3.9,9.1,43,12,hayır
-5. Sermaye Giderleri,5. Sermaye Giderleri,1345.9,1102.4,122,12,ana kalem
-5. Sermaye Giderleri,Mamul Mal Alımları,100.0,100.0,100,12,hayır
-5. Sermaye Giderleri,Gayrimenkul Alımları ve Kamulaştırması,81.3,47.2,172,12,hayır
-5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,1013.8,812.3,125,6,evet
-5. Sermaye Giderleri,Gayrimenkul Büyük Onarım Giderleri,85.6,77.1,111,12,hayır
-5. Sermaye Giderleri,Diğer Sermaye Giderleri,65.3,65.7,99,12,hayır
-6. Sermaye Transferleri,6. Sermaye Transferleri,360.1,338.0,107,12,ana kalem
-6. Sermaye Transferleri,a) Yurtiçi Sermaye Transferleri,354.3,328.9,108,12,hayır
-6. Sermaye Transferleri,KÖY-DES Projesi,6.5,7.5,87,12,hayır
-6. Sermaye Transferleri,BELDES (SUKAP),1.0,3.9,26,5,hayır
-6. Sermaye Transferleri,TÜBİTAK AR-GE Ödeneği,14.8,17.0,87,12,hayır
-6. Sermaye Transferleri,Kalkınma Ajansları,5.2,2.6,194,12,hayır
-6. Sermaye Transferleri,SOGEP,0.6,0.7,100,6,hayır
-6. Sermaye Transferleri,Diğer,326.2,296.7,110,12,hayır
-6. Sermaye Transferleri,b) Yurtdışı Sermaye Transferleri,5.8,9.1,64,12,hayır
-6. Sermaye Transferleri,Kuzey Kıbrıs Türk Cumhuriyeti,3.7,8.5,44,3,hayır
-6. Sermaye Transferleri,Diğer,2.1,0.6,374,12,hayır
-7. Borç Verme,7. Borç Verme,310.0,306.1,101,12,ana kalem
-7. Borç Verme,a) Yurtiçi Borç Verme,303.3,297.2,102,12,hayır
-7. Borç Verme,KİT Sermaye,211.9,229.9,92,6,hayır
-7. Borç Verme,Risk Hesabı,0.0,0.0,0,12,hayır
-7. Borç Verme,Öğrenim ve Harç Kredisi,29.5,27.8,106,12,evet
-7. Borç Verme,Kredi Garanti Kurumlarına,0.0,0.8,0,5,hayır
-7. Borç Verme,Diğer,61.9,38.7,160,12,hayır
-7. Borç Verme,b) Yurtdışı Borç Verme,6.8,8.8,76,12,hayır
-7. Borç Verme,Kuzey Kıbrıs Türk Cumhuriyeti (Kredi),1.0,4.0,25,3,hayır
-7. Borç Verme,Kuzey Kıbrıs Türk Cumhuriyeti (Teşvik),0.0,0.0,0,3,hayır
-7. Borç Verme,Diğer,5.7,4.8,119,12,hayır
-8. Yedek Ödenekler,8. Yedek Ödenekler,0.0,286.9,0,12,ana kalem
-8. Yedek Ödenekler,Personel Giderlerini Karşılama Ödeneği,0.0,26.7,0,12,hayır
-8. Yedek Ödenekler,Yedek Ödenek,0.0,111.7,0,12,evet
-8. Yedek Ödenekler,Doğal Afet Giderlerini Karşılama Ödeneği,0.0,9.0,0,12,hayır
-8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,0.0,128.9,0,12,evet
-8. Yedek Ödenekler,İlama Bağlı Borçları Karşılama Ödeneği,0.0,8.7,0,12,hayır
-8. Yedek Ödenekler,Özellikli Giderleri Karşılama Ödeneği,0.0,0.9,0,12,hayır
-8. Yedek Ödenekler,Yeni Kurulacak Dairelerin Giderlerini Karşılama Ödeneği,0.0,1.1,0,6,hayır
-B. Faiz Giderleri,B. Faiz Giderleri,2054.4,1950.0,105,12,ana kalem
-B. Faiz Giderleri,a) İç Borç Faiz Ödemeleri,1589.0,1279.7,124,12,hayır
-B. Faiz Giderleri,Kamu Kesimi,0.0,0.0,0,9,hayır
-B. Faiz Giderleri,Diğer İç Borç Faiz Ödemeleri,1589.0,1279.7,124,12,hayır
-B. Faiz Giderleri,-Tahvil Faizi,1550.1,1266.3,122,12,evet
-B. Faiz Giderleri,-Bono Faizi,38.9,13.4,291,12,hayır
-B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,242.5,400.4,61,12,evet
-B. Faiz Giderleri,c) İskonto ve Kısa Vadeli Nakit İşlemlere Ait Faiz Gid.,82.5,46.6,177,12,hayır
-B. Faiz Giderleri,d) Türev Ürün Giderleri,9.7,29.9,32,12,hayır
-B. Faiz Giderleri,e) Kira Sertifikası Giderleri,130.7,193.5,68,12,evet
+main_item,item,old_name,search_under
+1. Personel Giderleri,1. Personel Giderleri,,
+1. Personel Giderleri,Memurlar,,1. Personel Giderleri
+1. Personel Giderleri,İşçiler,,1. Personel Giderleri
+1. Personel Giderleri,Sözleşmeli Personel,,1. Personel Giderleri
+2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. Sosyal Güvenlik Kurumlarına Devlet Primi Giderleri,2. SGK'ya Devlet Primi Giderleri,
+3. Mal ve Hizmet Alım Giderleri,3. Mal ve Hizmet Alım Giderleri,,
+3. Mal ve Hizmet Alım Giderleri,a) Savunma-Güvenlik,,3. Mal ve Hizmet Alım Giderleri
+4. Cari Transferler,4. Cari Transferler,,
+4. Cari Transferler,KİT Görevlendirme Giderleri,KİT Görev Zararları,4. Cari Transferler
+4. Cari Transferler,Ziraat Bankası-Tarımsal Üreticilere Kredi Faiz Desteği,Ziraat Bankası,4. Cari Transferler
+4. Cari Transferler,-Devlet Sosyal Güvenlik Katkısı,,4. Cari Transferler
+4. Cari Transferler,-Faturalı Ödemeler (Görev Zararı),-Faturalı Ödemeler,4. Cari Transferler
+4. Cari Transferler,-Emeklilere Ek Ödemeler (Görev Zararı),-Emeklilere Ek Ödeme,4. Cari Transferler
+4. Cari Transferler,-Sosyal Güvenlik Açık Finansmanı (Hazine Yardımı),-Sosyal Güvenlik Açık Finansmanı,4. Cari Transferler
+4. Cari Transferler,e) Tarımsal Destekleme Ödemeleri,,4. Cari Transferler
+4. Cari Transferler,Bireysel Emeklilik Devlet Katkısı,,4. Cari Transferler
+4. Cari Transferler,g) Sosyal Amaçlı Transferler,,4. Cari Transferler
+4. Cari Transferler,-Büyükşehir Belediyelerine,,4. Cari Transferler
+4. Cari Transferler,-Büyükşehir İlçe Belediyelerine,,4. Cari Transferler
+4. Cari Transferler,-Diğer Belediyelere,,4. Cari Transferler
+5. Sermaye Giderleri,5. Sermaye Giderleri,,
+5. Sermaye Giderleri,Gayrimenkul Sermaye Üretim Giderleri,Gayrimenkul Sermaye ve Üretim Giderleri,5. Sermaye Giderleri
+6. Sermaye Transferleri,6. Sermaye Transferleri,,
+7. Borç Verme,7. Borç Verme,,
+7. Borç Verme,Öğrenim ve Harç Kredisi,,7. Borç Verme
+8. Yedek Ödenekler,8. Yedek Ödenekler,,
+8. Yedek Ödenekler,Yedek Ödenek,,8. Yedek Ödenekler
+8. Yedek Ödenekler,Yatırımları Hızlandırma Ödeneği,,8. Yedek Ödenekler
+B. Faiz Giderleri,B. Faiz Giderleri,,
+B. Faiz Giderleri,-Tahvil Faizi,,Diğer İç Borç Faiz Ödemeleri
+B. Faiz Giderleri,b) Dış Borç Faiz Ödemeleri,,B. Faiz Giderleri
+B. Faiz Giderleri,e) Kira Sertifikası Giderleri,,B. Faiz Giderleri
