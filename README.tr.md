@@ -71,11 +71,46 @@ Tablolar yıldan yıla aynı formatta olmadığı için temizlikte çözülenler
 
 ## Kurulum
 
-*(3. gün sonunda yazılacak)*
+**Gerekenler:** Python 3.12+, SQL Server (2019 ve üstü; ücretsiz Express sürümü yeterli).
+
+```bash
+git clone <repo>
+cd hazine-nabzi
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+```
+
+Veritabanını ve kullanıcıyı bir kez oluşturun:
+
+```sql
+CREATE DATABASE hazine_nabzi;
+CREATE LOGIN hazine WITH PASSWORD = '<şifre>', CHECK_POLICY = OFF;
+USE hazine_nabzi;
+CREATE USER hazine FOR LOGIN hazine;
+ALTER ROLE db_owner ADD MEMBER hazine;
+```
+
+Bağlantı bilgilerini `.env` dosyasına yazın:
+
+```bash
+cp .env.example .env
+```
+
+SQL Server WSL dışında, Windows tarafında çalışıyorsa üç ayar gerekiyor: SQL kullanıcı girişi (mixed mode), TCP bağlantısı ve 1433 portu için güvenlik duvarı izni. `DB_SERVER` değeri de `localhost` değil, Windows'un WSL'den görünen adresi olmalı:
+
+```bash
+ip route show default | awk '{print $3}'
+```
 
 ## Kullanım
 
-*(5. gün sonunda yazılacak)*
+```bash
+.venv/bin/python download.py   # Muhasebat'tan ham dosyaları indirir
+.venv/bin/python clean.py      # temizleyip data/clean/ altına yazar, kontrolleri yapar
+.venv/bin/python load.py       # temiz tabloları SQL Server'a yükler
+```
+
+*(tek komutla çalışan hali 5. günde)*
 
 ## Rapor
 
@@ -87,8 +122,10 @@ Tablolar yıldan yıla aynı formatta olmadığı için temizlikte çözülenler
 hazine-nabzi/
 ├── download.py        Muhasebat'tan 2015–2026 tablolarını indirir
 ├── clean.py           Ham dosyaları temizleyip iki tabloya çevirir, kontrolleri yapar
+├── load.py            Temiz tabloları SQL Server'a yükler
 ├── xls_reader.py      Eski .xls dosyalarını okur (bozuk biçim kayıtlarını atlar)
 ├── items.csv          Gider detayından alınacak kalemler, eski adlarıyla birlikte
+├── .env.example       Veritabanı bağlantı bilgilerinin örneği (.env repoya girmez)
 ├── requirements.txt   Gerekli Python kütüphaneleri
 ├── KURALLAR.md        Projenin çalışma kuralları ve günlüğü
 └── data/

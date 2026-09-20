@@ -71,11 +71,46 @@ The tables are not in the same format from year to year. Differences handled dur
 
 ## Setup
 
-*(to be written at the end of day 3)*
+**Requirements:** Python 3.12+, SQL Server (2019 or later; the free Express edition is enough).
+
+```bash
+git clone <repo>
+cd hazine-nabzi
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+```
+
+Create the database and the user once:
+
+```sql
+CREATE DATABASE hazine_nabzi;
+CREATE LOGIN hazine WITH PASSWORD = '<password>', CHECK_POLICY = OFF;
+USE hazine_nabzi;
+CREATE USER hazine FOR LOGIN hazine;
+ALTER ROLE db_owner ADD MEMBER hazine;
+```
+
+Put the connection details in `.env`:
+
+```bash
+cp .env.example .env
+```
+
+If SQL Server runs on Windows while the code runs in WSL, three settings are needed on the server: SQL login (mixed mode), TCP connections, and a firewall rule for port 1433. `DB_SERVER` is then not `localhost` but the address of the Windows host as seen from WSL:
+
+```bash
+ip route show default | awk '{print $3}'
+```
 
 ## Usage
 
-*(to be written at the end of day 5)*
+```bash
+.venv/bin/python download.py   # downloads the raw files from Muhasebat
+.venv/bin/python clean.py      # cleans them into data/clean/ and runs the checks
+.venv/bin/python load.py       # loads the clean tables into SQL Server
+```
+
+*(single-command version on day 5)*
 
 ## Report
 
@@ -87,8 +122,10 @@ The tables are not in the same format from year to year. Differences handled dur
 hazine-nabzi/
 ├── download.py        Downloads the 2015–2026 tables from Muhasebat
 ├── clean.py           Cleans the raw files into two tables and runs the checks
+├── load.py            Loads the clean tables into SQL Server
 ├── xls_reader.py      Reads the old .xls files (skips broken format records)
 ├── items.csv          Items taken from the expenditure detail table, with their old names
+├── .env.example       Example of the database connection settings (.env is not in the repo)
 ├── requirements.txt   Required Python libraries
 ├── KURALLAR.md        Working rules and daily log of the project (in Turkish)
 └── data/

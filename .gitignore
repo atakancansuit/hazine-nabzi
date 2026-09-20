@@ -7,3 +7,6 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Veritabani sifresi
+.env
