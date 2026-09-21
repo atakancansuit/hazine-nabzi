@@ -1,8 +1,7 @@
 -- Örnek sorgular. VS Code'da bu dosyayı açıp istediğin sorgunun üzerine gelip
--- fareyle seçtikten sonra Ctrl+Shift+E ile çalıştırabilirsin.
--- Tutarlar bin TL; 1e6'ya bölünce milyar TL olur.
+-- fareyle seçtikten sonra Ctrl+Shift+E ile çalıştırabilirsiniz.
 
--- 1) Bu yıl (2026) 8 ay sonunda neredeyiz?
+-- 1) Bu yıl (2026) 8 ay sonunda ne durumda?
 SELECT item,
        CAST(cumulative_actual / 1e6 AS DECIMAL(10,0)) AS gerceklesen_milyar,
        CAST(planned / 1e6          AS DECIMAL(10,0)) AS yillik_plan_milyar,
@@ -29,7 +28,7 @@ FROM v_annual
 WHERE source = 'ministries' AND year = 2025 AND pct_of_plan > 100
 ORDER BY pct_of_plan DESC;
 
--- 4) Bir kalemin yıllar içindeki gerçekleşme oranı
+-- 4) Bir kalemin yıllar içindeki ayrılan bütçeye uyma oranı
 SELECT year, CAST(pct_of_plan AS DECIMAL(5,1)) AS yuzde, is_complete_year AS yil_tam_mi
 FROM v_annual
 WHERE source = 'balance' AND item = N'Sermaye Giderleri'
