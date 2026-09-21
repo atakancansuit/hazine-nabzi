@@ -55,3 +55,14 @@ ORDER BY ay;
 -- 7) Yönetim raporu: yordamı çağır
 EXEC sp_monthly_report @year = 2026, @source = 'balance';
 EXEC sp_monthly_report @year = 2025, @source = 'ministries', @top = 10;
+
+-- 8) Bu yıl geçmiş yıllara göre hızlı mı gidiyor?
+-- cumulative_pct_of_plan: bu yıl bu ayın sonunda planın yüzde kaçı gerçekleşti
+-- typical_pct_of_plan:    geçmiş yıllarda aynı ayda ortalama yüzde kaç gerçekleşmişti
+SELECT item,
+       CAST(cumulative_pct_of_plan AS DECIMAL(5,1)) AS bu_yil,
+       CAST(typical_pct_of_plan    AS DECIMAL(5,1)) AS gecmis_ortalama,
+       CAST(cumulative_pct_of_plan - typical_pct_of_plan AS DECIMAL(5,1)) AS fark
+FROM v_monthly
+WHERE source = 'balance' AND year = 2026 AND month = 8
+ORDER BY fark DESC;

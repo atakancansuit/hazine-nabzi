@@ -1,20 +1,18 @@
 -- Raporun beslendiği görünümler. apply_sql.py bu dosyayı veritabanına uygular.
--- Tutarlar bin TL. Yüzdeler yalnızca planı sıfırdan büyük kalemler için hesaplanır:
--- bütçe dengesi gibi satırlarda plan sıfıra yakın olduğu için oran anlamsız çıkar.
+-- Tutarlar bin TL.
+--
+-- Yüzdeler iki koşulda hesaplanmaz, çünkü anlamsız çıkar:
+--   * planı sıfır ya da eksi olan kalemler,
+--   * denge satırları (bütçe dengesi, faiz dışı denge). Bunlar gelir eksi gider
+--     olarak hesaplandığı için planları sıfıra yakındır; küçük bir sapma bile
+--     yüzdeyi binlere çıkarır. Denge satırlarında tutar farkına bakılır.
 
 -- 1) Aylık gidiş: her kalemin her ayı, yılbaşından o aya kümülatifiyle birlikte.
+-- Son sütun kıyas içindir: geçmiş yıllarda aynı ayda planın yüzde kaçı
+-- gerçekleşmişti? Yıl bitmeden "%64 az mı çok mu" sorusu ancak buna bakarak
+-- cevaplanabilir. Kıyas yalnızca 12 ayı yayımlanmış yıllardan hesaplanır.
 CREATE OR ALTER VIEW v_monthly AS
-SELECT
-    m.source,
-    m.year,
-    m.month,
-    m.main_item,
-    m.item,
-    m.actual,
-    m.cumulative_actual,
-    m.planned,
-    CASE WHEN m.planned > 0 THEN 100.0 * m.cumulative_actual / m.planned END AS cumulative_pct_of_plan
-FROM (
+WITH base AS (
     SELECT
         a.source, a.year, a.month, a.main_item, a.item,
         a.amount_thousand_try AS actual,
@@ -27,7 +25,37 @@ FROM (
     FROM actuals a
     LEFT JOIN plans p
         ON p.source = a.source AND p.year = a.year AND p.item = a.item
-) m;
+),
+complete_years AS (
+    SELECT source, year, item
+    FROM base
+    GROUP BY source, year, item
+    HAVING COUNT(*) = 12
+),
+typical AS (
+    SELECT b.source, b.item, b.month,
+           AVG(100.0 * b.cumulative_actual / b.planned) AS typical_pct_of_plan
+    FROM base b
+    JOIN complete_years c
+        ON c.source = b.source AND c.year = b.year AND c.item = b.item
+    WHERE b.planned > 0 AND b.main_item <> 'Denge'
+    GROUP BY b.source, b.item, b.month
+)
+SELECT
+    b.source,
+    b.year,
+    b.month,
+    b.main_item,
+    b.item,
+    b.actual,
+    b.cumulative_actual,
+    b.planned,
+    CASE WHEN b.planned > 0 AND b.main_item <> 'Denge'
+         THEN 100.0 * b.cumulative_actual / b.planned END AS cumulative_pct_of_plan,
+    t.typical_pct_of_plan
+FROM base b
+LEFT JOIN typical t
+    ON t.source = b.source AND t.item = b.item AND t.month = b.month;
 GO
 
 -- 2) Yıl özeti: yılın toplamı, planı ve sapması.
@@ -44,7 +72,7 @@ SELECT
     SUM(a.amount_thousand_try)        AS actual,
     MAX(p.amount_thousand_try)        AS planned,
     SUM(a.amount_thousand_try) - MAX(p.amount_thousand_try) AS variance,
-    CASE WHEN MAX(p.amount_thousand_try) > 0
+    CASE WHEN MAX(p.amount_thousand_try) > 0 AND a.main_item <> 'Denge'
          THEN 100.0 * SUM(a.amount_thousand_try) / MAX(p.amount_thousand_try)
     END                               AS pct_of_plan
 FROM actuals a
@@ -63,7 +91,7 @@ SELECT
     ROW_NUMBER() OVER (PARTITION BY source, year ORDER BY ABS(variance) DESC) AS rank_by_amount,
     ROW_NUMBER() OVER (PARTITION BY source, year ORDER BY ABS(pct_of_plan - 100) DESC) AS rank_by_pct
 FROM v_annual
-WHERE planned > 0;
+WHERE planned > 0 AND pct_of_plan IS NOT NULL;
 GO
 
 -- 4) Yıl sonu tahmini: henüz bitmemiş yıl için.

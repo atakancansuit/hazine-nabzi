@@ -75,7 +75,7 @@ Variance, cumulative progress and forecast calculations live in the database as 
 
 | View | One row is | Question it answers |
 |---|---|---|
-| `v_monthly` | One item in one month: that month's amount, the cumulative amount since January, and the cumulative share of the plan | Where are we against the plan in this month of the year? |
+| `v_monthly` | One item in one month: that month's amount, the cumulative amount since January, its share of the plan, and the average share at the same month in previous years | Where are we against the plan, and is that fast or slow compared with previous years? |
 | `v_annual` | One item in one year: total, plan, variance amount and variance percentage | How far above the plan did the year close? |
 | `v_variance_rank` | The same rows with two rankings: by variance amount and by variance percentage | Which items and institutions deviate most from the plan? |
 | `v_year_end_forecast` | One item of the open year: the amount so far, the year-end forecast and the forecast as a share of the plan | How will the year close at this rate? |
@@ -139,14 +139,35 @@ ip route show default | awk '{print $3}'
 
 ## Usage
 
+The whole pipeline runs with one command:
+
+```bash
+.venv/bin/python run.py
+```
+
+It downloads, cleans, loads into the database and applies the calculations, in that order. Each step's output goes both to the screen and to `logs/<date>.log`. If a step fails the pipeline stops there, so bad data never reaches the next step.
+
+The steps can also be run separately:
+
 ```bash
 .venv/bin/python download.py   # downloads the raw files from Muhasebat
 .venv/bin/python clean.py      # cleans them into data/clean/ and runs the checks
 .venv/bin/python load.py       # loads the clean tables into SQL Server
 .venv/bin/python apply_sql.py  # applies the views and the procedure to the database
+.venv/bin/python run.py --skip-download   # uses the raw files already on disk
 ```
 
-*(single-command version on day 5)*
+### Monthly schedule
+
+Muhasebat publishes the data in the middle of each month. The pipeline is scheduled to run on the 20th of every month, so the new month's data is downloaded, cleaned and loaded without anyone touching it.
+
+Through the Windows Task Scheduler, calling the command inside WSL:
+
+```
+schtasks /Create /TN "Hazine Nabzi - aylik guncelleme" ^
+  /TR "wsl.exe -d Ubuntu -- /home/ataka/hazine-nabzi/.venv/bin/python /home/ataka/hazine-nabzi/run.py" ^
+  /SC MONTHLY /D 20 /ST 09:00
+```
 
 ## Report
 
@@ -160,6 +181,7 @@ hazine-nabzi/
 ├── clean.py           Cleans the raw files into two tables and runs the checks
 ├── load.py            Loads the clean tables into SQL Server
 ├── apply_sql.py       Applies the views and procedures in sql/ to the database
+├── run.py             Runs the whole pipeline with one command
 ├── xls_reader.py      Reads the old .xls files (skips broken format records)
 ├── items.csv          Items taken from the expenditure detail table, with their old names
 ├── .env.example       Example of the database connection settings (.env is not in the repo)
@@ -169,7 +191,8 @@ hazine-nabzi/
 │   ├── views.sql      Report calculations: five views
 │   ├── procedures.sql The management report procedure
 │   └── examples.sql   Example queries
-└── data/
-    ├── raw/           Downloaded raw files (not included in the repo)
-    └── clean/         Cleaned tables: actuals.csv, plans.csv
+├── data/
+│   ├── raw/           Downloaded raw files (not included in the repo)
+│   └── clean/         Cleaned tables: actuals.csv, plans.csv
+└── logs/              Run logs (not included in the repo)
 ```

@@ -139,14 +139,35 @@ ip route show default | awk '{print $3}'
 
 ## Kullanım
 
+Bütün akış tek komutla çalışır:
+
+```bash
+.venv/bin/python run.py
+```
+
+Sırayla indirir, temizler, veritabanına yükler ve hesapları uygular. Her adımın çıktısı hem ekrana hem `logs/<tarih>.log` dosyasına yazılır. Bir adım hata verirse akış orada durur; bozuk veri bir sonraki adıma geçmez.
+
+Adımlar ayrı ayrı da çalıştırılabilir:
+
 ```bash
 .venv/bin/python download.py   # Muhasebat'tan ham dosyaları indirir
 .venv/bin/python clean.py      # temizleyip data/clean/ altına yazar, kontrolleri yapar
 .venv/bin/python load.py       # temiz tabloları SQL Server'a yükler
 .venv/bin/python apply_sql.py  # görünümleri ve yordamı veritabanına uygular
+.venv/bin/python run.py --skip-download   # indirmeden, eldeki ham dosyalarla
 ```
 
-*(tek komutla çalışan hali 5. günde)*
+### Aylık otomatik çalışma
+
+Muhasebat verileri ayın ortasında yayımlıyor. Akış her ayın 20'sinde kendiliğinden çalışacak şekilde kuruldu; yeni ay verisi kendi iniyor, temizleniyor ve veritabanına yükleniyor.
+
+Windows Görev Zamanlayıcı üzerinden, WSL içindeki komutu çağırarak:
+
+```
+schtasks /Create /TN "Hazine Nabzi - aylik guncelleme" ^
+  /TR "wsl.exe -d Ubuntu -- /home/ataka/hazine-nabzi/.venv/bin/python /home/ataka/hazine-nabzi/run.py" ^
+  /SC MONTHLY /D 20 /ST 09:00
+```
 
 ## Rapor
 
@@ -160,6 +181,7 @@ hazine-nabzi/
 ├── clean.py           Ham dosyaları temizleyip iki tabloya çevirir, kontrolleri yapar
 ├── load.py            Temiz tabloları SQL Server'a yükler
 ├── apply_sql.py       sql/ altındaki görünüm ve yordamları veritabanına uygular
+├── run.py             Bütün akışı tek komutla çalıştırır
 ├── xls_reader.py      Eski .xls dosyalarını okur (bozuk biçim kayıtlarını atlar)
 ├── items.csv          Gider detayından alınacak kalemler, eski adlarıyla birlikte
 ├── .env.example       Veritabanı bağlantı bilgilerinin örneği (.env repoya girmez)
@@ -169,7 +191,8 @@ hazine-nabzi/
 │   ├── views.sql      Rapor hesapları: beş görünüm
 │   ├── procedures.sql Yönetim raporu yordamı
 │   └── examples.sql   Örnek sorgular
-└── data/
-    ├── raw/           İndirilen ham dosyalar (repoya dahil değil)
-    └── clean/         Temizlenmiş tablolar: actuals.csv, plans.csv
+├── data/
+│   ├── raw/           İndirilen ham dosyalar (repoya dahil değil)
+│   └── clean/         Temizlenmiş tablolar: actuals.csv, plans.csv
+└── logs/              Çalıştırma kayıtları (repoya dahil değil)
 ```
