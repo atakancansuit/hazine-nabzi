@@ -81,6 +81,8 @@ Sapma, kümülatif gerçekleşme ve tahmin hesapları veritabanında view olarak
 | `v_year_end_forecast` | Bitmemiş yılın bir kalemi: bugüne kadarki tutar, yıl sonu tahmini ve tahminin plana oranı | Yıl bu gidişle nasıl kapanır? |
 | `v_forecast_backtest` | Bitmiş bir yılın bir ayı: o ana kadarki veriyle yapılacak tahmin ve gerçekleşenden sapması | Tahmine ne kadar güvenilebilir? |
 
+Rapor tarafı için iki filtre tablosu daha var ([`sql/dimensions.sql`](sql/dimensions.sql)): `dim_year` (yıl listesi) ve `dim_item` (kalem ve kurum listesi). Power BI'daki yıl ve kalem filtreleri bunlara bağlanıyor, hesap görünümleri de buradan filtreleniyor; yani model yıldız şema biçiminde kurulu. `dim_item` iki yardımcı sütun taşıyor: `display_name` kalem adını kaynak dosyadaki hiyerarşi işaretlerinden ("1.", "a)", "-") arındırıyor, `is_total` ise satırın bir toplam mı yoksa alt kalem mi olduğunu söylüyor. İkincisi olmadan grafiklerde aynı para iki kez sayılır, çünkü tablolarda toplamlar ve alt kalemler yan yana duruyor.
+
 [`sql/procedures.sql`](sql/procedures.sql) içindeki `sp_monthly_report` yordamı, verilen yıl ve kaynak için raporun ana tablosunu tek çağrıda döndürür:
 
 ```sql
@@ -188,6 +190,7 @@ hazine-nabzi/
 ├── requirements.txt   Gerekli Python kütüphaneleri
 ├── KURALLAR.md        Projenin çalışma kuralları ve günlüğü
 ├── sql/
+│   ├── dimensions.sql Filtre tabloları: dim_year, dim_item
 │   ├── views.sql      Rapor hesapları: beş görünüm
 │   ├── procedures.sql Yönetim raporu yordamı
 │   └── examples.sql   Örnek sorgular

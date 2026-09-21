@@ -81,6 +81,8 @@ Variance, cumulative progress and forecast calculations live in the database as 
 | `v_year_end_forecast` | One item of the open year: the amount so far, the year-end forecast and the forecast as a share of the plan | How will the year close at this rate? |
 | `v_forecast_backtest` | One month of a completed year: the forecast that would have been made then, and how far off it was | How much can the forecast be trusted? |
 
+Two filter tables support the report side ([`sql/dimensions.sql`](sql/dimensions.sql)): `dim_year` (list of years) and `dim_item` (list of items and institutions). The year and item slicers in Power BI are bound to these, and the calculation views are filtered through them, so the model is a star schema. `dim_item` carries two helper columns: `display_name` strips the hierarchy markers of the source files ("1.", "a)", "-") from the item name, and `is_total` says whether a row is a total or a sub-item. Without the second one charts would count the same money twice, because the source tables list totals and sub-items side by side.
+
 The `sp_monthly_report` procedure in [`sql/procedures.sql`](sql/procedures.sql) returns the main table of the report for a given year and source in a single call:
 
 ```sql
@@ -188,6 +190,7 @@ hazine-nabzi/
 ├── requirements.txt   Required Python libraries
 ├── KURALLAR.md        Working rules and daily log of the project (in Turkish)
 ├── sql/
+│   ├── dimensions.sql Filter tables: dim_year, dim_item
 │   ├── views.sql      Report calculations: five views
 │   ├── procedures.sql The management report procedure
 │   └── examples.sql   Example queries

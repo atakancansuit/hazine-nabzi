@@ -12,7 +12,7 @@ from pathlib import Path
 from load import connect
 
 SQL_DIR = Path(__file__).parent / "sql"
-FILES = ["views.sql", "procedures.sql"]
+FILES = ["dimensions.sql", "views.sql", "procedures.sql"]
 
 
 def statements(text):

@@ -42,6 +42,7 @@ typical AS (
     GROUP BY b.source, b.item, b.month
 )
 SELECT
+    b.source + '|' + b.item AS item_key,
     b.source,
     b.year,
     b.month,
@@ -63,6 +64,7 @@ GO
 -- sapma yorumlanırken bu dikkate alınmalıdır.
 CREATE OR ALTER VIEW v_annual AS
 SELECT
+    a.source + '|' + a.item AS item_key,
     a.source,
     a.year,
     a.main_item,
@@ -86,7 +88,7 @@ GO
 -- çıkar) ve yüzde olarak en büyük sapma (küçük ama oransal olarak çarpıcı kalemler).
 CREATE OR ALTER VIEW v_variance_rank AS
 SELECT
-    source, year, main_item, item, months_reported, is_complete_year,
+    item_key, source, year, main_item, item, months_reported, is_complete_year,
     actual, planned, variance, pct_of_plan,
     ROW_NUMBER() OVER (PARTITION BY source, year ORDER BY ABS(variance) DESC) AS rank_by_amount,
     ROW_NUMBER() OVER (PARTITION BY source, year ORDER BY ABS(pct_of_plan - 100) DESC) AS rank_by_pct
@@ -123,6 +125,7 @@ open_years AS (                    -- bitmemiş yıl ve son yayımlanan ayın k�
     WHERE a.is_complete_year = 0
 )
 SELECT
+    o.source + '|' + o.item AS item_key,
     o.source, o.year, o.main_item, o.item,
     o.months_reported,
     o.cumulative_actual,
@@ -141,6 +144,10 @@ GO
 -- Bitmiş her yıl için soru şu: elimizde yalnızca ilk N ay olsaydı, yıl sonunu ne
 -- tahmin ederdik ve gerçekte ne oldu? Payı hesaplarken o yılın kendisi dışarıda
 -- bırakılıyor, yoksa cevabı bilerek tahmin etmiş oluruz.
+--
+-- "Kendisi hariç ortalama" tek geçişte hesaplanıyor: bütün yılların toplamı bir
+-- kez alınıp her satırda kendi payı düşülüyor. İlk yazımında her satır için tablo
+-- yeniden taranıyordu ve görünüm Power BI'a yüklenemeyecek kadar yavaştı.
 CREATE OR ALTER VIEW v_forecast_backtest AS
 WITH complete_years AS (
     SELECT source, year, item, actual AS year_total
@@ -154,22 +161,33 @@ shares AS (
     FROM v_monthly m
     JOIN complete_years c
         ON c.source = m.source AND c.year = m.year AND c.item = m.item
+),
+totals AS (                        -- kalem ve ay bazında bütün yılların toplamı
+    SELECT source, item, month,
+           SUM(share_of_year) AS share_sum,
+           COUNT(*)           AS year_count
+    FROM shares
+    GROUP BY source, item, month
+),
+excluded AS (                      -- kendi yılını düşerek diğer yılların ortalaması
+    SELECT s.*,
+           CASE WHEN t.year_count > 1
+                THEN (t.share_sum - s.share_of_year) / (t.year_count - 1)
+           END AS share_of_other_years
+    FROM shares s
+    JOIN totals t
+        ON t.source = s.source AND t.item = s.item AND t.month = s.month
 )
 SELECT
-    s.source, s.year, s.item, s.month,
-    s.cumulative_actual,
-    s.year_total,
-    o.share_of_other_years,
-    CASE WHEN o.share_of_other_years > 0
-         THEN s.cumulative_actual / o.share_of_other_years END AS forecast_year_end,
-    CASE WHEN o.share_of_other_years > 0
-         THEN 100.0 * ABS(s.cumulative_actual / o.share_of_other_years - s.year_total) / s.year_total
+    source + '|' + item AS item_key,
+    source, year, item, month,
+    cumulative_actual,
+    year_total,
+    share_of_other_years,
+    CASE WHEN share_of_other_years > 0
+         THEN cumulative_actual / share_of_other_years END AS forecast_year_end,
+    CASE WHEN share_of_other_years > 0
+         THEN 100.0 * ABS(cumulative_actual / share_of_other_years - year_total) / year_total
     END AS error_pct
-FROM shares s
-CROSS APPLY (
-    SELECT AVG(other.share_of_year) AS share_of_other_years
-    FROM shares other
-    WHERE other.source = s.source AND other.item = s.item
-      AND other.month = s.month AND other.year <> s.year
-) o;
+FROM excluded;
 GO
