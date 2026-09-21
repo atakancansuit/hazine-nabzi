@@ -51,10 +51,16 @@ Günün işi bittiğinde, commit'ten önce:
 | 1 | Veriyi tanımak: üç dosya türü (denge tablosu, gider detayı, bakanlıklar) 2015–2026 için indirilir, formatları karşılaştırılır, gider detayından alınacak kalemler seçilir |
 | 2 | Python ile temizleme: dağınık Excel'den düzgün tabloya |
 | 3 | SQL Server Express kurulumu ve temiz tabloların yüklenmesi |
-| 4 | SQL hesapları: sapma, kümülatif gerçekleşme, en çok sapan kalemler |
-| 5 | Tek komutla çalışan akış: indir → temizle → yükle → hesapla |
+| 4 | SQL hesapları: sapma, kümülatif gerçekleşme, en çok sapan kalemler, yıl sonu tahmini. View ve stored procedure olarak |
+| 5 | Tek komutla çalışan akış (indir → temizle → yükle → hesapla) ve aylık zamanlayıcı |
 | 6 | Power BI: Power Query, DAX ölçüleri, tek sayfalık rapor |
-| 7 | README'nin son hali, GitHub'a yükleme, CV maddeleri |
+| 7 | Otomatik Excel yönetim raporu: aynı rakamlardan biçimli bir .xlsx |
+| 8 | Yönetim yorumu: rakamlardan kısa bir özet metni üreten LLM adımı |
+| 9 | README'nin son hali, GitHub'a yükleme, CV maddeleri |
+
+*(Plan 20.09.2026'da 7 günden 9 güne çıkarıldı: Excel raporu, zamanlayıcı ve LLM yorumu
+ilk kapsam daraltmasında çıkarılmıştı, tempo iyi gidince geri eklendi. Atakan: "baştan
+sona fıstık gibi bir rapor olsun".)*
 
 ## Günlük
 
@@ -62,4 +68,4 @@ Günün işi bittiğinde, commit'ten önce:
 - **19.09.2026 (1. gün):** İki dilli README kuruldu, kod dilinin İngilizce olmasına karar verildi. `download.py` ve `xls_reader.py` yazıldı; 2015–2026 için üç tablo (denge, gider detayı, bakanlıklar) toplam 36 dosya iniyor. Formatlar 12 yıl boyunca karşılaştırıldı: denge tablosu tutarlı, gider detayında plan sütunu da var ve ana tabloyla birebir tutuyor. Kapsama bakanlıklar eklendi. Gider detayından 23 kalem seçildi (`items.csv`); 2021 öncesinde ayrı satırı olmayan SSK 5 puan indirimi ve KİT sermaye çıkarıldı.
 - **20.09.2026 (2. gün):** `clean.py` yazıldı: 36 ham dosya iki uzun biçim tabloya dönüşüyor (`data/clean/actuals.csv` 13.728 satır, `plans.csv` 1.174 satır). Sütunlar adıyla bulunuyor, 2021'de değişen kalem adları `items.csv`'deki `old_name` ile eşleşiyor, aynı adın tekrarı `search_under` ile çözülüyor. Üç otomatik kontrol eklendi (satır toplamı, kurum toplamı, iki tablo arası mutabakat); kontroller iki gerçek hata yakaladı: 2015 kurumsal dosyasındaki özet satırları kurum sanılıyordu, 2022'de yedek ödenek satırı tamamen boş olduğu için düşüyordu. Boş hücre kuralı: ay yayımlanmışsa 0, yayımlanmamışsa satır yok. Kod yazımı Claude'a geçti, kararlar Atakan'da (4. kural).
 - **20.09.2026 (3. gün):** SQL Server 2025 Express (instance `SQLEXPRESS`) Windows'a kuruldu. WSL'den bağlanabilmek için üç ayar açıldı: SQL kullanıcı girişi, TCP/1433 ve güvenlik duvarı izni; `hazine_nabzi` veritabanı ve `hazine` kullanıcısı oluşturuldu. Tablo tasarımı: iki tablo, CSV'lerle aynı yapı, tipli ve birincil anahtarlı (anahtar aynı kalemin iki kez girmesini engelliyor). `load.py` yazıldı: tabloları sıfırlayıp yeniden dolduruyor, yazılan satır sayısını tablodakiyle karşılaştırıyor. 13.728 + 1.174 satır 7 saniyede yüklendi; CSV ile SQL toplamları 1.176 kalem grubunda birebir aynı. Tutar tipi DECIMAL(19,5) — ilk denemede (18,3) yuvarlama farkı yaratmıştı. Şifre `.env`'de, repoya girmiyor; `.env.example` eklendi.
-
+- **21.09.2026 (4. gün):** Hesaplar SQL'e taşındı. `sql/views.sql` içinde beş görünüm (`v_monthly`, `v_annual`, `v_variance_rank`, `v_year_end_forecast`, `v_forecast_backtest`), `sql/procedures.sql` içinde `sp_monthly_report`, `sql/examples.sql` içinde yedi örnek sorgu; hepsini `apply_sql.py` uyguluyor. Önce raporun tek sayfalık taslağı çizildi, görünümler ona göre yazıldı. Yıl sonu tahmini rolling forecast mantığıyla: geçmiş yılların aynı aya kadarki payı bu yılın kümülatifine uygulanıyor, böylece Aralık yığılması hesaba katılıyor. Tahmin geriye dönük test edildi (o yılın kendi verisi hariç tutularak): medyan hata 4 ayda %11,4, 8 ayda %5,9, 10 ayda %3,4. `plan` SQL Server'da ayrılmış kelime olduğu için sütun adı `planned` oldu.

@@ -24,7 +24,7 @@ Cevapladığı sorular:
 
 **Kaynak:** [Muhasebat Genel Müdürlüğü, Merkezi Yönetim Bütçe İstatistikleri](https://muhasebat.hmb.gov.tr/merkezi-yonetim-butce-istatistikleri).
 
-**Kapsam:** 2015–2026, aylık. 2026 yılı yayımlanan son aya (Agustos) kadar.
+**Kapsam:** 2015–2026, aylık. 2026 yılı yayımlanan son aya (Ağustos) kadar.
 
 Her yıl için üç tablo kullanılıyor:
 
@@ -69,6 +69,41 @@ Tablolar yıldan yıla aynı formatta olmadığı için temizlikte çözülenler
 2. **Kurum toplamı:** okunan kurumların toplamı, tablodaki kurum toplamı satırına eşit mi?
 3. **Mutabakat:** gider detay tablosundaki dokuz ana kalem, denge tablosundaki aynı kalemlerle aynı tutarı mı veriyor? İki tablo ayrı yayımlandığı için bu, doğru satırların okunduğunun bağımsız kanıtı. 1.368 nokta karşılaştırılıyor.
 
+## Hesaplar
+
+Sapma, kümülatif gerçekleşme ve tahmin hesapları veritabanında view olarak duruyor ([`sql/views.sql`](sql/views.sql)). Rapor, Excel çıktısı ve yönetim yorumu aynı görünümleri okur; hesap tek yerde yazılıdır.
+
+| Görünüm | Bir satırı | Cevapladığı soru |
+|---|---|---|
+| `v_monthly` | Bir kalemin bir aydaki metrikleri: o ayki tutar, yılbaşından o aya kümülatif ve kümülatifin plana oranı | Yılın bu ayında planın yüzde kaçındayız? |
+| `v_annual` | Bir kalemin bir yıldaki metrikleri: toplam, plan, sapma tutarı ve oranı | Yıl planın ne kadar üstünde kapandı? |
+| `v_variance_rank` | Aynı satırlar, iki sıra numarasıyla: tutar olarak ve oran olarak sapma sıralaması | Planı en çok aşan kalemler ve kurumlar hangileri? |
+| `v_year_end_forecast` | Bitmemiş yılın bir kalemi: bugüne kadarki tutar, yıl sonu tahmini ve tahminin plana oranı | Yıl bu gidişle nasıl kapanır? |
+| `v_forecast_backtest` | Bitmiş bir yılın bir ayı: o ana kadarki veriyle yapılacak tahmin ve gerçekleşenden sapması | Tahmine ne kadar güvenilebilir? |
+
+[`sql/procedures.sql`](sql/procedures.sql) içindeki `sp_monthly_report` yordamı, verilen yıl ve kaynak için raporun ana tablosunu tek çağrıda döndürür:
+
+```sql
+EXEC sp_monthly_report @year = 2026, @source = 'balance';
+```
+
+Örnek sorgular [`sql/examples.sql`](sql/examples.sql) dosyasında.
+
+### Yıl sonu tahmini
+
+Yöntem olarak rolling forecast mantığı kullanıldı. Geçmiş yıllarda bir kalemin yılın aynı ayına kadar yıllık toplamının yüzde kaçı gerçekleşmişse, bu oran bu yılın kümülatifine uygulanır. Harcamaların yıl sonuna yığılması böylece hesaba katılır: Ağustos sonuna kadar personel giderinin ortalama %66'sı gerçekleşirken, yatırım harcamalarının yalnızca %46'sı gerçekleşiyor.
+
+Yöntem geriye dönük test edildi. Bitmiş her yıl için, o yılın kendi verisi dışarıda bırakılarak tahmin üretildi ve gerçekleşenle karşılaştırıldı (bütçe denge tablosu kalemleri, 2015–2025):
+
+| Elde olan veri | Medyan hata |
+|---|---|
+| 4 ay | %11,4 |
+| 6 ay | %8,1 |
+| 8 ay | %5,9 |
+| 10 ay | %3,4 |
+
+Büyük kalemlerde hata daha düşük: 2025 yılı Ağustos verisiyle tahmin edilseydi toplam harcamada sapma %0,1, vergi gelirlerinde %1,0 olacaktı. Yöntem, olağanüstü yıllarda başarısız kalıyor. Örneğin 2023'teki öngürülemez deprem sebebiyle 2023'te yatırım harcamalarının tahmininde %21,6 oranında sapma oluşuyor.
+
 ## Kurulum
 
 **Gerekenler:** Python 3.12+, SQL Server (2019 ve üstü; ücretsiz Express sürümü yeterli).
@@ -108,6 +143,7 @@ ip route show default | awk '{print $3}'
 .venv/bin/python download.py   # Muhasebat'tan ham dosyaları indirir
 .venv/bin/python clean.py      # temizleyip data/clean/ altına yazar, kontrolleri yapar
 .venv/bin/python load.py       # temiz tabloları SQL Server'a yükler
+.venv/bin/python apply_sql.py  # görünümleri ve yordamı veritabanına uygular
 ```
 
 *(tek komutla çalışan hali 5. günde)*
@@ -123,11 +159,16 @@ hazine-nabzi/
 ├── download.py        Muhasebat'tan 2015–2026 tablolarını indirir
 ├── clean.py           Ham dosyaları temizleyip iki tabloya çevirir, kontrolleri yapar
 ├── load.py            Temiz tabloları SQL Server'a yükler
+├── apply_sql.py       sql/ altındaki görünüm ve yordamları veritabanına uygular
 ├── xls_reader.py      Eski .xls dosyalarını okur (bozuk biçim kayıtlarını atlar)
 ├── items.csv          Gider detayından alınacak kalemler, eski adlarıyla birlikte
 ├── .env.example       Veritabanı bağlantı bilgilerinin örneği (.env repoya girmez)
 ├── requirements.txt   Gerekli Python kütüphaneleri
 ├── KURALLAR.md        Projenin çalışma kuralları ve günlüğü
+├── sql/
+│   ├── views.sql      Rapor hesapları: beş görünüm
+│   ├── procedures.sql Yönetim raporu yordamı
+│   └── examples.sql   Örnek sorgular
 └── data/
     ├── raw/           İndirilen ham dosyalar (repoya dahil değil)
     └── clean/         Temizlenmiş tablolar: actuals.csv, plans.csv

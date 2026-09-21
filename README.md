@@ -8,7 +8,7 @@ An automated reporting project that compares Türkiye's central government budge
 
 ## What it does
 
-It automates what a finance team does every month: comparing the planned budget with actual spending, finding the variances and reporting them.
+It automates what a finance team does every month: it compares the planned budget with actual spending, finds the variances and reports them.
 
 The data comes from the budget tables published every month by the General Directorate of Public Accounts (Muhasebat) of the Ministry of Treasury and Finance. The project downloads these tables itself, cleans them, loads them into a database and turns them into a Power BI report.
 
@@ -24,7 +24,7 @@ Questions it answers:
 
 **Source:** [General Directorate of Public Accounts, Central Government Budget Statistics](https://muhasebat.hmb.gov.tr/merkezi-yonetim-butce-istatistikleri) (in Turkish).
 
-**Coverage:** 2015–2026, monthly. 2026 up to the latest published month.
+**Coverage:** 2015–2026, monthly. 2026 up to the latest published month (August).
 
 Three tables are used for each year:
 
@@ -38,9 +38,9 @@ All three tables give the actual amount for each of the 12 months and the plan s
 
 ## Cleaning
 
-The 36 raw Excel files are turned into two tables: `data/clean/actuals.csv` (monthly actuals, 13,728 rows) and `data/clean/plans.csv` (annual plans, 1,174 rows).
+The 36 raw Excel files were turned into two tables: `data/clean/actuals.csv` (monthly actuals, 13,728 rows) and `data/clean/plans.csv` (annual plans, 1,174 rows).
 
-Each row is a single measurement: the amount of one item, in one year, in one month.
+Each row is a single measurement: the amount of one item, in one year, in one specific month of that year.
 
 | Column | Content |
 |---|---|
@@ -50,10 +50,10 @@ Each row is a single measurement: the amount of one item, in one year, in one mo
 | `item` | Name of the item or institution |
 | `amount_thousand_try` | Amount, in thousands of TRY |
 
-The tables are not in the same format from year to year. Differences handled during cleaning:
+The tables are not in the same format from year to year. What the cleaning step resolves:
 
-- **Columns are located by name, not by position.** Some years have an extra column and the positions shift. The plan column is written in seven different ways across the 12 years: "Bütçe Tahmini", "2022 Toplam Bütçe Tahmini*", "Bütçe Başlangıç Ödeneği *", "Toplam Bütçe Ödeneği*" and so on.
-- **The plan is the initial appropriation.** The institutional table has a second column for 2015–2024 ("Ödenek Toplamı"): the appropriation after in-year transfers. The other two tables have no equivalent, so it is not used.
+- **Columns are located by name, not by position.** Some years have an extra column and the positions shift. The plan column is written in seven different ways across the 12 years: "Bütçe Tahmini", "2022 Toplam Bütçe Tahmini*", "Bütçe Başlangıç Ödeneği *", "Toplam Bütçe Ödeneği*" and so on. They are standardised into one column.
+- **The plan is the initial appropriation.** The institutional table has a second column for 2015–2024 ("Ödenek Toplamı"): the appropriation after in-year transfers. The other two tables have no equivalent, so it was not used.
 - **Month names are abbreviated in some years:** "Oca" instead of "Ocak", and "Agu" for August in 2015.
 - **Item names changed in 2021.** Seven names, such as "KİT Görev Zararları" → "KİT Görevlendirme Giderleri". The old names are mapped in the `old_name` column of [`items.csv`](items.csv).
 - **The same name can appear more than once.** "Memurlar" (civil servants) appears under both personnel expenditure and social security premiums; "Tahvil Faizi" (bond interest) appears twice, one of them empty. The `search_under` column in `items.csv` says which heading the item must be looked for under.
@@ -68,6 +68,41 @@ The tables are not in the same format from year to year. Differences handled dur
 1. **Row total:** does the sum of the 12 months in each row equal the file's own "Toplam" column?
 2. **Institution total:** does the sum of the institutions read equal the total row in the table?
 3. **Reconciliation:** do the nine main items in the expenditure detail table give the same amounts as the same items in the balance table? The two tables are published separately, so this is independent evidence that the right rows were read. 1,368 points are compared.
+
+## Calculations
+
+Variance, cumulative progress and forecast calculations live in the database as views ([`sql/views.sql`](sql/views.sql)). The report, the Excel output and the management commentary all read the same views, so each calculation is written in one place.
+
+| View | One row is | Question it answers |
+|---|---|---|
+| `v_monthly` | One item in one month: that month's amount, the cumulative amount since January, and the cumulative share of the plan | Where are we against the plan in this month of the year? |
+| `v_annual` | One item in one year: total, plan, variance amount and variance percentage | How far above the plan did the year close? |
+| `v_variance_rank` | The same rows with two rankings: by variance amount and by variance percentage | Which items and institutions deviate most from the plan? |
+| `v_year_end_forecast` | One item of the open year: the amount so far, the year-end forecast and the forecast as a share of the plan | How will the year close at this rate? |
+| `v_forecast_backtest` | One month of a completed year: the forecast that would have been made then, and how far off it was | How much can the forecast be trusted? |
+
+The `sp_monthly_report` procedure in [`sql/procedures.sql`](sql/procedures.sql) returns the main table of the report for a given year and source in a single call:
+
+```sql
+EXEC sp_monthly_report @year = 2026, @source = 'balance';
+```
+
+Example queries are in [`sql/examples.sql`](sql/examples.sql).
+
+### Year-end forecast
+
+The method is the rolling forecast logic used by finance teams; there is no machine learning. Whatever share of an item's annual total had been spent by the same month in previous years is applied to this year's cumulative amount. This accounts for spending piling up at the end of the year: by the end of August an average of 66% of personnel expenditure has been spent, but only 46% of capital expenditure.
+
+The method was backtested. For every completed year a forecast was produced with that year's own data excluded, then compared with the actual outcome (balance table items, 2015–2025):
+
+| Data available | Median error |
+|---|---|
+| 4 months | 11.4% |
+| 6 months | 8.1% |
+| 8 months | 5.9% |
+| 10 months | 3.4% |
+
+The error is lower for large items: forecast from August 2025 data, total expenditure would have been off by 0.1% and tax revenue by 1.0%. The method misses in unusual years; for capital expenditure in 2023 it is off by 21.6%.
 
 ## Setup
 
@@ -108,6 +143,7 @@ ip route show default | awk '{print $3}'
 .venv/bin/python download.py   # downloads the raw files from Muhasebat
 .venv/bin/python clean.py      # cleans them into data/clean/ and runs the checks
 .venv/bin/python load.py       # loads the clean tables into SQL Server
+.venv/bin/python apply_sql.py  # applies the views and the procedure to the database
 ```
 
 *(single-command version on day 5)*
@@ -123,11 +159,16 @@ hazine-nabzi/
 ├── download.py        Downloads the 2015–2026 tables from Muhasebat
 ├── clean.py           Cleans the raw files into two tables and runs the checks
 ├── load.py            Loads the clean tables into SQL Server
+├── apply_sql.py       Applies the views and procedures in sql/ to the database
 ├── xls_reader.py      Reads the old .xls files (skips broken format records)
 ├── items.csv          Items taken from the expenditure detail table, with their old names
 ├── .env.example       Example of the database connection settings (.env is not in the repo)
 ├── requirements.txt   Required Python libraries
 ├── KURALLAR.md        Working rules and daily log of the project (in Turkish)
+├── sql/
+│   ├── views.sql      Report calculations: five views
+│   ├── procedures.sql The management report procedure
+│   └── examples.sql   Example queries
 └── data/
     ├── raw/           Downloaded raw files (not included in the repo)
     └── clean/         Cleaned tables: actuals.csv, plans.csv
