@@ -1,4 +1,4 @@
-"""Bütün akışı tek komutla çalıştırır: indir → temizle → yükle → hesapla → raporla.
+"""Bütün akışı tek komutla çalıştırır: indir → temizle → yükle → hesapla → raporla → gönder.
 
 Her adımın çıktısı hem ekrana hem logs/<tarih>.log dosyasına yazılır. Bir adım
 hata verirse akış orada durur: bozuk veri bir sonraki adıma geçmez.
@@ -15,9 +15,11 @@ from pathlib import Path
 
 import apply_sql
 import clean
+import commentary
 import download
 import excel_report
 import load
+import send_mail
 
 ROOT = Path(__file__).parent
 LOG_DIR = ROOT / "logs"
@@ -28,6 +30,8 @@ STEPS = [
     ("Yükleme", load.main),
     ("Hesaplar", apply_sql.main),
     ("Excel raporu", excel_report.main),
+    ("Yönetim yorumu", commentary.main),
+    ("E-posta", send_mail.main),
 ]
 
 

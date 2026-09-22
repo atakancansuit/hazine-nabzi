@@ -121,6 +121,20 @@ Her sayfada başlık satırı sabitlenmiş, tutarlar binlik ayırıcılı, gerç
 
 Excel çıktısı Power BI raporunun yerine değil, yanına konuldu: rapor alıcısı dosyayı kendi işine göre değiştirebiliyor, kendi pivotunu kurabiliyor ve e-postayla paylaşabiliyor.
 
+## Yönetim yorumu ve e-posta
+
+Akışın son iki adımı raporu yorumlayıp gönderiyor.
+
+[`commentary.py`](commentary.py) ayın rakamlarını veritabanından alıp tek bir metne çeviriyor ve Claude'a yorumlatıyor. Model hesap yapmıyor; hesapların tamamı SQL tarafında. Sistem yönergesi modelden yalnızca verilen rakamları kullanmasını, bilmediği bir sebebi uydurmamasını ve yıl bitmemişse bunu belirtmesini istiyor. Yorum `reports/yorum_<yıl>-<ay>.md` dosyasına yazılıyor. Maliyeti ayda birkaç sent.
+
+[`send_mail.py`](send_mail.py) yorumu e-postanın gövdesine, Excel raporunu ekine koyup gönderiyor.
+
+![Gönderilen e-posta](docs/eposta.png)
+
+Ağustos 2026 verisiyle üretilen yorumdan: *"Gider tarafında faiz harcamaları 1.988,0 milyar TL ile planın %72,5'ine ulaştı; kıyas %65,1. (...) Bu tahmin yönteminin 8 aylık veriyle geçmişteki medyan hatası %5,9'dur; sapmalar bu bant içinde değerlendirilmelidir."*
+
+Yorumdaki bütün rakamlar veritabanından geliyor ve doğrulandı. Modelin işi rakamları cümleye çevirmek; hangi rakamların verileceğine SQL sorguları karar veriyor.
+
 ## Kurulum
 
 **Gerekenler:** Python 3.12+, SQL Server (2019 ve üstü; ücretsiz Express sürümü yeterli).
@@ -224,6 +238,9 @@ hazine-nabzi/
 ├── clean.py           Ham dosyaları temizleyip iki tabloya çevirir, kontrolleri yapar
 ├── load.py            Temiz tabloları SQL Server'a yükler
 ├── apply_sql.py       sql/ altındaki görünüm ve yordamları veritabanına uygular
+├── excel_report.py    Aylık yönetim raporunu Excel olarak üretir
+├── commentary.py      Rakamlardan yönetim yorumu yazdırır (Claude)
+├── send_mail.py       Yorumu ve raporu e-posta ile gönderir
 ├── run.py             Bütün akışı tek komutla çalıştırır
 ├── xls_reader.py      Eski .xls dosyalarını okur (bozuk biçim kayıtlarını atlar)
 ├── items.csv          Gider detayından alınacak kalemler, eski adlarıyla birlikte

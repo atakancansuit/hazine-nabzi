@@ -121,6 +121,20 @@ Every sheet has a frozen header row, thousands separators on amounts, and realis
 
 The Excel output does not replace the Power BI report, it sits next to it: the recipient can change the file to suit their own work, build their own pivot and pass it on by email.
 
+## Management commentary and email
+
+The last two steps of the pipeline comment on the report and send it out.
+
+[`commentary.py`](commentary.py) pulls the month's figures from the database, turns them into a single block of text and has Claude write the commentary. The model does no arithmetic; all calculations stay in SQL. The system prompt tells it to use only the figures it is given, not to invent a reason it does not know, and to say so when the year is not complete. The commentary is written to `reports/yorum_<year>-<month>.md`. It costs a few cents a month.
+
+[`send_mail.py`](send_mail.py) puts the commentary in the body of an email and the Excel report in the attachment.
+
+![The email that is sent](docs/eposta.png)
+
+From the commentary generated on August 2026 data: *"On the expenditure side, interest payments reached 1,988.0 billion TRY, 72.5% of the plan; the benchmark is 65.1%. (...) The median error of this forecast method with eight months of data has been 5.9%; deviations should be read within that band."*
+
+Every figure in the commentary comes from the database and was verified. The model's job is to turn figures into sentences; which figures it gets is decided by the SQL queries.
+
 ## Setup
 
 **Requirements:** Python 3.12+, SQL Server (2019 or later; the free Express edition is enough).
@@ -224,6 +238,9 @@ hazine-nabzi/
 ├── clean.py           Cleans the raw files into two tables and runs the checks
 ├── load.py            Loads the clean tables into SQL Server
 ├── apply_sql.py       Applies the views and procedures in sql/ to the database
+├── excel_report.py    Produces the monthly management report as Excel
+├── commentary.py      Has Claude write the commentary from the figures
+├── send_mail.py       Emails the commentary and the report
 ├── run.py             Runs the whole pipeline with one command
 ├── xls_reader.py      Reads the old .xls files (skips broken format records)
 ├── items.csv          Items taken from the expenditure detail table, with their old names
