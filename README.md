@@ -106,6 +106,21 @@ The method was backtested. For every completed year a forecast was produced with
 
 The error is lower for large items: forecast from August 2025 data, total expenditure would have been off by 0.1% and tax revenue by 1.0%. The method misses in unusual years; for capital expenditure in 2023 it is off by 21.6%.
 
+## Excel report
+
+Alongside the Power BI report, a formatted Excel file is produced from the same data: [`excel_report.py`](excel_report.py). It is written to `reports/rapor_<year>-<month>.xlsx` and refreshed automatically as the last step of the pipeline. Sample output: [`docs/ornek-rapor.xlsx`](docs/ornek-rapor.xlsx).
+
+| Sheet | Content |
+|---|---|
+| Özet | Main items: actual, plan, variance, realisation rate and year-end forecast |
+| Kalemler | The 23 expenditure detail items, with the pace comparison |
+| Kurumlar | General budget institutions, sorted by spending |
+| Aylık | Month-by-month actuals of the main items; a raw table for building pivots |
+
+Every sheet has a frozen header row, thousands separators on amounts, and realisation rates coloured red when above plan and green when below. No calculation happens here; all figures come from the database views.
+
+The Excel output does not replace the Power BI report, it sits next to it: the recipient can change the file to suit their own work, build their own pivot and pass it on by email.
+
 ## Setup
 
 **Requirements:** Python 3.12+, SQL Server (2019 or later; the free Express edition is enough).
@@ -216,7 +231,7 @@ hazine-nabzi/
 ├── requirements.txt   Required Python libraries
 ├── KURALLAR.md        Working rules and daily log of the project (in Turkish)
 ├── powerbi/           Power BI report (.pbip) and theme file
-├── docs/              Report screenshots
+├── docs/              Report screenshots and a sample Excel output
 ├── sql/
 │   ├── dimensions.sql Filter tables: dim_year, dim_item
 │   ├── views.sql      Report calculations: five views

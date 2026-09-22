@@ -106,6 +106,21 @@ Yöntem geriye dönük test edildi. Bitmiş her yıl için, o yılın kendi veri
 
 Büyük kalemlerde hata daha düşük: 2025 yılı Ağustos verisiyle tahmin edilseydi toplam harcamada sapma %0,1, vergi gelirlerinde %1,0 olacaktı. Yöntem, olağanüstü yıllarda başarısız kalıyor. Örneğin 2023'teki öngürülemez deprem sebebiyle 2023'te yatırım harcamalarının tahmininde %21,6 oranında sapma oluşuyor.
 
+## Excel raporu
+
+Power BI raporunun yanında, aynı verilerden biçimlendirilmiş bir Excel dosyası üretiliyor: [`excel_report.py`](excel_report.py). Dosya `reports/rapor_<yıl>-<ay>.xlsx` adıyla kaydediliyor ve akışın son adımı olarak her ay kendiliğinden yenileniyor. Örnek çıktı: [`docs/ornek-rapor.xlsx`](docs/ornek-rapor.xlsx).
+
+| Sayfa | İçerik |
+|---|---|
+| Özet | Ana kalemler: gerçekleşen, plan, sapma, gerçekleşme oranı ve yıl sonu tahmini |
+| Kalemler | Gider detayındaki 23 kalem, kıyas farkıyla birlikte |
+| Kurumlar | Genel bütçeli idareler, harcamaya göre sıralı |
+| Aylık | Ana kalemlerin ay ay gerçekleşmesi; pivot kurmak isteyen için ham tablo |
+
+Her sayfada başlık satırı sabitlenmiş, tutarlar binlik ayırıcılı, gerçekleşme oranları planı aşanlarda kırmızı ve altında kalanlarda yeşil. Hesap yapılmıyor; rakamların hepsi veritabanındaki görünümlerden geliyor.
+
+Excel çıktısı Power BI raporunun yerine değil, yanına konuldu: rapor alıcısı dosyayı kendi işine göre değiştirebiliyor, kendi pivotunu kurabiliyor ve e-postayla paylaşabiliyor.
+
 ## Kurulum
 
 **Gerekenler:** Python 3.12+, SQL Server (2019 ve üstü; ücretsiz Express sürümü yeterli).
@@ -216,7 +231,7 @@ hazine-nabzi/
 ├── requirements.txt   Gerekli Python kütüphaneleri
 ├── KURALLAR.md        Projenin çalışma kuralları ve günlüğü
 ├── powerbi/           Power BI raporu (.pbip) ve tema dosyası
-├── docs/              Rapor ekran görüntüleri
+├── docs/              Rapor ekran görüntüleri ve örnek Excel çıktısı
 ├── sql/
 │   ├── dimensions.sql Filtre tabloları: dim_year, dim_item
 │   ├── views.sql      Rapor hesapları: beş görünüm

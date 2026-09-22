@@ -17,3 +17,6 @@ logs/
 # Power BI gecici dosyalari
 powerbi/**/.pbi/cache.abf
 powerbi/**/.pbi/localSettings.json
+
+# Uretilen raporlar
+reports/
