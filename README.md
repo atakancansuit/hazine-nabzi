@@ -2,8 +2,6 @@
 
 # Hazine Nabzı — Treasury Pulse
 
-> Work in progress. This file is filled in day by day, together with that day's work.
-
 An automated reporting project that compares Türkiye's central government budget, as planned at the start of the year, with what is actually spent month by month.
 
 ## What it does
@@ -106,6 +104,36 @@ The method was backtested. For every completed year a forecast was produced with
 
 The error is lower for large items: forecast from August 2025 data, total expenditure would have been off by 0.1% and tax revenue by 1.0%. The method misses in unusual years; for capital expenditure in 2023 it is off by 21.6%.
 
+## Report
+
+The Power BI report has five pages. The data comes straight from the database views; the calculations live in SQL, not in the report, which only displays them.
+
+![Summary page](docs/ozet.png)
+
+**Summary.** Four indicators for the selected year (actual, plan, realisation rate, year-end forecast) and the cumulative progress chart. The navy line is this year, the gold line the average of previous years at the same month. The two lines lying on top of each other means the year is running as usual.
+
+![Items page](docs/kalemler.png)
+
+**Items.** The items that deviate most from the plan, and the full list of expenditure items. The "Fark (puan)" column compares this year's pace with the pace of previous years at the same month, in percentage points.
+
+![Institutions page](docs/kurumlar.png)
+
+**Institutions.** Spending, plan and realisation rate of the general budget institutions, and the ones that went furthest over budget.
+
+![Method page](docs/yontem.png)
+
+**Method.** Backtest results of the year-end forecast: median error by month and the error per item. The bottom of the page holds the measure definitions and a description of the method, so every number in the report can be traced to how it is calculated.
+
+![Item detail page](docs/kalem-detayi.png)
+
+**Item detail.** Not opened directly; it opens for a single item when you right-click it on the Items or Institutions page and choose "Drill through". It shows the monthly progress of the selected year and the item's realisation rate across 12 years.
+
+### Model
+
+The report is built on a star schema: two filter tables (`dim_year`, `dim_item`) and three fact tables (`v_monthly`, `v_annual`, `v_year_end_forecast`) plus `v_forecast_backtest` for the forecast test. All eight relationships run one way, from the filter tables to the fact tables. The 12 DAX measures are collected in the `Ölçüler` table and each one carries its description in the model.
+
+The report file is stored in the repo in `.pbip` (Power BI Project) format: a folder of text files instead of a single binary, so changes to the report show up line by line in the git history. The colour scheme is in [`powerbi/hazine-nabzi-theme.json`](powerbi/hazine-nabzi-theme.json) and follows the corporate colours of Muhasebat.
+
 ## Excel report
 
 Alongside the Power BI report, a formatted Excel file is produced from the same data: [`excel_report.py`](excel_report.py). It is written to `reports/rapor_<year>-<month>.xlsx` and refreshed automatically as the last step of the pipeline. Sample output: [`docs/ornek-rapor.xlsx`](docs/ornek-rapor.xlsx).
@@ -134,6 +162,25 @@ The last two steps of the pipeline comment on the report and send it out.
 From the commentary generated on August 2026 data: *"On the expenditure side, interest payments reached 1,988.0 billion TRY, 72.5% of the plan; the benchmark is 65.1%. (...) The median error of this forecast method with eight months of data has been 5.9%; deviations should be read within that band."*
 
 Every figure in the commentary comes from the database and was verified. The model's job is to turn figures into sentences; which figures it gets is decided by the SQL queries.
+
+## Findings
+
+The main findings the report surfaces, all coming from the data itself:
+
+**The budget is usually exceeded, but the last two years are the exception.** In nine of the eleven completed years total expenditure closed above plan; the largest overruns were 2021 (119.1%) and 2023 (117.9%). 2024 (97.2%) and 2025 (99.4%) are the only two years that closed within plan.
+
+**Some items are exceeded systematically.** Averaged over eleven years, payments for state-assigned duties to public enterprises run at 170% of plan, invoiced social security payments at 162%, and construction investment at 135%. For these items the plan works less as a forecast and more as a floor.
+
+**Contingency appropriations show zero spending every year.** The two contingency items show 0% in all eleven years. They are not meant to be spent: they are set aside to be transferred to other items during the year, and in the institutional table this reserve sits in the budget of the Presidency of Strategy and Budget (2026 plan 379 billion TRY, eight-month spending 1 billion TRY). Part of any item's overrun is a transfer from there.
+
+**Spending piles up at the end of the year, but not evenly across items.** December carries 13.4% of annual expenditure on average; for capital expenditure that rises to 28.2%, while personnel expenditure stays at 6.9%. Reading a mid-year realisation rate on its own is therefore misleading, which is why the report's benchmark column and the year-end forecast account for this seasonality.
+
+**The year-end outcome can be forecast reasonably well from eight months of data.** In the backtest the median error is 5.9% at eight months and 3.4% at ten. For large, regular items it is far lower: forecast from August 2025 data, total expenditure would have been off by 0.1%. The method does not work for irregular items (capital transfers 43%, capital revenue 28%), and unusual years throw it off as well.
+
+### Next steps
+
+- **Revised appropriations:** for 2015–2024 the institutional table also reports the appropriation after in-year transfers ("Ödenek Toplamı"). With that column, an overrun could be split into a genuine overrun and an official transfer.
+- **Functional and programme classifications:** the same spending is also published by service (education, health, defence) and by policy programme; neither carries a plan column, so they were left out of this project.
 
 ## Setup
 
@@ -199,36 +246,6 @@ schtasks /Create /TN "Hazine Nabzi - aylik guncelleme" ^
   /TR "wsl.exe -d Ubuntu -- /home/ataka/hazine-nabzi/.venv/bin/python /home/ataka/hazine-nabzi/run.py" ^
   /SC MONTHLY /D 20 /ST 09:00
 ```
-
-## Report
-
-The Power BI report has five pages. The data comes straight from the database views; the calculations live in SQL, not in the report, which only displays them.
-
-![Summary page](docs/ozet.png)
-
-**Summary.** Four indicators for the selected year (actual, plan, realisation rate, year-end forecast) and the cumulative progress chart. The navy line is this year, the gold line the average of previous years at the same month. The two lines lying on top of each other means the year is running as usual.
-
-![Items page](docs/kalemler.png)
-
-**Items.** The items that deviate most from the plan, and the full list of expenditure items. The "Fark (puan)" column compares this year's pace with the pace of previous years at the same month, in percentage points.
-
-![Institutions page](docs/kurumlar.png)
-
-**Institutions.** Spending, plan and realisation rate of the general budget institutions, and the ones that went furthest over budget.
-
-![Method page](docs/yontem.png)
-
-**Method.** Backtest results of the year-end forecast: median error by month and the error per item. The bottom of the page holds the measure definitions and a description of the method, so every number in the report can be traced to how it is calculated.
-
-![Item detail page](docs/kalem-detayi.png)
-
-**Item detail.** Not opened directly; it opens for a single item when you right-click it on the Items or Institutions page and choose "Drill through". It shows the monthly progress of the selected year and the item's realisation rate across 12 years.
-
-### Model
-
-The report is built on a star schema: two filter tables (`dim_year`, `dim_item`) and three fact tables (`v_monthly`, `v_annual`, `v_year_end_forecast`) plus `v_forecast_backtest` for the forecast test. All eight relationships run one way, from the filter tables to the fact tables. The 12 DAX measures are collected in the `Ölçüler` table and each one carries its description in the model.
-
-The report file is stored in the repo in `.pbip` (Power BI Project) format: a folder of text files instead of a single binary, so changes to the report show up line by line in the git history. The colour scheme is in [`powerbi/hazine-nabzi-theme.json`](powerbi/hazine-nabzi-theme.json) and follows the corporate colours of Muhasebat.
 
 ## Project structure
 
