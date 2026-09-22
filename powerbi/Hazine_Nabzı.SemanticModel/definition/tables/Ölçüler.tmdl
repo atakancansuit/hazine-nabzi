@@ -1,0 +1,137 @@
+table Ölçüler
+	lineageTag: a910293c-c35f-4332-916c-327644a84d9e
+
+	/// Seçili dönemde gerçekleşen tutar, milyar TL. Yıl bitmemişse yalnızca yayımlanmış ayları kapsar.
+	measure Gerçekleşen = ```
+			SUM(v_annual[actual]) / 1000000
+			
+			```
+		formatString: #,0
+		lineageTag: da84a384-5621-40b0-91be-a7f70a78de4c
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	/// Bütçe Kanunu ile verilen başlangıç ödeneği, milyar TL. Yıllık bir tutardır, yıl içinde güncellenmez.
+	measure Plan = ```
+			SUM(v_annual[planned]) / 1000000
+			
+			```
+		formatString: #,0
+		lineageTag: f414fe9c-5309-482a-ad7d-421d5d5dd79d
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	/// Gerçekleşen eksi plan, milyar TL. Artı değer planın aşıldığını gösterir.
+	measure Sapma = ```
+			[Gerçekleşen] - [Plan]
+			
+			```
+		formatString: #,0
+		lineageTag: ecece068-36d4-45de-bd2c-7f2764a486ad
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	/// Gerçekleşenin plana oranı. Denge satırlarında hesaplanmaz, orada plan sıfıra yakın olduğu için oran anlamsız çıkar.
+	measure 'Gerçekleşme %' = ```
+			DIVIDE(SUM(v_annual[actual]), SUM(v_annual[planned]))
+			
+			```
+		formatString: %0.0;-%0.0;%0.0
+		lineageTag: de5476b6-6ce0-4615-a4c9-e0161051f397
+
+	/// Geçmiş yıllarda yılın aynı ayında planın ortalama yüzde kaçı gerçekleşmişti. Her kalemin kendi planı ağırlığında hesaplanır.
+	measure 'Kıyas %' = ```
+			
+			VAR SonAy = CALCULATE(MAX(v_monthly[month]))
+			VAR Beklenen =
+			    SUMX(
+			        FILTER(v_monthly, v_monthly[month] = SonAy),
+			        v_monthly[planned] * v_monthly[typical_pct_of_plan] / 100
+			    )
+			RETURN DIVIDE(Beklenen, SUM(v_annual[planned]))
+			
+			```
+		formatString: %0.0;-%0.0;%0.0
+		lineageTag: db7e0133-2e84-4cec-8194-5b25927d6c44
+
+	/// Gerçekleşme yüzdesi eksi kıyas yüzdesi. Artı değer bu yılın geçmiş yıllardan hızlı gittiğini gösterir.
+	measure 'Fark (puan)' = ```
+			[Gerçekleşme %] - [Kıyas %]
+			
+			```
+		formatString: %#,0.0;-%#,0.0;%#,0.0
+		lineageTag: 2fc61485-430e-4155-8ea7-6fb89a0fc29b
+
+	/// Bitmemiş yıl için yıl sonu tahmini, milyar TL. Bu yılın kümülatifi, geçmiş yılların aynı aya kadarki ortalama payına bölünerek bulunur.
+	measure 'Yıl Sonu Tahmini' = ```
+			SUM(v_year_end_forecast[forecast_year_end]) / 1000000
+			
+			```
+		formatString: #,0
+		lineageTag: 556fa260-9982-4fd7-901a-895e0e161496
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	/// Yıl sonu tahmininin plana oranı. Yıl bu hızla giderse planın yüzde kaçında kapanacağını gösterir.
+	measure 'Tahmin / Plan %' = ```
+			DIVIDE(SUM(v_year_end_forecast[forecast_year_end]), SUM(v_year_end_forecast[planned]))
+			
+			```
+		formatString: %0.0;-%0.0;%0.0
+		lineageTag: 06eaa8fe-459b-425d-a5ca-dfc740c96b6f
+
+	/// Seçili yılda yayımlanmış ay sayısı. 12 ise yıl tamamlanmıştır.
+	measure 'Ay Sayısı' = ```
+			MAX(v_annual[months_reported])
+			
+			```
+		formatString: 0
+		lineageTag: 9bd14bb0-5235-44ed-9df1-e601cd5c4b2e
+
+	/// Yılbaşından seçili aya kadar gerçekleşenin yıllık plana oranı.
+	measure 'Kümülatif %' = ```
+			DIVIDE(SUM(v_monthly[cumulative_actual]), SUM(v_monthly[planned]))
+			
+			```
+		formatString: %0.0;-%0.0;%0.0
+		lineageTag: 9ff080b8-dfc4-475e-9f4b-4d3402451001
+
+	/// Geçmiş yıllarda aynı ayda kümülatif gerçekleşmenin plana oranı. Kümülatif yüzdenin karşılaştırma çizgisi.
+	measure 'Kıyas Kümülatif %' = ```
+			
+			DIVIDE(
+			    SUMX(v_monthly, v_monthly[planned] * v_monthly[typical_pct_of_plan] / 100),
+			    SUM(v_monthly[planned])
+			)
+			
+			```
+		formatString: %0.0;-%0.0;%0.0
+		lineageTag: 4b4a8da0-1dee-4518-be9e-e89a21fdfb9c
+
+	/// Yıl sonu tahmininin geriye dönük testinde ölçülen medyan hata. Elde olan ay sayısı arttıkça düşer.
+	measure 'Medyan Hata %' = ```
+			MEDIAN(v_forecast_backtest[error_pct]) / 100
+			
+			```
+		formatString: %0.0;-%0.0;%0.0
+		lineageTag: 668e70cb-e6d1-4767-88a6-c10a43c24b81
+
+	column _
+		isHidden
+		formatString: 0
+		lineageTag: 57f56350-656e-4105-a6f8-a8a12e864a87
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [_]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Ölçüler = calculated
+		mode: import
+		source = ```
+				ROW("_", BLANK())
+				
+				```
+
+	annotation PBI_Id = e3a288ac238e4d93a7d99d37e4176283
+

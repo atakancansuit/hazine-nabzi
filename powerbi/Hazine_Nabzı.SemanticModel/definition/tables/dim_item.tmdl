@@ -1,0 +1,63 @@
+table dim_item
+	lineageTag: 4e9a2ca5-0419-4625-9af4-0cfa7d0934e2
+
+	column item_key
+		dataType: string
+		lineageTag: c51a4f01-95a3-4df2-8c56-0cf3790147af
+		summarizeBy: none
+		sourceColumn: item_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: e0448317-e7b1-4f14-ac3f-62f7de2c9234
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_item
+		dataType: string
+		lineageTag: e55345dc-446a-4552-9930-3f2142039709
+		summarizeBy: none
+		sourceColumn: main_item
+
+		annotation SummarizationSetBy = Automatic
+
+	column item
+		dataType: string
+		lineageTag: 20ba99e3-96d9-44f0-91f4-cbbfd3d008f9
+		summarizeBy: none
+		sourceColumn: item
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_total
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 52e29dde-f82d-4d66-8c30-683c32d8548d
+		summarizeBy: none
+		sourceColumn: is_total
+
+		annotation SummarizationSetBy = Automatic
+
+	column display_name
+		dataType: string
+		lineageTag: 63957f17-72f9-462f-8fcc-64f319466960
+		summarizeBy: none
+		sourceColumn: display_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_item = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost\SQLEXPRESS", "hazine_nabzi"),
+				    dbo_dim_item = Source{[Schema="dbo",Item="dim_item"]}[Data]
+				in
+				    dbo_dim_item
+
+	annotation PBI_ResultType = Table
+

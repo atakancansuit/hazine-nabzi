@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: tr-TR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_item","dim_year","v_monthly","v_annual","v_year_end_forecast","v_forecast_backtest"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_item
+ref table dim_year
+ref table v_monthly
+ref table v_annual
+ref table v_year_end_forecast
+ref table Ölçüler
+ref table v_forecast_backtest
+
+ref cultureInfo en-US
+

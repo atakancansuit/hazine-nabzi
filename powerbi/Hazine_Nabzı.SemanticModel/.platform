@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Hazine_Nabzı"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "91c475b9-05f0-425b-a4bc-35634619c575"
+  }
+}

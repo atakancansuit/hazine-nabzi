@@ -1,0 +1,106 @@
+table v_forecast_backtest
+	lineageTag: 0c03a868-a642-4018-b5df-510f2cc98739
+
+	column source
+		dataType: string
+		lineageTag: 2637ebf9-ce61-4a89-9266-a08edfa3c11e
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 280b725f-0768-4df2-afc0-15c2eba19796
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column item
+		dataType: string
+		lineageTag: 1e49a5bd-2d6e-4758-9773-63804084e849
+		summarizeBy: none
+		sourceColumn: item
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: int64
+		formatString: 0
+		lineageTag: e09daf82-d8a0-4068-851a-30343988cb42
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column cumulative_actual
+		dataType: double
+		lineageTag: f3922ddd-6df4-47c9-b7d3-b27960935e2b
+		summarizeBy: sum
+		sourceColumn: cumulative_actual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column year_total
+		dataType: double
+		lineageTag: f04aa6e4-60f4-4442-a19b-ba48b333637c
+		summarizeBy: sum
+		sourceColumn: year_total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column share_of_other_years
+		dataType: double
+		lineageTag: c451d3cf-4d01-446a-a852-07f8a47909ed
+		summarizeBy: sum
+		sourceColumn: share_of_other_years
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column forecast_year_end
+		dataType: double
+		lineageTag: 923a0820-d572-47ff-b40c-166be232ee4d
+		summarizeBy: sum
+		sourceColumn: forecast_year_end
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column error_pct
+		dataType: double
+		lineageTag: a30dcb78-09d2-434c-a13f-f0433c2e7196
+		summarizeBy: sum
+		sourceColumn: error_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column item_key
+		dataType: string
+		lineageTag: afcdef95-e996-4631-9cbb-2f25b4d92deb
+		summarizeBy: none
+		sourceColumn: item_key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition v_forecast_backtest = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost\SQLEXPRESS", "hazine_nabzi"),
+				    dbo_v_forecast_backtest = Source{[Schema="dbo",Item="v_forecast_backtest"]}[Data]
+				in
+				    dbo_v_forecast_backtest
+
+	annotation PBI_ResultType = Table
+

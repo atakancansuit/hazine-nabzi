@@ -1,0 +1,32 @@
+relationship AutoDetected_d409afef-ab2d-4da8-bd87-f8fe719d65f1
+	fromColumn: v_monthly.item_key
+	toColumn: dim_item.item_key
+
+relationship AutoDetected_b17bf519-6f4b-4044-8741-7bdbcfdfebc0
+	fromColumn: v_annual.item_key
+	toColumn: dim_item.item_key
+
+relationship AutoDetected_c8a3b558-12f5-43c1-8597-e8cee500a75c
+	fromColumn: v_year_end_forecast.item_key
+	toColumn: dim_item.item_key
+
+relationship AutoDetected_94d02676-8fa1-4547-8d78-b6c5dbf33756
+	fromColumn: v_monthly.year
+	toColumn: dim_year.year
+
+relationship AutoDetected_7c34e31e-167a-4396-9329-abdfdb0f0810
+	fromColumn: v_annual.year
+	toColumn: dim_year.year
+
+relationship AutoDetected_9bffcf28-abf8-49e9-ba91-5ff42bb43c6e
+	fromColumn: v_year_end_forecast.year
+	toColumn: dim_year.year
+
+relationship AutoDetected_0dce60f3-6ec8-436f-abb5-951585eb5caa
+	fromColumn: v_forecast_backtest.year
+	toColumn: dim_year.year
+
+relationship 291cc176-a54b-bc55-ca4a-dee8dcff3f07
+	fromColumn: v_forecast_backtest.item_key
+	toColumn: dim_item.item_key
+

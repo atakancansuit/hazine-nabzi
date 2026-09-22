@@ -1,0 +1,114 @@
+table v_monthly
+	lineageTag: 750e10de-8b31-4d53-a9a4-0bb835873b47
+
+	column item_key
+		dataType: string
+		lineageTag: 14084f57-017f-4e2c-bbaf-5b2a49730ef7
+		summarizeBy: none
+		sourceColumn: item_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: 90fe072e-3088-458b-ad41-156065f12eed
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 81e2db2c-c828-4bf7-a1df-83060018779c
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: int64
+		formatString: 0
+		lineageTag: 008ec50a-13ec-405c-9a0a-ac1a9a6daee3
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_item
+		dataType: string
+		lineageTag: 2dfa224d-ed3c-4d13-8f2a-3dd142142446
+		summarizeBy: none
+		sourceColumn: main_item
+
+		annotation SummarizationSetBy = Automatic
+
+	column item
+		dataType: string
+		lineageTag: 442a92fb-651d-4180-9215-c1443e677bdd
+		summarizeBy: none
+		sourceColumn: item
+
+		annotation SummarizationSetBy = Automatic
+
+	column actual
+		dataType: double
+		lineageTag: a74a6aa7-0533-41f8-a356-0d737458c3a8
+		summarizeBy: sum
+		sourceColumn: actual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cumulative_actual
+		dataType: double
+		lineageTag: ccf5cb6f-0e50-4bb4-be64-405012f9e8a6
+		summarizeBy: sum
+		sourceColumn: cumulative_actual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column planned
+		dataType: double
+		lineageTag: e88f1b95-2c42-4654-85e4-f99b28532339
+		summarizeBy: sum
+		sourceColumn: planned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cumulative_pct_of_plan
+		dataType: double
+		lineageTag: 0366c6ea-7b6a-4ce1-b0d6-4b2044a779f4
+		summarizeBy: sum
+		sourceColumn: cumulative_pct_of_plan
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column typical_pct_of_plan
+		dataType: double
+		lineageTag: 360f1df1-2b11-43d7-b56a-660f7c5427c5
+		summarizeBy: sum
+		sourceColumn: typical_pct_of_plan
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition v_monthly = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost\SQLEXPRESS", "hazine_nabzi"),
+				    dbo_v_monthly = Source{[Schema="dbo",Item="v_monthly"]}[Data]
+				in
+				    dbo_v_monthly
+
+	annotation PBI_ResultType = Table
+

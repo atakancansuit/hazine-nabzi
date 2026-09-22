@@ -1,0 +1,114 @@
+table v_year_end_forecast
+	lineageTag: 4083039f-07f0-4877-ad11-836c0048d354
+
+	column item_key
+		dataType: string
+		lineageTag: 2a10fa49-cc87-426d-9ba5-2fd4ef32f204
+		summarizeBy: none
+		sourceColumn: item_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: 241ac482-bdb9-422d-b2d8-8138654ab132
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 1456b807-a001-47e6-bd65-8202971803b7
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column main_item
+		dataType: string
+		lineageTag: 07d2d7ba-6ec9-408a-a1c7-6062192a434f
+		summarizeBy: none
+		sourceColumn: main_item
+
+		annotation SummarizationSetBy = Automatic
+
+	column item
+		dataType: string
+		lineageTag: 6a494ac4-e2de-43c5-aa00-10472e6d9e23
+		summarizeBy: none
+		sourceColumn: item
+
+		annotation SummarizationSetBy = Automatic
+
+	column months_reported
+		dataType: int64
+		formatString: 0
+		lineageTag: 3bc544c5-bf03-4abf-acd2-dba40ae824d0
+		summarizeBy: sum
+		sourceColumn: months_reported
+
+		annotation SummarizationSetBy = Automatic
+
+	column cumulative_actual
+		dataType: double
+		lineageTag: 7e6bbc41-da76-4feb-ae2c-b305c409d27c
+		summarizeBy: sum
+		sourceColumn: cumulative_actual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column planned
+		dataType: double
+		lineageTag: 25af11ba-e6a7-4f38-ba30-ff88f1126521
+		summarizeBy: sum
+		sourceColumn: planned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column share_of_year
+		dataType: double
+		lineageTag: d1a5981c-d319-4083-82fb-eefed5a74963
+		summarizeBy: sum
+		sourceColumn: share_of_year
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column forecast_year_end
+		dataType: double
+		lineageTag: 8faa0d31-6982-4070-852c-4a4c10390200
+		summarizeBy: sum
+		sourceColumn: forecast_year_end
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column forecast_pct_of_plan
+		dataType: double
+		lineageTag: b7fcb0e9-75bd-448c-b7a6-e2ba08df49dd
+		summarizeBy: sum
+		sourceColumn: forecast_pct_of_plan
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition v_year_end_forecast = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost\SQLEXPRESS", "hazine_nabzi"),
+				    dbo_v_year_end_forecast = Source{[Schema="dbo",Item="v_year_end_forecast"]}[Data]
+				in
+				    dbo_v_year_end_forecast
+
+	annotation PBI_ResultType = Table
+

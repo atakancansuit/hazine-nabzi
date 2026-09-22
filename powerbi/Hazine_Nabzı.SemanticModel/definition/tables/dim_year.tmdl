@@ -1,0 +1,23 @@
+table dim_year
+	lineageTag: 4dc8ad9e-b4e5-421a-afb4-574040a4f383
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 13e4e9a8-1f37-40a1-a17c-53c4d2097adb
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_year = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("localhost\SQLEXPRESS", "hazine_nabzi"),
+				    dbo_dim_year = Source{[Schema="dbo",Item="dim_year"]}[Data]
+				in
+				    dbo_dim_year
+
+	annotation PBI_ResultType = Table
+
