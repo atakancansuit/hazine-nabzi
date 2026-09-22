@@ -173,7 +173,33 @@ schtasks /Create /TN "Hazine Nabzi - aylik guncelleme" ^
 
 ## Rapor
 
-*(6. gün sonunda yazılacak)*
+Power BI raporu beş sayfadan oluşuyor. Veri doğrudan veritabanındaki görünümlerden geliyor; hesaplar raporda değil SQL tarafında yapılıyor, rapor yalnızca gösteriyor.
+
+![Özet sayfası](docs/ozet.png)
+
+**Özet.** Seçili yılın dört göstergesi (gerçekleşen, plan, gerçekleşme oranı, yıl sonu tahmini) ve kümülatif gidiş grafiği. Grafikte lacivert çizgi bu yılın gidişi, altın çizgi geçmiş yılların aynı aydaki ortalaması. İki çizginin üst üste olması yılın normal seyrettiğini gösterir.
+
+![Kalemler sayfası](docs/kalemler.png)
+
+**Kalemler.** Planı en çok aşan kalemler ve gider kalemlerinin tam listesi. "Fark (puan)" sütunu bu yılın temposunu geçmiş yılların aynı ayındaki temposuyla karşılaştırır.
+
+![Kurumlar sayfası](docs/kurumlar.png)
+
+**Kurumlar.** Genel bütçeli idarelerin harcaması, planı ve gerçekleşme oranı; bütçesini en çok aşan kurumlar.
+
+![Yöntem sayfası](docs/yontem.png)
+
+**Yöntem.** Yıl sonu tahmininin geriye dönük test sonuçları: ay ay medyan hata eğrisi ve kalem bazında hata tablosu. Sayfanın altında ölçü tanımları ve yöntemin anlatımı var. Rapordaki her sayının nasıl hesaplandığı bu sayfadan okunabilir.
+
+![Kalem detayı sayfası](docs/kalem-detayi.png)
+
+**Kalem detayı.** Doğrudan açılmaz; Kalemler veya Kurumlar sayfasında bir kaleme sağ tıklayıp "Drill through" denildiğinde o kalem için açılır. Seçili yılın aylık gidişini ve kalemin 12 yıllık gerçekleşme oranını gösterir.
+
+### Model
+
+Rapor yıldız şema üzerine kurulu: iki filtre tablosu (`dim_year`, `dim_item`) ve üç ölçüm tablosu (`v_monthly`, `v_annual`, `v_year_end_forecast`) ile tahmin testini taşıyan `v_forecast_backtest`. Sekiz ilişkinin hepsi filtre tablolarından ölçüm tablolarına doğru tek yönlü. 12 DAX ölçüsü `Ölçüler` tablosunda toplanmış ve her birinin açıklaması modelde yazılı.
+
+Rapor dosyası repoda `.pbip` (Power BI Project) biçiminde: tek bir ikili dosya yerine metin dosyalarından oluşan bir klasör. Böylece rapordaki değişiklikler git geçmişinde satır satır görünüyor. Renk düzeni [`powerbi/hazine-nabzi-theme.json`](powerbi/hazine-nabzi-theme.json) dosyasında ve Muhasebat'ın kurumsal renklerini kullanıyor.
 
 ## Proje yapısı
 
@@ -189,6 +215,8 @@ hazine-nabzi/
 ├── .env.example       Veritabanı bağlantı bilgilerinin örneği (.env repoya girmez)
 ├── requirements.txt   Gerekli Python kütüphaneleri
 ├── KURALLAR.md        Projenin çalışma kuralları ve günlüğü
+├── powerbi/           Power BI raporu (.pbip) ve tema dosyası
+├── docs/              Rapor ekran görüntüleri
 ├── sql/
 │   ├── dimensions.sql Filtre tabloları: dim_year, dim_item
 │   ├── views.sql      Rapor hesapları: beş görünüm

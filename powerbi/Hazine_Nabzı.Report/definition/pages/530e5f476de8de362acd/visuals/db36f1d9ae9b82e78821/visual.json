@@ -2,18 +2,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "db36f1d9ae9b82e78821",
   "position": {
-    "x": 63.333333333333336,
-    "y": 223.33333333333334,
+    "x": 60,
+    "y": 142,
     "z": 1000,
-    "height": 196.66666666666669,
-    "width": 250,
+    "height": 168,
+    "width": 420,
     "tabOrder": 1000
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "card",
     "query": {
       "queryState": {
-        "Data": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -27,8 +27,7 @@
                 }
               },
               "queryRef": "Ölçüler.Gerçekleşen",
-              "nativeQueryRef": "Gerçekleşen",
-              "format": "#,0"
+              "nativeQueryRef": "Gerçekleşen"
             }
           ]
         }
@@ -53,20 +52,27 @@
       }
     },
     "objects": {
-      "value": [
+      "labels": [
         {
           "properties": {
-            "show": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "1D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
           }
         }
       ],
-      "label": [
+      "categoryLabels": [
         {
           "properties": {
             "show": {
@@ -76,9 +82,6 @@
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
           }
         }
       ]

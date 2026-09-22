@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "Hazine_Nabz_06715875853224262.json",
+      "name": "Hazine_Nabz_5158231148896222.json",
       "reportVersionAtImport": {
         "visual": "2.12.0",
         "report": "3.4.0",
@@ -65,8 +65,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Hazine_Nabz_06715875853224262.json",
-          "path": "Hazine_Nabz_06715875853224262.json",
+          "name": "Hazine_Nabz_5158231148896222.json",
+          "path": "Hazine_Nabz_5158231148896222.json",
           "type": "CustomTheme"
         }
       ]

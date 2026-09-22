@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "e426e0b6095d911de05e",
+  "name": "dc8f21bda640507ad3c6",
   "position": {
-    "x": 1538,
-    "y": 16,
-    "z": 0,
-    "height": 128,
-    "width": 364,
-    "tabOrder": 0
+    "x": 1500.0042582788037,
+    "y": 10.465145987991653,
+    "z": 6001,
+    "height": 100,
+    "width": 360,
+    "tabOrder": 6001
   },
   "visual": {
     "visualType": "slicer",
@@ -81,7 +81,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "2026L"
+                                "Value": "2025L"
                               }
                             }
                           ]
@@ -127,50 +127,8 @@
             }
           }
         }
-      ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
       ]
     },
-    "drillFilterOtherVisuals": true,
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Yıl'"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
-    }
+    "drillFilterOtherVisuals": true
   }
 }

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "b6ba50ded1f242beadcf",
+  "position": {
+    "x": 60,
+    "y": 928,
+    "z": 6000,
+    "height": 132,
+    "width": 1800,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Nasıl okunur. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Kutular seçili yılı gösterir; yıl bitmemişse yalnızca yayımlanmış ayları kapsar. Alttaki grafikte koyu çizgi bu yılın gidişi, açık renkli çizgi geçmiş yılların aynı aydaki ortalaması. İki çizgi üst üsteyse yıl normal seyrediyor demektir.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "2026, sekiz aylık veri. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Harcamalar planın %64,1'inde, geçmiş yılların ortalaması %64,8; yani tempo normal. Ama faiz harcamaları %72,5 ile ortalamanın 7,4 puan üstünde. Bu hızla yıl sonunda toplam harcama planın %105'inde kapanır. Bütçe açığı sekiz ayda 1.308 milyar TL; yıllık plan 2.713 milyar TL.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

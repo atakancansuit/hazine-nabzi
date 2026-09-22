@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "ee89d176afdb434dbf22",
+  "position": {
+    "x": 60,
+    "y": 932,
+    "z": 6000,
+    "height": 128,
+    "width": 1800,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Nasıl okunur. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Tablo genel bütçeli idareleri harcamaya göre sıralar. Bütçesini aşan kurumlar %100'ün üstünde görünür; aşımın bir kısmı yıl içinde yedek ödenekten yapılan aktarımlardan gelir.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "2025'te göze çarpanlar. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "En büyük harcayan Hazine ve Maliye Bakanlığı (6.743 milyar TL): faiz ödemeleri ve sosyal güvenliğe yapılan transferler bu bütçeden çıkıyor. Oransal olarak en çok aşan Milli Saraylar İdaresi (%267) ve Çevre, Şehircilik ve İklim Değişikliği Bakanlığı (%164). Strateji ve Bütçe Başkanlığı ise planının yalnızca %1,6'sını harcamış görünür; yedek ödenek kasası bu kurumun bütçesinde durur ve diğer kurumlara aktarılır.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

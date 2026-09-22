@@ -173,7 +173,33 @@ schtasks /Create /TN "Hazine Nabzi - aylik guncelleme" ^
 
 ## Report
 
-*(to be written at the end of day 6)*
+The Power BI report has five pages. The data comes straight from the database views; the calculations live in SQL, not in the report, which only displays them.
+
+![Summary page](docs/ozet.png)
+
+**Summary.** Four indicators for the selected year (actual, plan, realisation rate, year-end forecast) and the cumulative progress chart. The navy line is this year, the gold line the average of previous years at the same month. The two lines lying on top of each other means the year is running as usual.
+
+![Items page](docs/kalemler.png)
+
+**Items.** The items that deviate most from the plan, and the full list of expenditure items. The "Fark (puan)" column compares this year's pace with the pace of previous years at the same month, in percentage points.
+
+![Institutions page](docs/kurumlar.png)
+
+**Institutions.** Spending, plan and realisation rate of the general budget institutions, and the ones that went furthest over budget.
+
+![Method page](docs/yontem.png)
+
+**Method.** Backtest results of the year-end forecast: median error by month and the error per item. The bottom of the page holds the measure definitions and a description of the method, so every number in the report can be traced to how it is calculated.
+
+![Item detail page](docs/kalem-detayi.png)
+
+**Item detail.** Not opened directly; it opens for a single item when you right-click it on the Items or Institutions page and choose "Drill through". It shows the monthly progress of the selected year and the item's realisation rate across 12 years.
+
+### Model
+
+The report is built on a star schema: two filter tables (`dim_year`, `dim_item`) and three fact tables (`v_monthly`, `v_annual`, `v_year_end_forecast`) plus `v_forecast_backtest` for the forecast test. All eight relationships run one way, from the filter tables to the fact tables. The 12 DAX measures are collected in the `Ölçüler` table and each one carries its description in the model.
+
+The report file is stored in the repo in `.pbip` (Power BI Project) format: a folder of text files instead of a single binary, so changes to the report show up line by line in the git history. The colour scheme is in [`powerbi/hazine-nabzi-theme.json`](powerbi/hazine-nabzi-theme.json) and follows the corporate colours of Muhasebat.
 
 ## Project structure
 
@@ -189,6 +215,8 @@ hazine-nabzi/
 ├── .env.example       Example of the database connection settings (.env is not in the repo)
 ├── requirements.txt   Required Python libraries
 ├── KURALLAR.md        Working rules and daily log of the project (in Turkish)
+├── powerbi/           Power BI report (.pbip) and theme file
+├── docs/              Report screenshots
 ├── sql/
 │   ├── dimensions.sql Filter tables: dim_year, dim_item
 │   ├── views.sql      Report calculations: five views

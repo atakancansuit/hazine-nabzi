@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "972e2081bac1d9202570",
+  "name": "aaff3a30766919719e0b",
   "position": {
-    "x": 1346.6666666666667,
-    "y": 0,
-    "z": 6,
-    "height": 93.333333333333343,
-    "width": 573.33333333333337,
-    "tabOrder": 6
+    "x": 1500.0042582788037,
+    "y": 8.7209549899930447,
+    "z": 6001,
+    "height": 100,
+    "width": 360,
+    "tabOrder": 6001
   },
   "visual": {
     "visualType": "slicer",
@@ -48,34 +48,48 @@
           }
         }
       ],
-      "selection": [
+      "general": [
         {
           "properties": {
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "header": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Yıllar'"
-                }
-              }
-            },
-            "textSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "20D"
-                }
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "dim_year",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "year"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "2025L"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }
@@ -87,41 +101,27 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "21D"
+                  "Value": "20D"
                 }
               }
             }
           }
         }
       ],
-      "general": [
-        {
-          "properties": {}
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
+      "header": [
         {
           "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Yıl'"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "'Yıllar'"
                 }
               }
             }
@@ -130,23 +130,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4f14ad72642576552547",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_year"
-              }
-            },
-            "Property": "year"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -2,18 +2,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "3edc9d1acace1c40d43a",
   "position": {
-    "x": 50,
-    "y": 106.66666666666667,
+    "x": 60,
+    "y": 120,
     "z": 1,
-    "height": 300,
-    "width": 480,
+    "height": 190,
+    "width": 573,
     "tabOrder": 1
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "card",
     "query": {
       "queryState": {
-        "Data": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -27,8 +27,7 @@
                 }
               },
               "queryRef": "Ölçüler.Gerçekleşen",
-              "nativeQueryRef": "Gerçekleşen",
-              "format": "#,0"
+              "nativeQueryRef": "Gerçekleşen"
             }
           ]
         }
@@ -52,7 +51,41 @@
         "isDefaultSort": true
       }
     },
-    "drillFilterOtherVisuals": true,
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "title": [
         {
@@ -101,6 +134,7 @@
           }
         }
       ]
-    }
+    },
+    "drillFilterOtherVisuals": true
   }
 }

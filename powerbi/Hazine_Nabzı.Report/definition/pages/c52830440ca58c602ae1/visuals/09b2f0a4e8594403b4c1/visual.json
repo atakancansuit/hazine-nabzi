@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "09b2f0a4e8594403b4c1",
+  "position": {
+    "x": 60,
+    "y": 934,
+    "z": 6000,
+    "height": 126,
+    "width": 1800,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Nasıl okunur. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Soldaki grafik sapması en büyük on kalemi gösterir: sapma = gerçekleşen − plan. Tablodaki 'Fark (puan)' sütunu bu yılın temposunu geçmiş yılların aynı ayındaki temposuyla karşılaştırır; artı değer normalden hızlı gidildiğini gösterir.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "2025'te göze çarpanlar. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Yatırım inşaatları planın %124,8'i, tahvil faizi %122,4'ü. Öte yandan sosyal güvenlik açık finansmanına ayrılan 552 milyar TL'nin yalnızca %13,6'sı kullanılmış. Yedek ödenek kalemlerinde harcama sıfır görünür: bu kalemler yıl içinde başka kalemlere aktarılmak üzere ayrılır, kendileri harcanmaz.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

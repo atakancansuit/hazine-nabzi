@@ -1,0 +1,197 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "bcac8e02dea540a5a5f3",
+  "position": {
+    "x": 60,
+    "y": 660,
+    "z": 6000,
+    "height": 400,
+    "width": 880,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Ölçü tanımları",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#101855"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Gerçekleşen: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "seçili yılda bugüne kadar harcanan tutar (milyar TL)",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Plan: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "Bütçe Kanunu'ndaki başlangıç ödeneği; yıl içinde güncellenmez",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Sapma: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "gerçekleşen − plan; artı değer planın aşıldığını gösterir",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Gerçekleşme %: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "gerçekleşenin plana oranı",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Kıyas %: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "geçmiş yıllarda yılın aynı ayında planın ortalama yüzde kaçı gerçekleşmişti",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fark (puan): ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "gerçekleşme yüzdesi − kıyas yüzdesi",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Yıl sonu tahmini: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "bu yılın kümülatifi ÷ geçmiş yılların aynı aya kadarki ortalama payı",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Medyan hata %: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "18pt",
+                      "color": "#222d56"
+                    }
+                  },
+                  {
+                    "value": "tahminin geriye dönük testte gerçekleşenden medyan sapması",
+                    "textStyle": {
+                      "fontSize": "18pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

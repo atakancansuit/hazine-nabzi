@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "4a9427aaee47424abbcd",
+  "position": {
+    "x": 980,
+    "y": 660,
+    "z": 6000,
+    "height": 400,
+    "width": 880,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Yıl sonu tahmini nasıl yapılıyor. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Geçmiş yıllarda bir kalemin yılın aynı ayına kadar yıllık toplamının yüzde kaçı gerçekleşmişse, o oran bu yılın kümülatifine uygulanır. Harcamaların yıl sonuna yığılması böylece hesaba katılır: ağustos sonunda personel giderinin ortalama %66'sı gerçekleşirken yatırım harcamalarının yalnızca %46'sı gerçekleşiyor. Makine öğrenmesi kullanılmıyor.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Tahmin ne kadar güvenilir. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Yöntem bitmiş 11 yıl üzerinde geriye dönük test edildi; her yıl tahmin edilirken o yılın kendi verisi dışarıda bırakıldı. Sekiz aylık veriyle medyan hata %5,9, on ayda %3,4. Büyük kalemlerde hata daha düşük: 2025 ağustos verisiyle toplam harcama tahmini %0,1 sapardı. Yöntem olağanüstü yıllarda şaşırıyor; 2023'te yatırım harcamalarında hata %21,6'ya çıkıyor.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

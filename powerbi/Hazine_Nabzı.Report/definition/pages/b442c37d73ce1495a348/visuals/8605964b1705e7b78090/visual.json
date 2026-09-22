@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "8605964b1705e7b78090",
   "position": {
-    "x": 50,
-    "y": 480,
+    "x": 60,
+    "y": 340,
     "z": 4,
-    "height": 480,
-    "width": 706.66666666666674,
+    "height": 600,
+    "width": 880,
     "tabOrder": 4
   },
   "visual": {
@@ -133,6 +133,46 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#222d56'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Ölçüler.Kümülatif %"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#c7a069'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Ölçüler.Kıyas Kümülatif %"
+          }
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "e6c11552687842a0bd37",
+  "position": {
+    "x": 60,
+    "y": 960,
+    "z": 6000,
+    "height": 100,
+    "width": 1800,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Nasıl okunur. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#101855"
+                    }
+                  },
+                  {
+                    "value": "Bu sayfa, önceki sayfalarda bir kaleme sağ tıklayıp 'Drill through' denildiğinde o kalem için açılır. Soldaki grafik seçili yılın aylık gidişini geçmiş yılların ortalamasıyla karşılaştırır; sağdaki grafik kalemin 12 yıllık gerçekleşme oranını gösterir ve yıl filtresinden etkilenmez. Sol üstteki okla gelinen sayfaya dönülür.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#495057"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

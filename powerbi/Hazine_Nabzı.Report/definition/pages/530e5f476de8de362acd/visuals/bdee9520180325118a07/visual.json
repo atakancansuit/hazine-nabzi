@@ -2,18 +2,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "bdee9520180325118a07",
   "position": {
-    "x": 560,
-    "y": 223.33333333333334,
+    "x": 520,
+    "y": 142,
     "z": 2000,
-    "height": 196.66666666666669,
-    "width": 243.33333333333334,
+    "height": 168,
+    "width": 420,
     "tabOrder": 2000
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "card",
     "query": {
       "queryState": {
-        "Data": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -27,8 +27,7 @@
                 }
               },
               "queryRef": "Ölçüler.Plan",
-              "nativeQueryRef": "Plan",
-              "format": "#,0"
+              "nativeQueryRef": "Plan"
             }
           ]
         }
@@ -53,29 +52,33 @@
       }
     },
     "objects": {
-      "label": [
+      "labels": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryLabels": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "value": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }
